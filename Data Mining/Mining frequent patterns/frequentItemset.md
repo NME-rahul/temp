@@ -1,4 +1,4 @@
-# Frquent itemset
+## Frquent itemset
 * A frequent itemset is a set of items that occur together frequently in dataset.
 for example : 
 analysis of banking data
@@ -6,7 +6,7 @@ corss-marketing
 catalog design
 
 
-# Closed itemset
+## Closed itemset
 * Aa clouser itemset is a aset of itemset that is not inclded in any other set with the same support in other words closed itemset is a frequnt itemset that is not included in the superset with same support
 
 
