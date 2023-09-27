@@ -1,0 +1,6 @@
+# Data warehouse
+
+Data warehouse is relational database mangement system(RDBMS) designed for query and analysis. it stores historcal data derived from transaction of data. it is a database that store information that is useful decision making, so it can also be described as centralized data repository.
+Data warehouse supports architecture that is useful making business related decisions.
+
+Data warehouse environment contains an extraction, transportation, loading(ETL), an online analytical processing engine, customer analysis tool and other applications that handle the process of gathering information and delivering.
