@@ -14,8 +14,8 @@
 	* now in remaining transaction instance, we have only those items which have count greater and equal to min.support.
 	* trace out each items transaction by transaction and update their count to construct tree.
 3. find frequnt itemset
-	* now we have tree of most frequrnt items.
-	* from these use combination to create frequent-itemset.
+	* now we have tree of most frequent items.
+	* from these, use combination to create frequent-itemset.
 
 
 
