@@ -25,10 +25,10 @@ eg.
 |---|---|
 |T1| {Hotdogs, Buns, Ketchup}|
 |T2| {Hotdogs, Buns}|
-|T3| {Hotdogs, Coks, Chips}|
-|T4| {Coks, Chips}|
-|T5| {Coks, Ketchup}|
-|T6| {Hotdogs, Coks, Chips}|
+|T3| {Hotdogs, Coke, Chips}|
+|T4| {Coke, Chips}|
+|T5| {Chips, Ketchup}|
+|T6| {Hotdogs, Coke, Chips}|
 
 1. Identify unique items and their count
 
