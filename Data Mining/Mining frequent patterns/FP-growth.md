@@ -17,9 +17,10 @@
 	* now we have tree of most frequent items.
 	* from these, use combination to create frequent-itemset.
 
-
+---
 
 eg.
+given minimum support 3
 
 |Transaction ID|Items|
 |---|---|
@@ -29,6 +30,8 @@ eg.
 |T4| {Coke, Chips}|
 |T5| {Chips, Ketchup}|
 |T6| {Hotdogs, Coke, Chips}|
+
+----
 
 1. Identify unique items and their count
 
@@ -50,9 +53,9 @@ eg.
 |Buns|2|
 |Ketchup|2|
 
-3. Most frequnt items that have frequency greate or equa to min. support
+3. Most frequnt items that have frequency greate or equal to min. support
 
-      {Hotdogs: 4, Chips: 4, Coke: 3, Buns: 2, Ketchup: 2}
+      {Hotdogs: 4, Chips: 4, Coke: 3}
 
 4. Now Cearte the ordered itemset by eleminating items having frequency count lower then min. support.
 
