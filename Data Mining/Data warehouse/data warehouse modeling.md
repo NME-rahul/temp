@@ -38,7 +38,7 @@ On the other hand, the physical modeling cocnerned about the implemntation of lo
 An enterprise warehouse collects all the records of organization. It support corporate-wide data integration.It generally contains detailes information as well as summarized information and can range in estimate from a few gigabyte to hundreds of gigabytes, terabytes or beyond. It requires business modeling and may take years to devvelop and build.
 
 2. Data mart
-Data mart is a subset of data from a company that is useful for specific user and focuses on selected subjects. For instance, a marketing data martt center on customers, items and saled and data in data marts is usually summarized.
+Data mart is a subset of data from a company that is useful for specific user and focuses on selected subjects. For instance, a marketing data mart center is on customers, items, sales. data in data marts is usually summarized.
 
 3. Virtual warehouse
 Virtual data warehouse is a set of preception over the operational database. For effective query processing, only some of the possile summary vision may be materilized. A virtual warehouse is simple to build but requires excess capacity on operational database servers.
