@@ -4,14 +4,14 @@
 
 1. Identify frequent items
 	* fom given transaction database, identify unique items and listout them.
-	* Now count each items frequency in database.
+	* Now count each item's frequency in each transaction.
 	* Sort the item list in descending order.
 	* by given minimum-support(minimum frequency count to be a support item), identify and list the items having count greater or equal to the minimim-support with their count.
 	
 2. Construct the tree
 	* mark the root node as NULL.
-	* from each transaction remove items that are not have count grater or equal to the minimum support.
-	* now in reaming transaction instance, we have only those items which have min support greater and equal to min.support.
+	* from each transaction remove items that does not have count grater or equal to the minimum support.
+	* now in remaining transaction instance, we have only those items which have count greater and equal to min.support.
 	* trace out each items transaction by transaction and update their count to construct tree.
 3. find frequnt itemset
 	* now we have tree of most frequrnt items.
