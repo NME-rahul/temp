@@ -1,6 +1,9 @@
 Basket 1: Bread, Milk, Eggs
+
 Basket 2: Bread, Diaper, Beer, Milk
+
 Basket 3: Bread, Milk, Diaper, Soda
+
 Basket 4: Milk, Diaper, Beer, Chips
 
 Find the bayesian belief itemset {Bread, Milk} with item Eggs
