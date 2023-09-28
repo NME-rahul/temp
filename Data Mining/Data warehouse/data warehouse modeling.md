@@ -2,7 +2,7 @@
 
 Data Warehouse modeling is the process of designing the schemas of detailed and summarized information. It involves creating a logical and physical model of data.
 
-Three two main reasons of data modeling:-
+There are two main reasons of data modeling:-
 1. Through the schema, clients can visualize the relationship among the warehouse data.
 2. a well-desgined schema allows an effective data warehouse structure.
 
