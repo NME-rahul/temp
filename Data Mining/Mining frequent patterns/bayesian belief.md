@@ -8,6 +8,8 @@ Basket 4: Milk, Diaper, Beer, Chips
 
 Find the bayesian belief itemset {Bread, Milk} with item Eggs
 
+---
+
 
 1. Prior probaility
 
