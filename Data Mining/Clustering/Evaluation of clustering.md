@@ -8,7 +8,9 @@ It measures the simlairty between the true labels and the labels assigned by the
 	ARI = N - [a * b]/N / 1/2(a + b) - (a * b)/N
 	
 	where N: is the total number of point in cluster(pair of 2)
+
 	a: is the total numebr of points in cluster with true labels
+
 	b: is the total number of points in cluster with predicted labels by the algorithm
 
 ## Internal methods
