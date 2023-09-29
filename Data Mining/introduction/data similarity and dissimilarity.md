@@ -14,16 +14,16 @@ Dissimilairty measures are used to quantify the degree of difference or distance
 
 1. Cosine similarity
 
-		COS(\theta) = \frac{A.B}{ |A||B|}
+	$$COS(\theta) = \frac{A.B}{ |A||B|}$$
 
 2. Euclidean distance
 
-		d = \sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2}
+	$$d = \sqrt{ (x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
 3. Manhatten distance
 
-		d = \sum_{i=0}^{n}|x_i - y_i|
+	$$d = \sum_{i=0}^{n}|x_i - y_i|$$
 
 4. Pearson correlation coefficeint
 
-		r = \frac{cov(x, y)}{\sigma_x . \sigma_y}
+	$$r = \frac{cov(x, y)}{\sigma_x . \sigma_y}$$
