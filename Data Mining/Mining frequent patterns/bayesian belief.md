@@ -16,29 +16,29 @@ Find the bayesian belief itemset {Bread, Milk} with item Eggs
 * assume prior probaility, there are 20% chance that customer will buy {Eggs} with {Bread, Milk}.
 * probability if X
 	
-		p({Bread, Milk}) = 3/4 = 0.75
+	$$p({Bread, Milk}) = 3/4 = 0.75$$
 
 
 2. likelihood
 	
-		p(X,Y) = number of transcation in which both itemset(X,Y) itemsetoccured / total transaction
+	$$p(X,Y) = Number of Transcation In Which Both Itemset(X,Y) Occured / Total Transaction$$
 
 * find the probability of {Bread, Milk} and {Eggs}
 
-		p({Bread, Milk, Eggs}) = 1 / 4 = 0.25
+	$$p({Bread, Milk, Eggs}) = 1 / 4 = 0.25$$
 
 3. Marginal probabilty
 
-		p(X,Y) = number of transcation in which both itemset Y occured / total transaction
+	$$p(X,Y) = Number of Transcation In Which Both Itemset Y Occured / Total Transaction$$
 
 * probailty of buying Eggs.
 
-		p({Eggs}) = 1/4 = 0.25
+	$$p({Eggs}) = 1/4 = 0.25$$
 
 4. Bayesian Belief
 
-		p(Y/X) = p(X, Y) * p(X) / p(Y)
+	$$p(Y/X) = p(X, Y) * p(X) / p(Y)$$
 
-		p({Eggs}/{Bread, Milk}) = p({Bread, Milk, Eggs}) * p({Bread, Milk}) / p({Eggs}) =  (1/4) * (3/4) / (1/4) = 3/4
+	$$p({Eggs}/{Bread, Milk}) = \frac{p({Bread, Milk, Eggs}) * p({Bread, Milk})}{ p({Eggs})} =  (1/4) * (3/4) / (1/4) = 3/4$$
 
 	
