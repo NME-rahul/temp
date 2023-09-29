@@ -5,7 +5,7 @@
 1. Adjust Rand Index(ARI)
 It measures the simlairty between the true labels and the labels assigned by the clustering algorithm. ARI values ranges from -1 to +1. A higher ARI value indeicate a better clustering.
 
-	ARI = N - [a * b]/N / 1/2(a + b) - (a * b)/N
+	$$ARI = \frac{N - \frac{[a * b]}N}{\frac{1}{2}(a + b) - \frac{(a * b)}{N}}$$
 	
 	where N: is the total number of point in cluster(pair of 2)
 
