@@ -20,9 +20,8 @@ IQR is a measure of spread of the middle half of a data set, it its calculated a
 $$lower fance = Q1 - K.IQR$$
 $$upper fance = Q3 - K.IQR$$
 		
-Q1 = median Of series
-
-Q3 = median of right series of median
+$$Q1 = Median Of Series$$
+$$Q3 = Median Of Right Series Of Median$$
 $$IQR = Q3 - Q1$$
 
 
