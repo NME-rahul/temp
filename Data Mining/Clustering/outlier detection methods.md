@@ -4,23 +4,26 @@
 #### 1. **Z-score**
 The Z-score is the number of deviations by which a data point is determined above or below the mean value. It is also used as an "outlier detection method" of finding out if a data point is too far or too close to the mean value.
 
-		z = \frac{x_i - mean}{\sigma}
+$$z = \frac{x_i - mean}{\sigma}$$
 
 #### 2. **Modified Z-score**
 This is a modififed version of z score, it uses MAD(mean absolute deviation) inseat of standard deviation and median instead mean.
 
-		z = \frac{x_i - median}{MAD}
-		where MAD = median( |x_1 - median|, |x_2 - median|, |x_3 - median|,....., |x_n - median| )
+$$z = \frac{x_i - median}{MAD}$$
+where
+$$MAD = median( |x_1 - median|, |x_2 - median|, |x_3 - median|,....., |x_n - median| )$$
 
 #### 3. **Inter Quartile Range(IQR)**
 IQR is a measure of spread of the middle half of a data set, it its calculated as the difference between third quartile and the first qurtile. The IQR is used to access the variability of middle 50% of a sample.
 
-		lower fance = Q1 - K.IQR
-		upper fance = Q3 - K.IQR
+
+$$lower fance = Q1 - K.IQR$$
+$$upper fance = Q3 - K.IQR$$
 		
-		Q1 = median of series
-		Q3 = median of right series of median
-		IQR = Q3 - Q1
+Q1 = median Of series
+
+Q3 = median of right series of median
+$$IQR = Q3 - Q1$$
 
 
 ----
