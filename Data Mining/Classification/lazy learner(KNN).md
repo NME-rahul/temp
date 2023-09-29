@@ -1,6 +1,6 @@
 # Lazy learners
 
-These type of algorithm do not explictly learns on the dataset they just learns the data. when a new data point occurs they make prediction based on data distribution.
+These type of algorithm do not explictly train on the dataset they just learns the data. when a new data point occurs they make prediction based on data distribution.
 
 ## K-nearest neighbour(KNN):-
 
