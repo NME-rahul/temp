@@ -23,7 +23,8 @@ $$\alpha -> \beta$$
 
 #### To be in 2NF
 
-* IF there is partial dependency then it is not in 2NF. If beta is partially dependent on alpha then it is a partialy dependency for example, AB is prime or candidate key, and given functionl dependency is A -> D then D is partially dependent on the key.
+* IF there is partial dependency then it is not in 2NF. If beta is partially dependent on alpha then it is a partialy dependency for example, AB is candidate key, and given functionl dependency is A -> D then D is partially dependent on the AB.
+* Here, A is the prime-key beacuse it's a part of candidate-key.
 
 ---
 
