@@ -6,7 +6,7 @@
 
 * The table should be in 1NF.
 * Non-prime key should be partially dependent on candidate-key.
-* Each non-key in table should fully-functionally dependent on the primary-key or candidate-key.
+* Each non-key in table should fully-functionally dependent on the entire primary-key or candidate-key.
 * **Functioanly dependent:** If values of field B is determined by the field A, and there can be only one value in field B. Here, A is a prime-key and B is non-prime-key.
   * **Symbolic repersentation:** A ---> B
 * **To do this:**
