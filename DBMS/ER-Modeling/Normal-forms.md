@@ -62,7 +62,7 @@
 * It is a new 3NF.
 * The table should be in 3NF.
 * There should be no overlapping candidate keys.
-  * **Overlapping Candidate key:** If we have more then one combination of keys(composit-key) that uniquly determines the record, and composit-key have a common attribute, then the keys are called  the overlapping candidate keys. eg (A,B) and (A,c)
+  * **Overlapping Candidate key:** If we have more then one composit-key and every composit-key have a common attribute, then the keys are called  the overlapping candidate keys. eg (A,B) and (A,c)
 * **To remove this:**
   * Create seprate table for each unique combination of composit-key's attribute. (A,B), (A,C) and (B,C)
 
