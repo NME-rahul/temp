@@ -9,3 +9,11 @@ A candidate-key is a subset of the super-key, which uniquly determine each attri
 ## Prime-key
 
 A prime-key is an attibute that uniquly deterimnes the every tuple in record. It can be a combination of key's.
+
+## Partial dependency
+
+If a prime-key can uniquly determine some of the attributes of the table but not all, then it is called Partial dependency.
+
+## Full dependecny
+
+If a prime-key can uniquly determine all the attributes of table, then it is called Partial dependency. 2NF requires full dependency not partial.
