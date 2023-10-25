@@ -1,0 +1,30 @@
+* Check for BCNF
+  * If fails, check for 3NF
+    * If fails, check for 2NF
+      * If fails, then it's a 1NF
+
+---   
+
+$$\alpha -> \beta$$
+
+|$$\alpha$$|$$\beta$$|dependency|
+|---|---|---|  
+| P | NP| partial dependency|
+| NP| NP|trasitive dependency|
+  
+#### To be in BCNF
+
+* If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
+
+#### To be in 2NF
+
+* If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
+* If beta is a prime-key or there is transitive functional dependecny then relation is not in 3NF.
+
+#### To be in 2NF
+
+* IF there is partial dependency then it is not in 2NF.
+
+---
+
+* The above condition should be followed by the all dependency in the relation.
