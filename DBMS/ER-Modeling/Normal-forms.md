@@ -85,7 +85,7 @@
 
 * The table should be in BCNF.
 * There should be no multi-valued dependency.
-  * **Multi-valued dependencies:** In field A, there is a set values for field B and a set of values for field C but fields B and C are not related.
+  * **Multi-valued dependencies:** In field A, there is a set values for both fields B and C but fields B and C are not related.
 * **To remove this:**
   * crate seprate table for each relationship. (A,B) and (A,C)
  
