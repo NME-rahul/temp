@@ -7,7 +7,7 @@
 * The table should be in 1NF.
 * Non-prime key should be partially dependent on candidate-key.
 * Each non-key in table should fully-functionally dependent on the primary-key or candidate-key.
-* **Functioanly dependent:** If values of field B is determined by the field B, and there can be only one value in field B.
+* **Functioanly dependent:** If values of field B is determined by the field A, and there can be only one value in field B. Here, A is a prime-key and B is non-prime-key.
   * **Symbolic repersentation:** A ---> B
 * **To do this:**
   * create a table for functionlaly dependent attributes. primary-key --> non-key1, primary-key --> non-key2, primary-key --> non-key3...,.
@@ -34,7 +34,7 @@
 
 * Table should be in 2NF.
 * There should be no transitive dependencies.
-  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C
+  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C. Here, A, B and C is a no-prime-key.
 * **To remove this:**
   * Find the attributes that are transitively dependent.
   * Create seprate table for each of dependencies, A ---> B and B ---> C
