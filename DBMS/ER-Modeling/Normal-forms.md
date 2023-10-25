@@ -87,7 +87,7 @@
 * There should be no multi-valued dependency.
   * **Multi-valued dependencies:** In field A, there is a set values for both fields B and C but fields B and C are not related.
 * **To remove this:**
-  * crate seprate table for each relationship. (A,B) and (A,C)
+  * crate seprate table for each attribute with field A . (A,B) and (A,C)
  
 |Movie|Star|Producer|
 |---|---|---|
