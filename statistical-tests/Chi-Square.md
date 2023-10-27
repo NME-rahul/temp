@@ -86,5 +86,5 @@ Degree of freddom =  (number of categories - 1)
 
 * Assume LOS(rejection area) as 5%(standard) or we can say 95% as acceptence area and find the value for it from chi-square distribution table. Critical value or we can say chi-square value at 5% rejection is 5.991.
 
-> $$If (X^2_{calulated} < X^2_{crtical}) : accept$$
-> $$Else: rject$$
+> $$If (X^2_{calulated} < X^2_{crtical}) : accept(H0)$$
+> $$Else: reject(H0)$$
