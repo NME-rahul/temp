@@ -102,7 +102,7 @@ R⋂N
   * Outer join
   * Inner/Equi join
 
-**Natural join:** join the set of tuples of all combinations based on common attribute(foriegn key).
+**Natural join:** Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the conditio of the natural join.
 
 Employee Table
 | EmployeeID | EmployeeName | DepartmentID | Salary |
@@ -237,7 +237,7 @@ Orders
 
 8. **Division:** Tuples of table table1 associated with tuples with table2.
 
-$$\pi(table1) x \pi(table2) - (table1)$$
+$$\pi(table1) * \pi(table2) - (table1)$$
 
 table1
 |Name|Course|
@@ -253,7 +253,7 @@ table2
 |B.tech|
 |M.tech|
  
-$$\pi(table1) x \pi(table2)$$
+$$\pi(table1) * \pi(table2)$$
 |Name|Course|
 |---|---|
 |System|B.tech|
@@ -265,7 +265,7 @@ $$\pi(table1) x \pi(table2)$$
 |Algebra|B.tech|
 |Algebra|M.tech|
 
-$$\pi(table1) x \pi(table2)$$ - (table1)$$
+$$\pi(table1) * \pi(table2) - (table1)$$
 |Name|Course|
 |---|---|
 |System|M.tech|
