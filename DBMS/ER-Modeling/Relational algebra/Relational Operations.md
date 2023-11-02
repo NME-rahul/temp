@@ -53,6 +53,11 @@ $$\pi_{Semester}(N)$$
 
 3. **Union**: it is represented as R U N. like set operation, selects all the records from both the table without replication.
 
+* To do union operation.
+  * Both realtion(tables) must have same arity.
+    * Same number of columns.
+    * Same Name of columns with same order.
+
 RUN
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
@@ -61,6 +66,7 @@ RUN
 |58|Sita|7|35%|
 |28|Suresh|4|65%|
 |44|Pinky|4|75%|
+
 
 4. **Intersection:** it is represented as R ⋂ N. like set operation, selects all the common records from both the table.
 
@@ -71,10 +77,19 @@ R⋂N
 |31|Bindu|6|55%|
 |58|Sita|7|35%|
 
+* To do Interscetion operation.
+  * Both realtion(tables) must have same arity.
+    * Same number of columns.
+    * Same Name of columns with same order.
 
 5. **Difference:** it is represented as R-N. like set operation, it removes all the records from R that are present in the table N.
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
+
+* To do Difference operation.
+  * Both realtion(tables) must have same arity.
+    * Same number of columns.
+    * Same Name of columns with same order.
 
 6. **Cartesion product:** it is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
 
