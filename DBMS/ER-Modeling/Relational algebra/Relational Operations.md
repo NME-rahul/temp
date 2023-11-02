@@ -102,14 +102,19 @@ R⋂N
   * Outer join
   * Inner/Equi join
 
-**Natural join:** Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the conditio of the natural join.
+**Natural join:** Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the condition of the natural join.
+
+> Natural join = cartesin_product + selection + projection
 
 Employee Table
 | EmployeeID | EmployeeName | DepartmentID | Salary |
 |------------|--------------|--------------|--------|
 | 1          | John         | 101          | 50000  |
-| 2          | Jane         | 102          | 60000  |
-| 3          | Alex         | 101          | 55000  |
+| 2          | Jane         | 104          | 60000  |
+| 3          | Mark         | 103          | 55000  |
+| 4          | Joy          | 105          | 78000  |
+| 5          | Alex         | 102          | 21000  |
+
 
 Department Table
 | DepartmentID | DepartmentName |
@@ -120,12 +125,40 @@ Department Table
 
     Select * from Employee NATURAL JOIN Department;
 
-| EmployeeID | EmployeeName | DepartmentID | Salary | DepartmentName |
-|------------|--------------|--------------|--------|----------------|
-| 1          | John         | 101          | 50000  | HR             |
-| 3          | Alex         | 101          | 55000  | HR             |
-| 2          | Jane         | 102          | 60000  | IT             |
 
+|EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentID|DepartmentName|
+|----------|------------|------------|------|------------|--------------|
+|1         |John        |101         |50000 |101         |HR            |
+|1         |John        |101         |50000 |102         |IT            |
+|1         |John        |101         |50000 |103         |Finance       |
+|2         |Jane        |104         |60000 |101         |HR            |
+|2         |Jane        |104         |60000 |102         |IT            |
+|2         |Jane        |104         |60000 |103         |Finance       |
+|3         |Mark        |103         |55000 |101         |HR            |
+|3         |Mark        |103         |55000 |102         |IT            |
+|3         |Mark        |103         |55000 |103         |Finance       |
+|4         |Joy         |105         |78000 |101         |HR            |
+|4         |Joy         |105         |78000 |102         |IT            |
+|4         |Joy         |105         |78000 |103         |Finance       |
+|5         |Alex        |102         |21000 |101         |HR            |
+|5         |Alex        |102         |21000 |102         |IT            |
+|5         |Alex        |102         |21000 |103         |Finance       |
+
+* Here, the Natural join point is DepartmentID, eleminate those rows mismatching DepartmentId value.
+
+|EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentID|DepartmentName|
+|----------|------------|------------|------|------------|--------------|
+|1         |John        |101         |50000 |101         |HR            |
+|3         |Mark        |103         |55000 |103         |Finance       |
+|5         |Alex        |102         |21000 |102         |IT            |
+
+* Now remove common coloumns, resultant table will be your output for the natural join.
+
+|EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentName|
+|----------|------------|------------|------|--------------|
+|1         |John        |101         |50000 |HR            |
+|3         |Mark        |103         |55000 |Finance       |
+|5         |Alex        |102         |21000 |IT            |
 
 **Inner join:**
 
