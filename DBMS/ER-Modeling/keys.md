@@ -1,10 +1,10 @@
 ## Super-key
 
-A super-key is a superset of candidate key's, meaning a candidate key is a subset of super key.
+A super-key is a superset of candidate key's, All candidate keys can be a super key, but the reverse is not true.
 
 ## Candidate-key
 
-A candidate-key is a subset of the super-key, which uniquly determine each attribute of table. it is a minimal key. A candidate-key is a key which is a candidate to be a prime-key.
+A candidate-key is a subset of the super-key, which uniquly determine each attribute of table.A candidate key is a super key with leat number of columns. A candidate-key is a key which is a candidate to be a prime-key.
 
 ## Prime-key
 
