@@ -1,11 +1,24 @@
-Bias-Variance tradeoff descibes the relationship between a model's complexity and accuracy on unseen data.
+# Bias variance tradeoff
 
-![](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/images/bias_variance/bullseye.png)
+Bias-Variance tradeoff descibes the relationship between a model's complexity and accuracy on unseen data. There is a traeoff between a model's complexity to minimize bias and variance.
 
-![](https://scott.fortmann-roe.com/docs/docs/BiasVariance/biasvariance.png)
+<p align="center">
+  <img src="https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/images/bias_variance/bullseye.png" width="500" height="400">
+</p>
 
-## High variance
+
+<p align="center">
+  <img src="https://scott.fortmann-roe.com/docs/docs/BiasVariance/biasvariance.png" width="600" height="400">
+</p>
+
+----
+
+## variance
 Variance refers to the model's sensitivity to fluctuation in the training data. A high-variance model is overly flexible, often capturing noise and random fluctation in the training data, which can lead to overfiting.
+
+Variance measures how musch a prediction vary for a given data point from average prediction for the same class.
+
+$$variance(x) = E[( \hat f(x) - E[\hat{f(x)}])^2]$$
 
 $$\sigma^2 = \frac{1}{N}\sum{x_i^2} - \bar{X}$$
 
