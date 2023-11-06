@@ -233,11 +233,11 @@ Orders
       |3|	103|	2023-10-10|
       
       Table: Customers
-      |CustomerID|	CustomerName|	ContactName|
-      |---|---|---|
-      |101|	Alfreds	Maria| Anders|
-      |102|	Berglunds|	Christina Berg|
-      |105|	Centro|	Francisco Chang|
+      |CustomerID|	CustomerName-|	ContactName  |OrderID| OrderDate|
+      |----------|---------------|---------------|-------|----------|
+      |101       | Alfreds	Maria|         Anders|1      |2023-10-01|
+      |102       |	    Berglunds| Christina Berg|2      |023-10-05 |
+      |105       |	       Centro|Francisco Chang|NULL   |NULL      |
 
           SELECT O.OrderID, C.CustomerName, O.OrderData FROM Orders O RIGHT OUTTER JOIN Customers C ON O.CustomerID = C.CustomerID;
       Output
@@ -248,32 +248,32 @@ Orders
       |105|	Centro|	Francisco Chang|
       
 
-    * **Full join:**
+    * **Full outer join:**
 
       Employees:
-      |EmployeeID|	EmployeeName|	DepartmentID|
-      |---|---|---|
-      |1|	John|	101|
-      |2|	Jane|	102|
-      |3|	Bob|	104|
-      |4|	Alice|	103|
+      |EmployeeID|EmployeeName|	DepartmentID|
+      |----------|------------|-------------|
+      |1         |	      John|	         101|
+      |2         |	      Jane| 	       102|
+      |3         |	       Bob|	         104|
+      |4         |	     Alice|          103|
       
       Departments:
-      |DepartmentID|	DepartmentName|
-      |---|---|
-      |101|	HR|
-      |102|	Finance|
-      |104|	IT|
+      |DepartmentID|DepartmentName|
+      |------------|--------------|
+      |101         |	          HR|
+      |102         |	     Finance|
+      |104         |	          IT|
 
           SELECT * FROM CUSTOMER FULL OUTER JOIN Departments;
 
       Output
-      |EmployeeID|	EmployeeName|	DepartmentID|	DepartmentName|
-      |---|---|---|---|
-      |1|	John|	101| HR|
-      |2|	Jane|	102| Finance|
-      |3|	Bob|	104| IT|
-      |4|	Alice|	103| NULL|
+      |EmployeeID|EmployeeName|	DepartmentID|	DepartmentName|
+      |----------|------------|-------------|---------------|
+      |1         |	      John|	         101|             HR|
+      |2         |	      Jane|	         102|        Finance|
+      |3         |	       Bob|	         104|             IT|
+      |4         |	     Alice|	         103|           NULL|
 
 |Natural Join|Inner Join| Outer Join|
 |---|---|---|
