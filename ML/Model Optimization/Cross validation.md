@@ -20,8 +20,12 @@
 5. Evaulaute the model performace on validaion set.
 6. Average the performance metric over k iteration to obtain the overall performance of the model.
 
-
 k=10 is best value for every type of variance, the appropriate k value is choosed the bases of variance of data.
+
+
+<p align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*W7JGxNLP1Jvlz3Hu.png" height="" width=""/>
+</p>
 
 
 # Nested Cross-Validation
