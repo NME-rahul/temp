@@ -45,14 +45,61 @@
 
   $$j = -\frac{1}{n} \sum{P(\hat{y_i})^{\hat{y_i}}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}}$$
   
-  $$\log{j} = -\frac{1}{n} \sum{ \log{[ P(\hat{y_i})^{y_i}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}]} } $$
+  $$\log{j} = -\frac{1}{n} \sum{ \log{[ P(\hat{y_i})^{\hat{y_i}}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}]} } $$
 
-  $$J = -\frac{1}{n} \sum{ \hat y_i\log{[ P(\hat{y_i})] + (1 - \hat{y_i})\log[(1 - P(\hat{y_i}))]} }$$
+  $$J = -\frac{1}{n} \sum{ \hat{y_i}\log{[ P(\hat{y_i})] + (1 - \hat{y_i})\log[(1 - P(\hat{y_i}))]} }$$
 
 |Cost function|prediction|
 |---|---|
 | $$- \log{ P( \hat{y_i} ) }$$ | y = 1|
 |$$- \log{ (1 - P( \hat{y_i} ) ) }$$|  y = 0|
 
-  
+
+simplfying the cost function equation:-
+
+we know
+
+$$p(\hat{y_i}) = \frac{ e^{\hat{y_i}} }{ 1 + e^{\hat{y_i}} } $$
+
+$$e^{\hat{y_i}} = \frac{ p(\hat{y_i}) }{ 1 - p(\hat{y_i}) } $$
+
+take log
+
+$$\log[e^{\hat{y_i}}] = \log[ \frac{ p(\hat{y_i}) }{ 1 - p(\hat{y_i}) } ]$$
+
+$$\hat{y_i} = \log[ \frac{ p(\hat{y_i}) }{ 1 - p(\hat{y_i}) } ]$$
+
+now,
+
+$$J = \log{(1 + e^{\hat{y_i}})} - \hat{y_i}^2  $$
+
+$$J = \log{(1 + e^{(wx + b)})} - (wx + b)^2  $$
+
+
+
+
+to minimize the cost differntiate with respect to w, b
+
+$$ \frac{\partial J}{\partial w} = \frac{1}{ 1 + e^{(wx + b)} } e^{(wx + b)} * x  - 2(wx + b)*x =  x * [\frac{ e^{(wx + b)} }{ 1 + e^{(wx + b)} }  - 2(wx + b)] = x * [p(\hat{y_i})  - 2\hat{y_i}] $$
+
+
+$$ \frac{\partial J}{\partial b} = \frac{1}{ 1 + e^{(wx + b)} } e^{(wx + b)} * b  - 2(wx + b)*b = b * [\frac{ e^{(wx + b)} }{ 1 + e^{(wx + b)} }  - 2(wx + b)] = b * [p(\hat{y_i})  - 2\hat{y_i}]$$
+
+
+**updation:-**
+
+$$w_{new} = w_{old} - \alpha * \frac{\partial J}{\partial w} $$
+
+$$b_{new} = b_{old} - \alpha * \frac{\partial J}{\partial b} $$
+
+
+**Algorithm:**
+1. $$\hat{y_i} = wx + b$$
+   $$p(\hat{y_i}) = \frac{ e^{\hat{y_i}} }{ 1 + e^{\hat{y_i}} } $$
+
+2. $$error = \log{ (1 - p(\hat{y_i})) }  - \hat{y_i}^2 $$
+
+3. $$w_{new} = w_{old} - \alpha * \frac{\partial J}{\partial w} $$
+   $$b_{new} = b_{old} - \alpha * \frac{\partial J}{\partial b} $$
+
 
