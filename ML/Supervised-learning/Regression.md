@@ -1,6 +1,6 @@
 * Select the prediction function.
 * Select the cost function.
-* Update the coeffiecnets of the function.
+* Update the coefficients of the function.
 
 # Simple Regression
 
