@@ -43,11 +43,11 @@
 
 * select the cost function, log-loss is used for the binary classification.
 
-  $$J = -\frac{1}{n} \sum{P(\hat{y_i})^{\hat{y_i}}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}}$$
+  $$j = -\frac{1}{n} \sum{P(\hat{y_i})^{\hat{y_i}}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}}$$
   
-  $$\log{J} = -\frac{1}{n} \sum{ \log{[ P(\hat{y_i})^{y_i}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}]} } $$
+  $$\log{j} = -\frac{1}{n} \sum{ \log{[ P(\hat{y_i})^{y_i}*(1 - P(\hat{y_i}))^{(1 - \hat{y_i})}]} } $$
 
-  $$j = -\frac{1}{n} \sum{ y_i\log{[ P(\hat{y_i})] + (1 - \hat{y_i})\log[(1 - P(\hat{y_i}))]} }$$
+  $$J = -\frac{1}{n} \sum{ y_i\log{[ P(\hat{y_i})] + (1 - \hat{y_i})\log[(1 - P(\hat{y_i}))]} }$$
 
 |Cost function|prediction|
 |---|---|
