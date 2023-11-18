@@ -16,7 +16,7 @@ $$\alpha -> \beta$$
 
 * If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
 
-#### To be in 2NF
+#### To be in 3NF
 
 * If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
 * If above condition fails check, whether beta is a prime-key or there is transitive functional dependecny if yes, then relation is not in 3NF.
