@@ -1,7 +1,7 @@
 * Check for BCNF
   * If fails, check for 3NF
     * If fails, check for 2NF
-      * If fails, then it's a 1NF
+      * If fails, check for 1NF
 
 ---   
 
