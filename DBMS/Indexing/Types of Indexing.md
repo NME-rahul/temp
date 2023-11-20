@@ -7,7 +7,7 @@ In Indexing we store a subscidary file in MM which have search-key and block poi
 
 ### Stucture of Indexing
 
-|Serach-key|recored Pointer/Block pointer/ Data reference|
+|Serach-key/Index field|recored Pointer/Block pointer/ Data reference|
 |---|---|
 
 * Data filld in index file must be Ordered.
