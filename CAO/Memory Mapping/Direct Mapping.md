@@ -26,4 +26,7 @@
   <img alt="direct memory mapping" src="https://diveintosystems.org/book/C11-MemHierarchy/_images/DirectMapping.png" height="500" width="500" />
 </p>
 
+**Tag directory:** has as many entries as a cache lines have.
+
+Tag directory size = No. of lines x No. of tag bits
  
