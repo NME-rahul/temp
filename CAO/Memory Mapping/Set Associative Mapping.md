@@ -3,6 +3,8 @@
 * Set associative mapping combines the best of direct and associative cache mapping.
 * In this technique cache is divided into set of lines, by dividing cache the block can take place in any line of set this provides the flexibility of associative mapping.
 * By creating sets in cache memory the number of conflict misses reduces because if a line of a particular set is accomodated by a block then new block can accomodate other line of same set.
+* Number of Comparater required = Set size
+* N-bit Comparater required, where N = tag bits
 
   |Tag bits|Set bits|Block/line offset|
   |---|---|---|
