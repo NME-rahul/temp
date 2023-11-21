@@ -4,7 +4,8 @@
 * **Word:** Smallest addressable unit of memory.
   * Byte addressable: 1 Byte = 1 word
 
-
+* No. of comparator required = 1, due to each block have a particular line in cache to be map onto, regardless of cache size.
+* N-bit comparator required, where N = tag bits
  
 **Physical address split :**
 
