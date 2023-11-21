@@ -8,6 +8,7 @@
 * At it took much time to search for block because data can be in any line of cache memory.
 * It is expenisve from the point of hardare because it requires n-bit comprator where n is equal to tag bits.
   * Comprator size = tag bits
+  * No of comparator required = No. of lines in cache
  
 $$Hit latency = T_{comparator} + T_{OR}$$
 
