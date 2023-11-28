@@ -23,7 +23,7 @@ $$MissRatio = 1 - HitRatio$$
 
 ---
 
-# Write allocate vs No write Allocate
+# Write allocation Vs No write allocation
 
 |Sr. No.|Write allocation | No write allocation|
 |---|---|---|
@@ -31,3 +31,15 @@ $$MissRatio = 1 - HitRatio$$
 |2.|The write operation is then performed on the cache copy of the block.|This approach is often used when it assumed that the data being written is unlikely to be read again soon or if the weite-to-read ratio is low.|
 |3.|This strategy is typical in systems where writing to the cache is relatively fast, and it is assumed that the data being written will likey be read again in the near future.|It avoids bringing unnecessary data into cache for write-only operation.|
 ||Example: Suppose a program writes to a specific memory location, and that location is not currently in the cache. With write-allocate, the entire cache block containing that location is fetched from main memory into the cache. The write is then performed on the cache copy.|Example: If a program writes to a specific memory location not currently in the cache and no-write allocation is in place, the data is directly written to the main memory, bypassing the cache. This can be advantageous if the data is unlikely to be read again in the near future.|
+
+---
+
+# Write through Vs Write Back
+
+Write-through and write-back are two different cache write policies that determine how changes made to data in the cache are propagated to the main memory
+
+|Sr. no.|Write through|Write Back|
+|---|---|---|
+|1|In write through cache policy, every write operation to the cache is immidiately reflected in the main memory.|In a write-back cache policy, changes made to the cache are not immidiatley propogated to the main memory.|
+|2.|After a write operation, both the cache line and oresponding location in main memory are updated simultaneously|The odified data is first written to the cache, and the corssponding location in main memory is updated only when the cache line is about to be replaced or when explicitly requested.|
+|3.|This ensures that the data in the cache is always consistent with the data in the main-memory|This allows for multiple writes to the same location in the cache before updating the main-memory, potentially reducing memory traffic.|
