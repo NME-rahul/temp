@@ -7,7 +7,7 @@ generally CPU has three cache levels L1, L2 and L3
 
 ### Level 1 cache(L1)
 
-* **Location**: L1 cache is the smallest and fastest cache, physically located on the CPU chip itself.
+* **Location**: L1 cache is the smallest and fastest cache, physically located on the CPU chip itself. L1 cache is genrally a SRAM.
 * **Purpose**: It holds a small amount of both data and instruction that CPU is currently working with.
 
 ### Level 2 cache(L2)
