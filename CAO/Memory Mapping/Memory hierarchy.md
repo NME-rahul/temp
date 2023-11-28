@@ -19,3 +19,7 @@ generally CPU has three cache levels L1, L2 and L3
 
 * **Location**: L3 cache, when present, is larger than both L1 and L2 and is shared among multiple CPU cores in a multi-core processor. It can be on the same chip or on a seprate chip(in case of multi-socket system).
 * **Purpose**: L3 cache serves as a shared resources among multiple CPU cores, reducing contention for cache resources. It helps in enhancing overall system performance in multi-core processors. L3 is slower than the L1 and L2 cache.
+
+$$HitRatio = \frac{No. of Hits}{No. of Hits + No. of Miss}$$
+
+$$MissRatio = 1 - HitRatio$$
