@@ -15,8 +15,8 @@
 
 * B+ tree is a variant of the B tree.
 * In B+ tree the data is only stored in leaves.
-* It leaf node keeps the copy of parent nodes keys.
-* Leaf node are connected through a link list structure.
+* Leaf node keeps the copy of every parent nodes key.
+* Leaf nodes are connected through a link list structure.
 
   <p align="center">
     <img src="https://s3.ap-south-1.amazonaws.com/s3.studytonight.com/tutorials/uploads/pictures/1608912327-.png" height="300" width=""/>
