@@ -8,17 +8,20 @@
 
 1. Direct Mapping
    * |Tag bits|Line No.|Block/Line offset|
-   |----|----|----|
+     |----|----|----|
+
    * Find the match using Line No. and Block/Line offset.
    * Compare it with tag associated with the line.
   
-2. Set Associative Mapping
+3. Set Associative Mapping
    * |Tag bits|Set|Block/Line offset|
-   |----|----|----|
+     |----|----|----|
+
    * Find the match using Set No. and Block/Line offset.
    * Compare it with tag associated with the line of only within the set parallel.
 
-3. Associative Mapping
+4. Associative Mapping
    * |Tag bits|Block/Line offset|
-   |----|----|
+     |----|----|
+
    * Compare the match with tag associated with every line of cache, simultaneously.
