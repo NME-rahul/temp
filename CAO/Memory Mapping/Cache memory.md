@@ -27,8 +27,8 @@ $$MissRatio = 1 - HitRatio$$
 
 |Sr. No.|Write allocation | No write allocation|
 |---|---|---|
-|1.| In the Write-allocate strategy, when a write operation is requested, the entire block containing the target address if first brought into the cache(if it is not already present)|In the no-write allocation stratergy, when a write operation is requested,the data is written directly to the main memory without bringing the corresponding cache block into the cache.|
-|2.|The write operation is then performed on the cache copy of the block.|This approach is often used when it assumed that the data being written is unlikely to be read again soon or if the weite-to-read ratio is low.|
+|1.| In the Write-allocate strategy, when a write operation is requested, the entire block containing the target address is first brought into the cache(if it is not already present)|In the no-write allocation stratergy, when a write operation is requested,the data is written directly to the main memory without bringing the corresponding cache block into the cache.|
+|2.|The write operation is then performed on the cache copy of the block.|This approach is often used when it assumed that the data being written is unlikely to be read again soon or if the write-to-read ratio is low.|
 |3.|This strategy is typical in systems where writing to the cache is relatively fast, and it is assumed that the data being written will likey be read again in the near future.|It avoids bringing unnecessary data into cache for write-only operation.|
 ||Example: Suppose a program writes to a specific memory location, and that location is not currently in the cache. With write-allocate, the entire cache block containing that location is fetched from main memory into the cache. The write is then performed on the cache copy.|Example: If a program writes to a specific memory location not currently in the cache and no-write allocation is in place, the data is directly written to the main memory, bypassing the cache. This can be advantageous if the data is unlikely to be read again in the near future.|
 
