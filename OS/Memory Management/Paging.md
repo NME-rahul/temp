@@ -5,15 +5,15 @@
 
 * Page Table:
   
-|Frame No./ Memory address|
+|Frame No./ Memory index|
 |---|
-|page 0 address|
-|page 1 address|
-|page 2 address|
+|page 0 memory index|
+|page 1 memory index|
+|page 2 memory index|
 |.|
 |.|
 |.|
-|page n address|
+|page n memory index|
 
 * The index of the page table is used to determine the page no. of corresponding page.
 * **Page Table entry size**: The number of bits require to store the frame addresss of a page that is stored in the memory.
