@@ -24,6 +24,8 @@ A search problem consists of
 * **Completeness**: BFS is complete and will find the soloution if it exists.
 * **Memory Usage**: Requires more memeory compared to DFS as it needs to store informaion about all paths at a given depth.
 
+  **Eg.**
+
 
 ### Depth First search(DFS)
 
