@@ -24,7 +24,17 @@ A search problem consists of
 * **Completeness**: BFS is complete and will find the soloution if it exists.
 * **Memory Usage**: Requires more memeory compared to DFS as it needs to store informaion about all paths at a given depth.
 
-  **Eg.**
+**Eg.**
+
+<p align="center">
+  <img width="374" alt="tree" src="https://github.com/NME-rahul/temp/assets/100432854/5ffe0d2d-9bfa-4a53-bcd3-10d2d5c33b92">
+</p>
+
+**Solution**
+
+<p align="center">
+  <img width="374" alt="tree" src="https://github.com/NME-rahul/temp/assets/100432854/a102bb97-a7e9-4674-927c-0d82f23afb7c">
+</p>
 
 
 ### Depth First search(DFS)
@@ -34,6 +44,11 @@ A search problem consists of
 * **Completenes**: DFS is not guranted to find the solution if state space is infinite. It may get stuck exploring a deep branch. The completness can be improved by introducing cycle count. 
 * **Memory usage**: Requires less memory compared to BFS as it only needs to store inforamtion about one path.
 
+**Solution**
+
+<p align="center">
+  <img width="374" alt="tree" src="https://github.com/NME-rahul/temp/assets/100432854/66fe6ae9-6b90-4882-8558-fd44bcfc4179">
+</p>
 
 **Ref**: https://www.geeksforgeeks.org/search-algorithms-in-ai/
 
