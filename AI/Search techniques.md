@@ -23,6 +23,7 @@ A search problem consists of
 * **Data Structure**: BFS uses Queue data structure as it works on First-In-First-Out(FIFO).
 * **Completeness**: BFS is complete and will find the soloution if it exists.
 * **Memory Usage**: Requires more memeory compared to DFS as it needs to store informaion about all paths at a given depth.
+* **Time Complexity**: O(V+E)
 
 **Eg.**
 
@@ -43,6 +44,7 @@ A search problem consists of
 * **Data Structure**: Typically implemented using a stack(or recursion), as it works on Last-In-first-Out(LIFO).
 * **Completenes**: DFS is not guranted to find the solution if state space is infinite. It may get stuck exploring a deep branch. The completness can be improved by introducing cycle count. 
 * **Memory usage**: Requires less memory compared to BFS as it only needs to store inforamtion about one path.
+* **Time Complexity**: O(V+E)
 
 **Solution**
 
