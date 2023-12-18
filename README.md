@@ -31,3 +31,12 @@
   * [course](https://youtube.com/playlist?list=PLG9aCp4uE-s17rFjWM8KchGlffXgOzzVP&feature=shared)
   <summary></summary>
 </details>
+
+
+# Theory of Computation
+
+<details>
+  
+  * [toc](https://youtube.com/playlist?list=PLG9aCp4uE-s1P6Z73Gbbh-kdDWwq5Bg7f&si=-BwYU-JEiJDLANQB)
+  <summary></summary>
+</details>
