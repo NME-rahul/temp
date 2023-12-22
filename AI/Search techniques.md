@@ -8,7 +8,7 @@ A search problem consists of
 > The solution to search problem is sequence of actions, called the plan that transforms the start state to the goal state. And this plan is acheived through search algorithms.
 
 <p align="center">
-  <img src="https://media.geeksforgeeks.org/wp-content/uploads/AI-algos-1-e1547043543151.png" height="" width="" />
+  <img width="" alt="Screenshot 2023-12-22 at 7 39 55 PM" src="https://github.com/NME-rahul/temp/assets/100432854/c81491c0-4039-4577-b7af-5d38a93c0943" height="" width="">
 </p>
 
 ## Uniformed
