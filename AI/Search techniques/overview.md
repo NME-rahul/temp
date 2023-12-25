@@ -10,3 +10,12 @@ A search problem consists of
 <p align="center">
   <img width="" alt="Screenshot 2023-12-22 at 7 39 55 PM" src="https://github.com/NME-rahul/temp/assets/100432854/c81491c0-4039-4577-b7af-5d38a93c0943" height="" width="">
 </p>
+
+
+## Uninformed Search
+
+
+## Informed Search
+
+
+## Adverarial Search
