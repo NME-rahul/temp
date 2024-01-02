@@ -5,15 +5,15 @@
 
 * Segment Table:
  
-|offset length|Frame index/No.|
+|Length of segment|Frame index/No.(base address of memory)|
 |---|---|
-||segment 0 memory index|
-||segment 1 memory index|
-||segment 2 memory index|
+|100|segment 0 memory index|
+|400|segment 1 memory index|
+|300|segment 2 memory index|
 |.|.|
 |.|.|
 |.|.|
-||segment n memory index|
+|733|segment n memory index|
 
 * The index no. of segment table is used to determine segement no. of corresponding segment.
 
