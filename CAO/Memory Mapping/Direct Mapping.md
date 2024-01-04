@@ -18,7 +18,7 @@
 * **Block offset:** represents the word number of block.
 * **Block Number:** represents the block number.
 * **Tag bits:** tells the which block set is mapped into the cache memory.
-* **Line/Index number:** tells on which cache line a particular block of block set(reprsented in tag bits) is mapped.
+* **Line/Index number:**(no. of lines) tells on which cache line a particular block of block set(reprsented in tag bits) is mapped.
 
 
 ---
