@@ -4,7 +4,7 @@
 * **Word:** Smallest addressable unit of memory.
   * Byte addressable: 1 Byte = 1 word
 
-### Hardware Orgniation
+### Hardware Orgnization
 
 **Working**: 
 * When a address comes to the cache, The cache controller extracts the tag and offset bits ffrom the address.
