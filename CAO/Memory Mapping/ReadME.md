@@ -6,9 +6,13 @@
   * where $m$ is the no of sets in the cache
 * In case of fully associative a block can be place in any cache line and if cache is full then page replacement policy is used to evict a page to make room free for next page.
 
+* Hit latency in Direct mapping.
   $$HitLatency = T_{comprator} + T_{OR}$$
 
-* comprators and or gate works parallely so take 1 OR gate 1 comprators latency.
+* Hit latency in Set associative mapping.
+  $$HitLatency = T_{mutiplexer} + T_{comprator} + T_{OR}$$
+
+* comprators and or gate works parallely so take latecny of each circuit one time only.
 * DATC(Data Access Time of Cache): Data retrival time
 
   $$DATC = HitLatency + T_{multiplexers}$$
