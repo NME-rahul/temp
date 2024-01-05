@@ -7,7 +7,7 @@
 ### Hardware Orgnization
 
 * When an address comes to cache memory, the cache contoller extracts the tag and set and offset bits.
-* First the set bits are used to determine the particular set.
+* First the set bits are used to determine the particular set with the help of multiplexers.
 * Then within set, the comparator compares the tag bits with each address line stored inside that particular set.
 * If it thare is match then the the output of comparator is fed into the OR gate, to make output of OR gate HIGH indicating cache hit.
   * If the output of is LOW indicating cache Miss.
@@ -16,7 +16,7 @@
 |Circuit Name|Size|No of circuits required|Reason|
 |---|---|---|---|
 |Comaprator|$N$-bit comparator, where $N$ = no of tag bits|No. of sets|the comparator compares the tag bits with a set, if we have $n$ sets then we require $n$ comparators.|
-|OR|$2^n$ where $n$:set size, is the number of lines in a set|$S$ x $L$, S sets and L lines per set|the output of comparator is fed into the OR gate, that means we require a OR that has input equal to the number of lines per set.|
+|OR|$2^n$ where $n$:set size, is the number of lines in a set||the output of comparator is fed into the OR gate, that means we require a OR that has input equal to the number of lines per set.|
 |Multiplexer|$2^{offsetBits}-to-1$|$S$ x $L$, S sets and L lines per set|It selcets the particular word within cache line, so if a line contains 64 word then we need $\log_2(64)-to-1$ mulitplexer.|
 
 ---
