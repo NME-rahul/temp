@@ -7,10 +7,15 @@
 **Disadvantages:**
 * At it took much time to search for block because data can be in any line of cache memory.
 * It is expenisve from the point of hardare because it requires n-bit comprator where n is equal to tag bits.
-  * Comprator size = tag bits
+  * 1 OR gate is also required.
+  * Comprator size = tag bits = Line bits
   * No of comparator required = No. of lines in cache
  
 $$Hit latency = T_{comparator} + T_{OR}$$
+
+<p align="center">
+ <img width="" alt="Screenshot 2024-01-05 at 2 15 14 PM" src="https://github.com/NME-rahul/temp/assets/100432854/5fb0f61d-f4c2-4fd1-9c7a-ca220ad78115">
+</p>
 
 **Why associative mapping?**
 * In direct memory mapping policy we have strict rule to map a particular set of blocks to a fixed line of cache memory.
