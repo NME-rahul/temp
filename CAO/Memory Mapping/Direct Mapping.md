@@ -10,7 +10,7 @@
 * When a address comes to the cache, The cache controller extracts the tag and offset bits ffrom the address.
 * The comprators compare the tag bits of the addres with stored bits in each cache line.
 * The outputs of all comprators are fed into OR gate and corresponding OR line's logic become HIGH, indicating cache hit.
-  * If the OR output is LOW, the data must be fetched from main memory.
+  * If the OR output is LOW(cache miss), the data must be fetched from main memory.
 * If there's a cache hit, the offset bits are fed into multiplexer. The multiplexer use these bits to select the specific byte within the matched cache line that need to retrieved.
 * And then this correct fetched byte is sent to the processor.
 
