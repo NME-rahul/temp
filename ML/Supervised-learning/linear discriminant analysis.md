@@ -1,8 +1,18 @@
 # Linear Discriminant Analysis(LDA)
 
-* It finds the projection to a line such that sample from different classes are well seprated.
-* PCA finds the most accurate data representation in a linear dimension space by projecting data in the direction of maximum variance. However it is not useful for classification beacuse maximum variance can lead to unseprable data.
+* It is a tool for classification and dimesnionality reduction.
+* LDA projects data from a D-dimensional feature space to D' dimesnion space (D > D').
+* It maximize the variability between the class and reduce the variability within the class.
 
+* It finds the projection to a line such that sample from different classes are well seprated.
+
+### Assumptions
+
+* It assumes that the data is distributed normally.
+* Each of the classes has identical covariance matrices.
+
+
+## Derivation
 <p align="center>
   <img src="" height="" width="">
 </p>
@@ -14,12 +24,12 @@
   <img src="" height="" width="">
 </p>
 
-* but it is not always correct because larger $|\tilde{\mu_2} - \tilde{\mu_1}|$ leads to poor sepration of data.
-* Suppose we have two classes and a d dimensional samples $x1, x2, ..., xn.$
+* but it is not always correct because larger $|\tilde{\mu_2} - \tilde{\mu_1}|$ may leads to poor sepration of data.
+* Suppose we have two classes and a d-dimensional samples $x1, x2, ..., xn.$
   * where $n1$ samples are coming from class-1 (C1).
   * and $n2$ samples are coming from class-2 (C2).
 
-* Now if $xi$ be a data point then its projection on the line will be given by unit vector $V$ as $V^T.x_i$
+* Now if $xi$ be a data point then its projection on the line will be given by unit vector $V$ as $V^T.x_i$, here $V$ is a vector matrix.
 * Let $\mu_1$ and $\mu_2$ be the means(centroid) of class C1 and C2 respectively before projection.
 * If $\tilde{\mu_1}$ denote the centroid of samples of class C1 after projection then,
   
@@ -39,6 +49,8 @@ similarily,
 
 * Thus, we need to project our data onto a line having direction V which maximizes.
   $$J(V) = \frac{(\tilde{\mu_1} - \tilde{\mu_2})^2}{\tilde{S_1^2} + \tilde{S_2^2}}$$
+  * Here, $(\tilde{\mu_1} - \tilde{\mu_2})^2$ is the between class scatter.
+  * and, $\tilde{S_1^2} + \tilde{S_2^2}$ is within class scatter scatter.
 
 * If we find V which make $J(V)$ large, we are guarented that te classes are well seprated.
   $$J(V) = \frac{(\tilde{\mu_1} - \tilde{\mu_2})^2}{\tilde{S_1^2} + \tilde{S_2^2}}$$
@@ -47,18 +59,18 @@ similarily,
   $$S_1 = \frac{1}{n-1} \sum_{x_i \in c_1} (x_i - \mu_1)^T (x_i - \mu_1)$$
   $$S_2 = \frac{1}{n-1} \sum_{x_i \in c_2} (x_i - \mu_2)^T (x_i - \mu_2)$$
 
-* Now define within class scatter matrix.
+* Now define **within class scatter matrix**(measure spread around mean in each class).
   $$S_w = S_1 + S_2$$
+  * we know, $\tilde{S_1^2} = V^T S_1 V$ and $\tilde{S_2^2} = V^T S_2 V$ and we require $\tilde{S_1^2} + \tilde{S_2^2}$
+    $$\tilde{S_1^2} + \tilde{S_2^2} = V^T(S_1 + S_2)V = V^T S_w V$$
 
-* we know, $\tilde{S_1^2} = V^T S_1 V$ and $\tilde{S_2^2} = V^T S_2 V$ and we require $\tilde{S_1^2} + \tilde{S_2^2}$
-  $$\tilde{S_1^2} + \tilde{S_2^2} = V^T(S_1 + S_2)V = V^T S_w V$$
+* Define **between the class scatter matrix**(measure distance between the mean of classes)
+  $$S_B = (\mu_1 - \mu_2)^2 = (\mu_1 - \mu_2)(\mu_1 - \mu_2)^T$$
 
-* DEfine between the class scatter matrix
-  $$S_B = (\mu_1 - \mu_2)(\mu_1 - \mu_2)^T$$
+  * we know, $(\tilde{\mu_1} - \tilde{\mu_2})^2 = (V^T\mu_1 - V^T\mu_2)^2 = V.V^T(\mu_1 - \mu_2)(\mu_1 - \mu_2)^T = V^T S_B V$
 
-* $(\tilde{\mu_1} - \tilde{\mu_2}) = (V^T\mu_1 - V^T\mu_2) = V^T(\mu_1 - \mu_2)(\mu_1 - \mu_2)^T = V^T S_B V$
+* we require $max_V, J(V) = \frac{(\tilde{\mu_1^2} - \tilde{\mu_1^2})}{\tilde{S_1^2} + \tilde{\mu_2^2}}$
 
-* we require $max_V J(V) = \frac{(\tilde{\mu_1^2} - \tilde{\mu_1^2})}{\tilde{S_1^2} + \tilde{\mu_2^2}}$
   $$\frac{\partial J(V)}{\partial V} = 0 => S_BV - \frac{V^TS_BV(S_BV)}{V^TS_WV} = 0$$
 
 * assume $\lambda = \frac{V^T S_B V}{V^T S_W V}$
@@ -68,20 +80,26 @@ similarily,
   $$=> M V = \lambda V => A.V = \lambda V$$
 
 * here, $M = S_W^{-1}S_B $
-* here, $V$ is non-zero eigen vector, $\lambda is eigen value
-* But S_BX points in the same direction as $\mu_1 - \mu_2$
-* $S_BX = (\mu_1 - \mu_2)(\mu_1 - \mu_2)^TX$
+* here, $V$ is non-zero eigen vector and $\lambda$ is eigen value
+* But $S_BX$ points in the same direction as $\mu_1 - \mu_2$
+* $S_B X = (\mu_1 - \mu_2)(\mu_1 - \mu_2)^TX$
 * $V = S_W^{-1}(\mu_1 - \mu_2)$
 
 ---
 
 eg.
 
-* Class 1 has 5 samples $C_1 = [(1, 2), (2, 3), (3, 3), (4, 5), (5, 5)]$
-* Class 2 has 6 samples $C_2 = [(1, 0), (2, 1), (3, 1), (3, 2), (5,3), (5, 6)]$
+<p align="center>
+  <img src="https://private-user-images.githubusercontent.com/100432854/294693238-dd8919eb-4024-4c9d-bd23-d11a2d219c36.jpg" height="" width="">
+</p>
 
-sol.
 
-* Arrange in 2 seprate matrics
+<p align="center>
+  <img src="https://private-user-images.githubusercontent.com/100432854/294693257-c1e03d2c-a5d4-449f-a038-a65eb57767c1.jpg" height="" width="">
+</p>
 
-  $$C_1 = \mbox{~and~}\left[\begin{array}{cc} 1 & 2 \\ 2 & 3 \\ 3 & 3 \\ 4 & 5 \\ 5 & 5 \end{array} \right]$$ 
+
+<p align="center>
+  <img src="https://private-user-images.githubusercontent.com/100432854/294693263-480eac3d-f001-4eff-a365-d5fb83cbc7e6.jpg" height="" width="">
+</p>
+
