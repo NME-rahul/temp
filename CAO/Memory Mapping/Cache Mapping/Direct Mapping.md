@@ -7,12 +7,12 @@
 ### Hardware Orgnization
 
 **Working**: 
-* When a address comes to the cache, The cache controller extracts the tag and offset bits ffrom the address.
-* The comprators compare the tag bits of the addres with stored bits in each cache line.
-* The outputs of all comprators are fed into OR gate and corresponding OR line's logic become HIGH, indicating cache hit.
+* When a address comes to the cache, The cache controller extracts the tag and offset bits f\from the address.
+* The comprator compare the tag bits of the addres with stored bits in each cache line.
+* The outputs of comprator is fed into OR gate and corresponding OR line's logic become HIGH, indicating cache hit.
   * If the OR output is LOW(cache miss), the data must be fetched from main memory.
-* If there's a cache hit, the offset bits are fed into multiplexer. The multiplexer use these bits to select the specific byte within the matched cache line that need to retrieved.
-* And then this correct fetched byte is sent to the processor.
+* If there's a cache hit, the offset bits are fed into multiplexer. The multiplexer use these bits to select the specific word within the matched cache line that need to retrieved.
+* And then this correct fetched word is sent to the processor.
 
 |Circuit name|Size|No. of circuit required|Reason |
 |---|---|---|---|
@@ -31,7 +31,7 @@
 * **Block offset:** represents the word number of block.
 * **Block Number:** represents the block number.
 * **Tag bits:** tells the which block set is mapped into the cache memory.
-* **Line/Index number:**(no. of lines) tells on which cache line a particular block of block set(reprsented in tag bits) is mapped.
+* **Line/Index number:**(line no.) tells on which cache line a memory block of block set(reprsented in tag bits) is mapped.
 
 
 ---
