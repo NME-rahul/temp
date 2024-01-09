@@ -40,7 +40,7 @@ Write-through and write-back are two different cache write policies that determi
 
 |Sr. no.|Write through|Write Back|
 |---|---|---|
-|1|In write through cache policy, every write operation to the cache is immidiately reflected in the main memory.|In a write-back cache policy, changes made to the cache are not immidiatley propogated to the main memory.|
+|1|In write through cache policy, all writes goes to main-memory as well as cache.|In a write-back cache policy, changes made to the cache are not immidiatley propogated to the main memory.|
 |2.|After a write operation, both the cache line and corresponding location in main memory are updated simultaneously|The modified data is first written to the cache, and the corresponding location in main memory is updated only when the cache line is about to be replaced or when explicitly requested.|
 |3.|This ensures that the data in the cache is always consistent with the data in the main-memory|This allows for multiple writes to the same location in the cache before updating the main-memory, potentially reducing memory traffic.|
 |4.|Write through policy is used when there is no possibilty of modification in near future.|Write back policy is implemented when, in near future multiple modification has to be done on same cache line.|
