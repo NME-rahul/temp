@@ -5,7 +5,7 @@
 * It follows many-to-many relationship.
 
 **Disadvantages:**
-* At it took much time to search for block because data can be in any line of cache memory.
+* At it took much time to search for block because data can be map on any line of cache memory.
 * It is expenisve from the point of hardare because it requires n-bit comprator where n is equal to tag bits.
   * 1 OR gate is also required.
   * Comprator size = tag bits = Line bits
@@ -19,7 +19,7 @@ $$Hit latency = T_{comparator} + T_{OR}$$
 
 **Why associative mapping?**
 * In direct memory mapping policy we have strict rule to map a particular set of blocks to a fixed line of cache memory.
-* And when we want to place another block in cache line it is not possible without replacing it, this is called conflict on direct mapping that's hy we use associative memory mapping.
+* And when we want to place another block in cache line it is not possible without replacing it, this is called conflict on direct mapping that's why we use associative memory mapping.
 
 **Physical Adrress bit split**
 
