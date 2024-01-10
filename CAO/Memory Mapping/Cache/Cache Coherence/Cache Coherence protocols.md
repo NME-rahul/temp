@@ -22,4 +22,20 @@
 7. IF we use **Write Back** policy in the cachethen the updation in the mai-memory will reflect in the next cache block replacement.
 8. In **Write update** strategy instead of generating invalid request, P1 generates an update request and place it on the shared bus commandng all other cache memory to update their local copies of A. Once the all update is done the state will change into the "shared".
 
+## Directory Based Protocol
+
+**NOte**: In snooping-base protocol when we have N number of processors then the common bus bottlenecks.
+
+* In this organization each processor have their own cache meory, main-memory as well as directory.
+* The communication between the processors is done by the Point-2-Point communication.
+
+<p align="center">
+<img width="1421" alt="Screenshot 2024-01-10 at 2 40 23 PM" src="https://github.com/NME-rahul/temp/assets/100432854/5e913305-e10b-4933-af80-d416f485c0e2">
+</p>
+
+1. 
+
+
+
+
  
