@@ -12,6 +12,12 @@
 * **Disadvatnage**: Once the circuit is implemented the updation is not possible.
 
 
+<p align="center">
+  <img src="https://github.com/NME-rahul/temp/assets/100432854/39c1a92d-8eeb-4fec-a1d8-9fe13a32b121" width="" height="" />
+</p>
+
+
+
 ## Microprogrammed Control unit
 
 * The programing approach is used to implement the control unit.
