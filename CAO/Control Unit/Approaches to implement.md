@@ -23,6 +23,14 @@ The hardwired control unit can be seen as state machine that changes from one st
 * The micro-programmed control unit is slower in speed because of the time it takes to fetch instruction from control memory.
 * A microassembler is used to translate the control word that is stored in the control memory.
 
+Standard micro-instruction format:-
+|Control signals|Mux Select|Next Address|
+|---|---|---|
+
+* Control Signal: Each bit indicate whether the coressponding device will take action or not.
+* Mux select: flag bits/condition bits.
+* Next Address: Address of the next micro-instruction.(these bit are used onto control memmory to fetch next address).
+
 ---
 
 ||Hardwired control unit|Micro-programmed control unit|
