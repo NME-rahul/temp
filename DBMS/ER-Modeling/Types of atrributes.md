@@ -26,4 +26,5 @@
 * Arbitrary nested Composit and multi-valued attributes.
 * composit componnet is represented by the ().
 * and multi-valued is represented by the {}.
+* eg. a person can have more then one residence and each residence can have multiple phones.
 
