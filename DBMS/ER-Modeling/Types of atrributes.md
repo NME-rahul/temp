@@ -20,3 +20,10 @@
 |----|----|----|
 |1.|Attributes which doen't require any type of further update since they are stored in the database|An attribute that can be derive from other attributes.|
 |2.|eg. DOB|eg. Age can be derived from the DOB|
+
+
+5. **Complex Attributes**:
+* Arbitrary nested Composit and multi-valued attributes.
+* composit componnet is represented by the ().
+* and multi-valued is represented by the {}.
+
