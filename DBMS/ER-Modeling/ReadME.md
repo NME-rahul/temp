@@ -1,7 +1,7 @@
 ## Entity Set
 
 * A collection of entities of same type.
-* An entity is reprsented by a set attributes.
+* An entity is reprsented by a set of attributes.
 * Basically, an entity set is set of records/rows.
 
 <p align="center">
