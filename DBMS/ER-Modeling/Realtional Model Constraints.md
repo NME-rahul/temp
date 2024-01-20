@@ -1,4 +1,4 @@
-## Constraints
+## RConstraints
 
 Constrants are nothing but rules that needs to be followed while entring the data in reational database.
 
@@ -14,6 +14,15 @@ Constrants are nothing but rules that needs to be followed while entring the dat
 
 1. **Domain constraints:** It specify the acceptable value that a column can take. It gurantess data consistency and prevents from inaccurate data entry.
    * **Data type constraint:** Defines the kind of data that can be fill in the a column. eg. INTEGER
+     * String Data types
+       * CHAR(SIZE), VARCHAR(SiZE), TEXT(Size)
+     * Numeric Data types
+       * BOOL, INTEGER(Size), BIGINT(Size), FLOAT(Size, d), DOUBLE(Size, d), DECIMAL(SIZE, d). d: decimal point
+     * Binary Data types
+       * BINARY(Size), VARBINARY(Size), BLOB(Size), BIT(Size)
+     * Date Data types
+       * DATE, DATETIME(fsp), TIMESTAMP(fsp), TIME(fsp), YEAR, 
+     * Money Data types
    * **Length constraint:** Defines the number of digits/chararater that can be enter in the columns. eg. VARCHAR(10)
    * **Range constraints:** Specify the range restriction.
      
@@ -50,7 +59,7 @@ Constrants are nothing but rules that needs to be followed while entring the dat
 
         CREATE TABLE Students (Student_ID INT PRIMARY KEY, Student_name VARCHAR(50));
    
-5. **Refrential integrity constraints:**  Refrential integirty constraints ensures the consistency and accuracy of data between related tables.
+4. **Refrential integrity constraints:**  Refrential integirty constraints ensures the consistency and accuracy of data between related tables.
 
        CREATE TABLE Auhors (Auther_id PRIMARY KEY, Author_name VARCHAR(50));
        CREATE TABLE Books(Book_ID INT PRIMARY KEY, Book_title VARCHAR(50), Author_ID INT, FOREIGN KEY (Author_ID) REFRENCES Authors(Author_ID) ON DELETE CASCADE);
@@ -58,7 +67,7 @@ Constrants are nothing but rules that needs to be followed while entring the dat
      * ON DELETE CASCADE clause is used which means that if a record in the Authors is deleted, all the associated recored in the Books table with the Author_ID will automatically delete.
   
 
-7. **Tupe uniquness constraint:** It is also knwon as composite key constraints, it is use to enforce uniqness in the table by the combination of multiple columns in the table. for example in a table Student, student name, DOB and age can be used to uniqly determine each individual student in table.
+5. **Tupe uniquness constraint:** It is also knwon as composite key constraints, it is use to enforce uniqness in the table by the combination of multiple columns in the table. for example in a table Student, student name, DOB and age can be used to uniqly determine each individual student in table.
 
         CREATE TABLE Students (Student_ID INT, Student_name VARCAHR(50), Age INT(3), DOB DATE, CONSTRAINTS name_age_dob UNIQUE (Student_name, Age, DOB));
   * here name_age_dob is the name given to the combination of three column Student_name, Age and DOB
