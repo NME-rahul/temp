@@ -1,4 +1,4 @@
-## Types of Mapping cardinaity constraints
+## Types of cardinaity constraints
 
 1. **One to One(1:1)**
 2. **Many to One(N:1)**
