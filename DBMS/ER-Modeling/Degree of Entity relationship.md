@@ -13,7 +13,7 @@ If a relationship type between enities in a single type. also known as recursive
 eg. In a college presdenital election among all the students one student is elected whether the elected is he or she, the president is the student.
    
    <p align="center">
-     <img src="" />
+     <img height="300" width="" src="https://github.com/NME-rahul/temp/assets/100432854/81fb9807-9ed0-48ad-9bc3-896daa467af4" />
    </p>
    
 ### Binary
@@ -23,16 +23,16 @@ If a relationship type is between entities in one type and entities in another t
 eg. Each indian citizen has their own Adhar cards, so we can the citizen and Adhar card are two entites.
 
    <p align="center">
-     <img src="https://github.com/NME-rahul/temp/assets/100432854/a4adda73-38e9-4705-8231-aca961e95c5b" />
+     <img height="200" width="700" src="https://github.com/NME-rahul/temp/assets/100432854/fe7c64d0-af24-48d0-86bc-8dcfc65e7371" />
    </p>
    
-### Ternary**
+### Ternary
 
 If a realtionship type is between three differnet type of entities. It is difficult to convert it to a relational table.
 
 eg. A student studies in a school, so student and school are two entities but the same student also takes some coaching classes so he has relaationship with coaching as well.
    <p align="center">
-     <img src="" />
+     <img height="200" width=500" src="https://github.com/NME-rahul/temp/assets/100432854/647344c3-48d3-4137-90e9-0efb894fe6c7" />
    </p>
 
 ### N-ary
@@ -41,5 +41,5 @@ It is a generalized form of relationship where N number of entities parts in a r
 
 eg. A unversity have many entities like studentss, teachers, affiliated colleges, courses and these are all related.
    <p align="center">
-     <img src="" />
+     <img height="200" width="500" src="https://github.com/NME-rahul/temp/assets/100432854/78732403-1a11-4010-8dac-5062614b4e23" />
    </p>
