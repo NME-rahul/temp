@@ -25,3 +25,12 @@ The Order in which operations of multiple transactions appears for execution is 
      * Recoverable
      * Cascadeless
      * Strict
+
+# Serailzability
+
+IF a non-Serial schedule can be transformed into it's eqvivalent serial schedule then it is called serializable.
+
+
+## Types of Serializable
+
+1. **Conflict Serializable**:
