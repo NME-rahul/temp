@@ -16,3 +16,8 @@ It baascially indicates the level of locking.
 4. **Row Level**: It is less restrictive, it allows concurrent transactions to access different rows of table.
 
 5. **Field Level**: It allows concurrent transactions to access the same row but with different fields/attributes/columns.
+
+## Problems with Locks
+
+1. Resulting shedule may or may not be Serializable.
+2. The Schedule may create deadlock.
