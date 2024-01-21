@@ -1,9 +1,0 @@
-# Schedule
-
-The Order in which operations of multiple transactions appears for execution is called Schedule.
-
-## Types of Schedule
-
-<p align="center">
-  <img src="https://github.com/NME-rahul/temp/assets/100432854/4cbf23d6-365c-4858-8b85-c0c60944697d" />
-</p>
