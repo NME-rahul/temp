@@ -16,3 +16,12 @@ The Order in which operations of multiple transactions appears for execution is 
      * Recoverable
      * Cascadeless
      * Strict
+
+1. **Serial Schedule**:
+   * Multiple transactions executes concurrently.
+   * Operations of all the transactions are interleaved with each other.
+   * **Characteristics**: may not always.
+     * Consistent
+     * Recoverable
+     * Cascadeless
+     * Strict
