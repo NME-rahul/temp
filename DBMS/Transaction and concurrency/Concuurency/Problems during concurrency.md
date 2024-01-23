@@ -1,3 +1,9 @@
+## Problems with concuurency
+
+1. Recoverability
+2. Deadlock
+3. Seralizability
+
 ## Problems during Concurrent execution
 
 There are three main problems
