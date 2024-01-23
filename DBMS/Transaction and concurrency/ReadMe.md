@@ -8,5 +8,3 @@
 # Concurrency
 
 * The cordination between simultaneous execution of transactions in a multiprocessing environment.
-* It ensures the seralizbility of transaction.
-* Ensures data consistency.
