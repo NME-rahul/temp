@@ -7,7 +7,7 @@ Locks guarntess that no two transactions can use same data item at same time.
 
 It baascially indicates the level of locking.
 
-1. **Database Level**: In a database level lock, the entire database is locked, this level of locking is useful for batch processing not and suitable for online multiuser DBMSs.
+1. **Database Level**: In a database level lock, the entire database is locked, this level of locking is useful for batch processing and not suitable for online multiuser DBMSs.
 
 2. **Table Level**: In a table-level lock, the entire table is locked, preventing access to use of any row of table.
 
@@ -21,3 +21,5 @@ It baascially indicates the level of locking.
 
 1. Resulting shedule may or may not be Serializable.
 2. The Schedule may create deadlock.
+
+Note: Serailizability can be ensured by use of 2-phase locking.
