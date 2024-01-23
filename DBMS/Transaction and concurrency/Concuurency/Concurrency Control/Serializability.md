@@ -4,7 +4,7 @@
 2. View Serializability
 
    <p align="center">
-     <img height="300" width="" src="https://github.com/NME-rahul/temp/assets/100432854/3374415d-7cc7-426c-a30b-15e92fc4120d" />
+     <img height="300" width="" src="https://github.com/NME-rahul/temp/assets/100432854/b929082c-77e9-460f-bbc3-1abf5a1dd512" />
    </p>
 
 ## **Conflict Serializable**:
