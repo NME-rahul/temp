@@ -23,5 +23,14 @@
 * Nature of shared and exclusive locks.
   * Shared: less restrictive, can be provide to multiple transaction at a time whenever every transaction wants to read data item.
   * Exclusing: much restrictive, only provides to a single transaction at a time whenever transaction wants to write on data item.
+ 
+**Compatible locks matrix for same data item**
+<div align="center">
+ 
+ ||Shared|Exclusive|
+ |---|---|---|
+ |**Shared**|  ✅ |x|
+ |**Exclusive**|x|x|
+</div>
 
 * Exclusive lock is provide when their is potential conflict exists.
