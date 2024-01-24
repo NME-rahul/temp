@@ -26,11 +26,11 @@
     * no conflict schedule.
   * If a schedule is conflict serializable than it is guranted that schedule is serializable schedule and hence consistent schedule.
 
-* **find serial schedule of serializable schedule**:
-  * $1.$ Repeat step 2 and 3 procedure until 1 vertex remain.
-  * $2.$ Calculate indegree of each vertx.
-  * $3.$ Remove vertex having the 0 indegree.
-  * $4.$ Now, create a sequence in which you removed the vertex, the formed sequence will be the serial schedule.
+**find serial schedule of serializable schedule**:
+ * $1.$ Repeat step 2 and 3 procedure until 1 vertex remain.
+ * $2.$ Calculate indegree of each vertx.
+ * $3.$ Remove vertex having the 0 indegree.
+ * $4.$ Now, create a sequence in which you removed the vertex, the formed sequence will be the serial schedule.
 
 * **Conflict eqvivlance**: Two transaction that have same precedence graph.
 
@@ -40,11 +40,21 @@
    * If a schedule is a conflict serializable schedule then its definatly view serializble but inverse is not ture because conflict serializable schedule is a subset of view serialble schedules.
    * View serialzbility is a NP-hard problem beacuse we have to check $n!$ view equivalance combinations.
   
-**View Equivalance**: 2 schedules are said to be view equivalent if they follow following rules.
-* $1.$ Same data item in both schedules should read first from database.
-* $2.$ the order of read from other transaction's written value should same in both schedules for each data item.
-* $3.$ same data item should be written last on database in both schedules.
+**View Equivalance**: 2 schedules are said to be view equivalent if they follow some conditions.
+* $1.$ If non-serial schedual and its equivalnet serial schedule Reads the same data item initially.
+* $2.$ Final write should same.
+* $3.$ Intermidiate read should same.
+* **Definition**: a schedules a is said to be view serializable if there exist a View Equivalance schedule and that we need to check one-by-one.
 
-* **Definition**: a schedules a  is said to be view serializable if there exist a View Equivalance schedule. that we need  to check one-by-one.
+* **Note**: Never check view serializability always check conflict serializability because if a schedule is conflict serializable then it is definatly view serializable.
 
-* **Note**: Never check view serializability always check conflict serializability becaue if a schedule is serializable then it is definatly view serializable.
+## Blind Write:
+
+IF any transaction in schedule write data without before readig then it is called blind write.
+
+<div align="center">
+   <img height="" width="" src="https://github.com/NME-rahul/temp/blob/main/Resources/Images/20240124_154259.jpg" />
+</div>
+
+**easy solution**:
+   * To check whether a schedule is view serializable find if there exist a blind write or not.
