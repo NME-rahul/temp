@@ -1,7 +1,7 @@
 # Clustered Indexing
 
-* Indexing is done on non-primary key.
-* Data must be ordered.
+* Indexing is done on non-primary key attribute.
+* Data must be ordered on indexing attribute.
 * It is sparse indexing but not always.
 
 
@@ -20,7 +20,7 @@
 
 * Number of records in DB: 1GB
 * Record Size: 64 bytes
-* Block size: 1096 bytes
+* Block size: 4096 bytes
 * Index field: 10 bytes
 * Block pointer size: 22 bytes
 * Number of distinct values in index file: 16384
@@ -31,8 +31,8 @@
 
 **Solution**
 
-* Total size of DB records = Number of records in DB * Size of a single record = 2^30 * 64 bytes
-* Total number of blocks = Total size of DB records / size of a single block = 2^30 * 64 bytes / 4096 bytes = 2^36 / 2^12 = 2^24
+* Total size of DB records = Number of records in DB * Size of a single record = $2^{30} * 64$ bytes
+* Total number of blocks = Total size of DB records / size of a single block = $\frac{2^{30} * 64}{4096} \frac{bytes}{bytes}$ = $\frac{2^{36}}{2^{12}}$ = $2^{24}$
 * Index file strcture
 
   |Index field|Block pointer|
@@ -42,6 +42,6 @@
 
 * size of index file = Number of distinct records in index file * size of each record in index file = 16384 * 32 bytes
 
-* Number of blocks required for index file = size of index file / size of a single block  = 16384 * 32 bytes / 4096 bytes = 2^19 / 2^12 = 2^7
+* Number of blocks required for index file = size of index file / size of a single block  = $\frac{16384 * 32}{4096} \frac{bytes}{bytes} = \frac{2^{19}}{2^{12}} = 2^7$
 
 
