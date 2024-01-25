@@ -10,7 +10,7 @@ A transcation is said to be follow 2-phase protocol if locking and unlocking is 
 **Lock Point**: Point at which growing phase end, ie. point at which transaction acquires it's last lock.
 
 <p align="center">
-  <img src="" />
+  <img width="400" src="https://github.com/NME-rahul/temp/blob/main/Resources/Images/20240125_211109.jpg" />
 </p>
 
 **Note**: upgrading of locks from shared to exclusive is allowd in growing phase but not in shrinking phase.
@@ -22,6 +22,12 @@ A transcation is said to be follow 2-phase protocol if locking and unlocking is 
 * Deadlock
 
 ### Casecade rollback
+
+* In casecading when a single transaction abort or failure causes other transactions to rollback is called casecading.
+
+<p align="center">
+  <img height="400" src="https://github.com/NME-rahul/temp/blob/main/Resources/Images/12122-768.webp" />
+</p>
 
 
 ### Starvation
