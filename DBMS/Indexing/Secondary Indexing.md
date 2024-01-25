@@ -16,7 +16,7 @@
 * It is a two level Indexing.
  
 <p align="center">
-  <img src="https://www.guru99.com/images/1/070119_0833_IndexinginD4.png" height="" width=""/>
+  <img src="https://github.com/NME-rahul/temp/blob/main/Resources/Images/20240125_205629.jpg" height="" width=""/>
 </p>
 
 **Explanation**
