@@ -1,4 +1,4 @@
-# Concuurency contol methods
+# Concurrency contol methods
 
 There are mainly 3 concurrency control methods
 
