@@ -50,10 +50,14 @@ Degree of freddom =  (number of categories - 1)
 
 **Example:** procedure is same for both the tests only diference is the conclusion.
 
+<div align="center">
+
 |Data|Candidate A|    Candidate B|    Candidate C|
 |---|---|---|---|
 |Male |       50 |           30     |        20|
 |Female|      40 |           50     |        10|
+
+</div>
 
 **step 1.** set Hypothesis.
 
@@ -63,26 +67,38 @@ Degree of freddom =  (number of categories - 1)
 
 **step 2.** Calculate the row total, coloum total For each and calculate grand total.
 
+<div align="center">
+
   |Data|Candidate A|    Candidate B|    Candidate C| Column total|
   |---|---|---|---|---|
   |Male |       50 |           30|        20|      100|
   |Female|      40 |           50|        10|      100|
   |Row total|   90 |           80|        30|      Grand total = 200| 
 
+ </div>
+
 
 **step 3.** Calculate expected value for each coloumn.
+
+<div align="center">
 
   |Data|Candidate A|    Candidate B|    Candidate C|
   |---|---|---|---|
   |Male |       $$\frac{100 * 90}{200} = 45$$ |           $$\frac{100 * 80}{200} = 40$$|        $$\frac{100 * 30}{200} = 15$$|
   |Female|      $$\frac{100 * 90}{200} = 45$$ |           $$\frac{100 * 80}{200} = 40$$|        $$\frac{100 * 30}{200} = 15$$|
 
+ </div>
+
 **step 4.** Calculate chi-square value.
+
+<div align="center">
   
   |Data|Candidate A|    Candidate B|    Candidate C|
   |---|---|---|---|
   |Male |       $$\frac{(50 - 45)^2}{45} = 0.55$$ |           $$\frac{(30 - 40)^2}{40} = 2.5$$|        $$\frac{(20 - 15)^2}{15} = 1.67$$|
   |Female|      $$\frac{(40 - 45)^2}{45} = 0.55$$ |           $$\frac{(50 - 40)^2}{40} = 2.5$$|        $$frac{(10 - 15)^2}{15} = 1.67$$|
+
+</div>
 
 **step 5.** Calculate sum of chi-square value.
 
