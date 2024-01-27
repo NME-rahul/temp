@@ -16,13 +16,13 @@ $$\alpha->\beta$$
 
 which is correct?
 
-- [] XY -> Z && Z -> y
+-  XY -> Z && Z -> y
 
 - [x] YZ -> X && Y -> Z
 
-- [] YZ -> X && X -> Z
+-  YZ -> X && X -> Z
 
-- [] XZ -> Y && Y -> Z
+-  XZ -> Y && Y -> Z
 
 
 XZ means composit of X and Z
