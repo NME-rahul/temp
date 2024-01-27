@@ -10,7 +10,7 @@ $$\alpha -> \beta$$
 |$$\alpha$$|$$\beta$$|dependency|
 |---|---|---|  
 | P | NP| partial dependency|
-| NP| NP|trasitive dependency|
+| NP| NP|transitive dependency|
   
 #### To be in BCNF
 
