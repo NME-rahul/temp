@@ -1,6 +1,6 @@
 # Chi-Square test
 
-A chi-square test is used to compare/association two statistical categorical data set.
+A chi-square test is used to compare or association two statistical categorical data set.
 
 ## Chi-Square Goodness-of-fit test
 
@@ -15,7 +15,7 @@ $$ X^2 = \sum{\frac{(Observed - Expeted)^2}{Expected}}$$
 $$Expected = \frac{Row Total * Col Total}{GrandTotal}$$
 
 
-Degree of freddom =  (number of rows - 1)*(number of columns)
+Degree of freddom =  (number of rows - 1)*(number of columns - 1)
 
 Degree of freddom =  (number of categories - 1)
 
@@ -38,7 +38,7 @@ $$ X^2 = \sum{\frac{(Observed - Expeted)^2}{Expected}}$$
 $$Expected = \frac{Row Total * Col Total}{GrandTotal}$$
 
 
-Degree of freddom =  (number of rows - 1)*(number of columns)
+Degree of freddom =  (number of rows - 1)*(number of columns - 1)
 
 Degree of freddom =  (number of categories - 1)
 
@@ -48,7 +48,7 @@ Degree of freddom =  (number of categories - 1)
 
 ---
 
-**Example:** procedure is same for both the tests only diference is the conclusion.
+**Example:** procedure is same for both the tests only difference is the conclusion.
 
 <div align="center">
 
@@ -61,19 +61,19 @@ Degree of freddom =  (number of categories - 1)
 
 **step 1.** set Hypothesis.
 
-  **H0** = There is no difference between Male and Female candidates.
+  **H0** = There is no difference between number of Male and Female candidates.
 
-  **H1** = There is difference between Male and Female candidates.
+  **H1** = There is difference between number of Male and Female candidates.
 
 **step 2.** Calculate the row total, coloum total For each and calculate grand total.
 
 <div align="center">
 
-  |Data|Candidate A|    Candidate B|    Candidate C| Column total|
-  |---|---|---|---|---|
-  |Male |       50 |           30|        20|      100|
-  |Female|      40 |           50|        10|      100|
-  |Row total|   90 |           80|        30|      Grand total = 200| 
+  |Data                |Candidate A    |    Candidate B|  Candidate C|          Row total|
+  |--------------------|---------------|---------------|-------------|-------------------|
+  |Male                |            50 |             30|           20|                100|
+  |Female              |            40 |             50|           10|                100|
+  |**Column total**    |            90 |             80|           30|  Grand total = 200| 
 
  </div>
 
