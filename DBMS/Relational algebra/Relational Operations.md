@@ -127,9 +127,9 @@ It is represented as RxN. it multiplies Every row of table R with every row of t
 ## Join
 
 A join operation combines tuples/rows from different tables/relations, if and only if it satisfy some specific condition.
-  * Natural Join
-  * Outer join
-  * Inner/Equi join
+1. Natural Join
+2. Outer join
+3. Inner/Equi join
 
 ### Natural join
 
