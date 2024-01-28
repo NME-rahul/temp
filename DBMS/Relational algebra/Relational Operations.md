@@ -302,7 +302,7 @@ Orders
 ### Division(/):
    * all Tuple of table2 associated with tuples of table1.
    * Attributes of B is proper subset of attibutes of A, here in example attribute of tabel1 'course' attribute is also ocuring in table2
-   * every, all, at all, for all, in all, for every like phrases will come in question when have to perform division. for eg. Find the the person that has account in all the banks of a particular city.
+   * every, all, at all, for all, in all, for every like phrases will come in question then we have to perform division. for eg. Find the the person that has account in all the banks of a particular city.
    * It is derived operator
      * $$\pi(table1) * \pi(table2) - (table1)$$
      * $$A(X,Y) / B(Y) = C(X)$$
