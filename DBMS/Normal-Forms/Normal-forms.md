@@ -295,4 +295,5 @@
 ---
 
 * It is not possible or fesiable to convert a table into it's 4th or 5th or even some cases BCNF beacuse it difficult and costly to maintain.
+* As you go higher in normalization you will get more and more tables from a single table.
 * A table in 3NF is good. 
