@@ -35,7 +35,9 @@
 
 ## Definitions
 
-1. **Select:** Selects records according to the specified condition
+### Select:
+
+Selects records according to the specified condition
 $$\sigma_{condition} (tableName)$$
 
 $$\sigma_{Semester = 4}(R)$$
@@ -45,13 +47,17 @@ $$\sigma_{Roll no > 35}(R)$$
 $$\sigma_{Roll no > 30 AND Roll no < 45}(R)$$
 
 
-2. **Project:** Project/show all the table record according specified table.
+### Project
+
+Project/show all the table record according specified table.
 $$\pi_{col1, col2, ..., coln}(tableName)$$
 
 $$\pi_{Semester}(N)$$
 
 
-3. **Union**: it is represented as R U N. like set operation, selects all the records from both the table without replication.
+### Union
+
+it is represented as R U N. like set operation, selects all the records from both the table without replication.
 
 * To do union operation.
   * Both realtion(tables) must have same arity.
@@ -68,7 +74,9 @@ RUN
 |44|Pinky|4|75%|
 
 
-4. **Intersection:** it is represented as R ⋂ N. like set operation, selects all the common records from both the table.
+### Intersection
+
+it is represented as R ⋂ N. like set operation, selects all the common records from both the table.
 
 R⋂N
 |Roll No.|Name|Semester|Percentage|
@@ -82,7 +90,9 @@ R⋂N
     * Same number of columns.
     * Same Name of columns with same order.
 
-5. **Difference:** it is represented as R-N. like set operation, it removes all the records from R that are present in the table N.
+### Difference
+it is represented as R-N. like set operation, it removes all the records from R that are present in the table N.
+
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
 
@@ -91,7 +101,9 @@ R⋂N
     * Same number of columns.
     * Same Name of columns with same order.
 
-6. **Cartesion product:** it is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
+### Cartesion product
+
+It is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
 
 |Roll No.|Name|Semester|Percentage|Roll No.|Name|Semester|Percentage|
 |---|---|---|---|---|---|---|---|
@@ -112,12 +124,16 @@ R⋂N
 |44|Pinky|4|75%|58|Sita|7|35%|
 
 
-7. **Join:** A join operation combines tuples/rows from different tables/relations, if and only if it satisfy some specific condition.
+## Join
+
+A join operation combines tuples/rows from different tables/relations, if and only if it satisfy some specific condition.
   * Natural Join
   * Outer join
   * Inner/Equi join
 
-**Natural join:** Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the condition of the natural join.
+### Natural join
+
+Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the condition of the natural join.
 
 > Natural join = cartesin_product + selection + projection
 
@@ -175,7 +191,7 @@ Department Table
 |3         |Mark        |103         |55000 |Finance       |
 |5         |Alex        |102         |21000 |IT            |
 
-**Inner join:**
+### Inner join
 
 Customers
 | ID | Name    | Location  |
@@ -195,7 +211,7 @@ Orders
 
     SELECT C.Name, O.Ammount FROM Customer AS C INNER JOIN Order AS O ON C.ID = O.ID;
 
-**Outer Join:** 
+### Outer Join
     ![](https://d1wl9nui6miy8.cloudfront.net/media/969825/2013-06-inner-outer-join-venn.jpg)
 
   * **Left Outer join:** Take all records from left table(table1).
@@ -283,7 +299,7 @@ Orders
 |join matching columns| join matching rows| join each row|
 
 
-8. **Division(/):**
+### Division(/):
    * all Tuple of table2 associated with tuples of table1.
    * Attributes of B is proper subset of attibutes of A, here in example attribute of tabel1 'course' attribute is also ocuring in table2
    * every, all, at all, for all, in all, for every like phrases will come in question when have to perform division. for eg. Find the the person that has account in all the banks of a particular city.
