@@ -57,16 +57,16 @@
 * Patients Table
 <div align="center">
  
-|PatientID|PatientName|Age|
-|---------|-------|---|
-|5001|Rahul|38|
-|5001|Rahul|38|
-|5002|Sursh|56|
-|5002|Sursh|56|
-|5003|Ramesh|23|
-|5003|Ramesh|23|
-|5004|Neelam|60|
-|5004|Neelam|60|
+|PatientID|PatientName|Age|Dieases|
+|---------|-------|---|---|
+|5001|Rahul|38|alphaviruses|
+|5001|Rahul|38|Acute Flaccid Myelitis|
+|5002|Sursh|56|Cold|
+|5002|Sursh|56|Cancer|
+|5003|Ramesh|23|Arthritis|
+|5003|Ramesh|23|alphaviruses|
+|5004|Neelam|60|Babesios|
+|5004|Neelam|60|Cancer|
 </div>
 
 * Doctors Table
@@ -86,7 +86,7 @@
 </div>
 
 * Here, in this we are changing the name of attribute from Dieases to Specialist beacuse initially we assigned the doctors according, in which disease they have mastered and that is not possible in initial tables but now.
-* There, is something intresting in the 2nd table(Doctors Table) which is now we have repeating value in table and this is happening beacuse same Docotor is speacialist with the two dieases, we can remove this repeating value form table.
+* There, is something intresting in the 2nd table(Doctors Table) which is now we have repeating value in table and this is happening beacuse same Docotor is speacialist with the two dieases, we should remove this repeating value form table.
 
 * now, create a new table, having attribute of both the table's primary-key, candidate-key or we can say the attribute on which non-key attributs are dependent. here, PatientID and Dieases.
 
@@ -115,23 +115,70 @@
   * Find the attributes that are transitively dependent.
   * Create seprate table for each of dependencies, A ---> B and B ---> C
 
-|ProjectNum|ProjectTitle|ProjectMgr|Phone|
-|---|---|---|---|
+<div align="center">
 
-* Here, Phone is determined by projectMgr because multiple repetition of ProjectMgr in multiple projects and ProjectMgr is determined by the ProjectNum they have assigned.
-* So, there is transitive functional dependencies in attributes, ProjectNum ---> ProjectMgr ---> Phone
-* create table for each of dependencies, ProjectNum ---> ProjectMgr and ProjectMgr ---> Phone
-  
-  |ProjectNum|ProjectTitle|ProjectMgr|
-  |---|---|---|
-  
-  |ProjectMgr|Phone|
-  |---|---|
+|Doctor|Dieases|DoctorID|
+|-------|-------|---------|
+|Ram|alphaviruses|1001|
+|Chavi|Acute Flaccid Myelitis|1004|
+|Dhruv|Cold|1002|
+|Sambhavita|Cancer|1003|
+|Druv|Arthritis|1002|
+|Chavi|Babesios|1004|
+</div>
 
-* adding ProjectTitle because ProjectNum and ProjectTitile are functionaly dependent, to ensure 2NF.
-* ProjectMgr will work as foriegn-key.
-* At last add necessary foriegn-key's and primary-key's.
- 
+* Now, Check Functional dependecies for each table, and for the Doctors table.
+  * DoctorID ---> Doctor
+  * Dieases ---> DoctorID
+  * Here, Dieases is a candiate key and as well as prime key, DoctorID is not a prime key beacuse column have repeated value.
+  * And there is transative functional dependecy, Dieases ---> DoctorID ---> Doctor
+  * To remove this create serate table for each dependency Dieases ---> DoctorID and DoctorID ---> Doctor
+  
+<div align="center">
+ <table>
+  <tr><th>Dieases table</th><th>Doctor Table</th></tr>
+  <tr>
+   <td>
+
+   |Dieases|DoctorID|
+   |-------|---------|
+   |alphaviruses|1001|
+   |Acute Flaccid Myelitis|1004|
+   |Cold|1002|
+   |Cancer|1003|
+   |Arthritis|1002|
+   |Babesios|1004|
+   </td>
+   <td>
+    
+   |Doctor|DoctorID|
+   |-------|---------|
+   |Ram|1001|
+   |Chavi|1004|
+   |Dhruv|1002|
+   |Sambhavita|1003|
+   |Druv|1002|
+   |Chavi|1004|
+   </td>
+  </tr>
+ </table>
+</div>
+  
+* At last create a new table that joins both the tables.
+
+<div align="center">
+   
+   |Dieseas|DoctorID|
+   |-------|---------|
+   |alphaviruses|1001|
+   |Acute Flaccid Myelitis|1004|
+   |Cold|1002|
+   |Cancer|1003|
+   |Arthritis|1002|
+   |Babesios|1004|
+</div> 
+
+* Repeat the same procedure for Pateint table.
 
 ## Boyce-Codd Normal Form(BCNF)
 
@@ -142,19 +189,62 @@
 * **To remove this:**
   * Create seprate table for each unique combination of composit-key's attribute. (A,B), (A,C) and (B,C)
 
-|CourseNum|Student|TA|
-|---|---|---|
+* We know there are other dieases and there is no doctor avaiable to trat it. For the sake of understanding, we are extending Dieases table, you can add these extra attribute from starting of the normalization this will not affect much.
 
-* Here (CourseNum, Student) and (Student, TA) are composit-keys, and each have Student attribute common.
-* Crate table for each unique combination of composit-key,
-  |CourseNum|Student|
-  |---|---|
+* We know one dieases can be discover by more then one scientist and a dieases can have more then sympotoms and same symptoms can be seen in multiple dieases.
 
-  |CourseNum|TA|
-  |---|---|
+  <div align="center">
+   
+   |Dieases|DiscoverBY|Symptoms|DoctorID|
+   |-------|----------|--------|--------|
+   |alphaviruses|Carlos Finlay|body aches|1001|
+   |Acute Flaccid Myelitis|Michael Wilson|arm Weakness|1004|
+   |Cold|Egyptian|Cough|1002|
+   |Cancer|Hippocrates|bleeding|1003|
+   |Arthritis|Dr Augustin Jacob|pain|1002|
+   |Arthritis|Landré-Beauvais|swelling in joints|1002|
+   |Babesios|Victor Babes|arm Weakness|1004|
+   |tuberculosis|Victor Babes|pain|None|
+  </div>
+ 
+* In this table now, we can't determine any attribute by single attribute, we need composit keys to detemine unique rows.
+  * for eg., ther {Arthritis, Dr Augustin Jacob} deterimens symptom single "pain" but "Arthritis" single can not not determine a single symptom. another example is {Victor Babes, arm Weakness} determines the single dieases "tuberculosis" but "Victor Babes" can not determine a single "dieases" so we need composit keys to determine each row uniqly.
+* Here (Dieases, DiscoverBY) and (DiscoverBY, Symptoms) are composit-keys, and each have DiscoverBY attribute common.
+* Crate table for each unique combination of composit-key. {(Dieases, DiscoverBY, DoctorID) and (DiscoverBY, Symptoms, DoctorID) }
+  
+  <div align="center">
+ <table>
+  <tr><th>Dieases table</th><th>Symptom table</th></tr>
+  <tr>
+   <td>
 
-  |Student|TA|
-  |---|---|
+   |Dieases|DiscoverBY|DoctorID|
+   |-------|----------|--------|
+   |alphaviruses|Carlos Finlay|1001|
+   |Acute Flaccid Myelitis|Michael Wilson|1004|
+   |Cold|Egyptian|1002|
+   |Cancer|Hippocrates|1003|
+   |Arthritis|Dr Augustin Jacob|1002|
+   |Arthritis|Landré-Beauvais|1002|
+   |Babesios|Victor Babes|1004|
+   |tuberculosis|Victor Babes|None|
+   </td>
+   <td>
+    
+   |DiscoverBY|Symptoms|DoctorID|
+   |----------|--------|--------|
+   |Carlos Finlay|body aches|1001|
+   |Michael Wilson|arm Weakness|1004|
+   |Egyptian|Cough|1002|
+   |Hippocrates|bleeding|1003|
+   |Dr Augustin Jacob|pain|1002|
+   |Landré-Beauvais|swelling in joints|1002|
+   |Victor Babes|arm Weakness|1004|
+   |Victor Babes|pain|None|
+   </td>
+  </tr>
+ </table>
+</div>
 
 
 ## 4 NF
@@ -201,3 +291,8 @@
 
   |Company|Product|
   |---|---|
+
+---
+
+* It is not possible or fesiable to convert a table into it's 4th or 5th or even some cases BCNF beacuse it difficult and costly to maintain.
+* A table in 3NF is good. 
