@@ -1,6 +1,34 @@
-## 1 NF
+# 1 NF
 
 * Fileds must contain atomic values.
+* **To Remove this**
+  * create seprate row for each value
+
+<div align="center">
+
+|PatientID|PatientName|Doctor|Dieases|DoctorID|PatientAddress|
+|---------|-----------|------|-------|--------|--------------|
+|5001|Rahul, 38|Ram, Chavi|alphaviruses, Acute Flaccid Myelitis|1001, 1004|Jaipur|
+|5002|Sursh, 56|Dhruv, Sambhavita|Cold, Cancer|1002, 1003|Jodhpur|
+|5003|Ramesh, 23|Ram, Druv|alphaviruses, Arthritis|1001, 1002|Delhi|
+|5004|Neelam, 60|Chavi, Sambhavita|Babesios, Cancer|1004, 1003|Bikaner|
+</div>
+
+### Coversion in 1NF
+
+<div align="center">
+
+|PatientID|PatientName|Age|Doctor|Dieases|DoctorID|PatientAddress|
+|---------|-----------|---|------|-------|--------|--------------|
+|5001|Rahul|38|Ram|alphaviruses|1001|Jaipur|
+|5001|Rahul|38|Chavi|Acute Flaccid Myelitis|1004|Jaipur|
+|5002|Sursh|56|Dhruv|Cold|1002|Jodhpur|
+|5002|Sursh|56|Sambhavita|Cancer|1003|Jodhpur|
+|5003|Ramesh|23|Druv|Arthritis|1002|Delhi|
+|5003|Ramesh|23|Ram|alphaviruses|1001|Delhi|
+|5004|Neelam|60|Chavi|Babesios|1004|Bikaner|
+|5004|Neelam|60|Sambhavita|Cancer|1003|Bikaner|
+</div>
 
 ## 2 NF
 
@@ -9,32 +37,80 @@
 * Each non-key in table should fully-functionally dependent on the entire primary-key or candidate-key.
 * **Functioanly dependent:** If values of field B is determined by the field A, and there can be only one value in field B. Here, A is a prime-key and B is non-prime-key.
   * **Symbolic repersentation:** A ---> B
-* **To do this:**
+* **To remove this:**
   * create a table for functionlaly dependent attributes. primary-key --> non-key1, primary-key --> non-key2, primary-key --> non-key3...,.
   * Think about primary key for each table.
 
-|EmployeeID|Last Name|First Name|Project Number|Project title|
-|---|---|---|---|---|
+<div align="center">
+ 
+|PatientID|PatientName|Age|Doctor|Dieases|DoctorID|PatientAddress|
+|---------|-------|---|-------|-------|---------|----|
+</div>
 
-* Here, EmployeeID is a primary-key, and others are the non-key attributes.
-* Last Name, First Name is functioanly dependent on the EmployeeID and project title on Project Number, so create a table for each functionaly dependent attributes.
-    
-    |EmployeeID|Last Name|First Name|    
-    |---|---|---|
-    
-    |Project Number|Project title|
-    |---|---|
+* From the table the functional dependencies are
+  * PatientID ---> PatientName, Age, PatientAddress
+  * DoctorsID ---> Doctor
+  * Dieases ---> DoctorID, Doctore
+  * Here, {PatientId, Dieases} is a candidate key, and attributes {PatientName, Age, PatientAddress} and {DoctorID, Doctorw} are partially dependent on PatientId and Dieases reectively, so this is not in 2NF. to make this in 2NF create seprate table for each dependecies {PatientID ---> PatientName, Age, PatientAddress} and {Dieases ---> DoctorID, Doctor} and create a new table that joins both tables.
+  * Here we are no talking abot dependency, {DoctorsID ---> Doctor} beacuse it is internally taken by Dieases attribute.
 
-  * now, create a new table, having attribute of both the table's primary-key, candidate-key or we can say the attribute on which they are dependent. here, EmployeeID and Project Number.
-    |EmployeeID|Project Number|
-    |---|---|
+* Patients Table
+<div align="center">
+ 
+|PatientID|PatientName|Age|
+|---------|-------|---|
+|5001|Rahul|38|
+|5001|Rahul|38|
+|5002|Sursh|56|
+|5002|Sursh|56|
+|5003|Ramesh|23|
+|5003|Ramesh|23|
+|5004|Neelam|60|
+|5004|Neelam|60|
+</div>
 
+* Doctors Table
+
+<div align="center">
+
+|Doctor|Dieases|DoctorID|
+|-------|-------|---------|
+|Ram|alphaviruses|1001|
+|Chavi|Acute Flaccid Myelitis|1004|
+|Dhruv|Cold|1002|
+|Sambhavita|Cancer|1003|
+|Druv|Arthritis|1002|
+|Ram|alphaviruses|1001|
+|Chavi|Babesios|1004|
+|Sambhavita|Cancer|1003|
+</div>
+
+* Here, in this we are changing the name of attribute from Dieases to Specialist beacuse initially we assigned the doctors according, in which disease they have mastered and that is not possible in initial tables but now.
+* There, is something intresting in the 2nd table(Doctors Table) which is now we have repeating value in table and this is happening beacuse same Docotor is speacialist with the two dieases, we can remove this repeating value form table.
+
+* now, create a new table, having attribute of both the table's primary-key, candidate-key or we can say the attribute on which non-key attributs are dependent. here, PatientID and Dieases.
+
+<div align="center">
+ 
+|PatientID|Dieases|
+|---|---|
+|5001|alphaviruses|
+|5001|Acute Flaccid Myelitis|
+|5002|Cold|
+|5002|Cancer|
+|5003|Arthritis|
+|5003|alphaviruses|
+|5004|Babesios|
+|5004|Cancer|
+</div>
+
+* There is one more thing which has to point out that creating a new column has no relation with normaliztion here,
 
 ## 3 NF
 
 * Table should be in 2NF.
 * There should be no transitive dependencies.
-  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C. Here, A, B and C is a no-prime-key.
+  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C. Here, A, B and C is a non-prime-key.
 * **To remove this:**
   * Find the attributes that are transitively dependent.
   * Create seprate table for each of dependencies, A ---> B and B ---> C
@@ -85,9 +161,9 @@
 
 * The table should be in BCNF.
 * There should be no multi-valued dependency.
-  * **Multi-valued dependencies:** In field A, there is a set values for both fields B and C but fields B and C are not related.
+  * **Multi-valued dependencies:** In field A, there is a set of values for both fields B and C but fields B and C are not related.
 * **To remove this:**
-  * crate seprate table for each attribute with field A . (A,B) and (A,C)
+  * create seprate table for each attribute with field A . (A,B) and (A,C)
  
 |Movie|Star|Producer|
 |---|---|---|
