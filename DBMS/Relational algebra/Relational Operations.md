@@ -49,7 +49,8 @@ $$\sigma_{Roll no > 30 AND Roll no < 45}(R)$$
 
 ### Project
 
-Project/show all the table record according specified table.
+Project/show all the table record according specified table. return only unique tuples.
+
 $$\pi_{col1, col2, ..., coln}(tableName)$$
 
 $$\pi_{Semester}(N)$$
