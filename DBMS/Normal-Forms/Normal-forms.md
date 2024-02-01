@@ -109,7 +109,7 @@
 ## 3 NF
 
 * Table should be in 2NF.
-* There should be no transitive dependencies.
+* There should be no transitive dependencies for non-prime attributes.
   * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C. Here, A, B and C is a non-prime-key.
 * **To remove this:**
   * Find the attributes that are transitively dependent.
