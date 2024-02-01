@@ -246,6 +246,7 @@
  </table>
 </div>
 
+* **Note**: This decomposition may give lossy decomposition, so after 3NF you should always check you get the same dependeency set as before decomposition or not, if not then it will stop here.
 
 ## 4 NF
 
