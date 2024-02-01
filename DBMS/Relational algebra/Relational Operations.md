@@ -16,20 +16,26 @@
 
 **Table N:**
 
+<div align="center">
+  
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
 |22|Arun|7|45%|
 |31|Bindu|6|55%|
 |58|Sita|7|35%|
+</div>
 
 **Table R:**
 
+<div align="center">
+  
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
 |28|Suresh|4|65%|
 |31|Bindu|6|55%|
 |44|Pinky|4|75%|
 |58|Sita|7|35%|
+</div>
 
 ----
 
@@ -63,7 +69,9 @@ it is represented as R U N. like set operation, selects all the records from bot
     * Same number of columns.
     * Same Name of columns with same order.
 
-RUN
+<div align="center">
+  
+R U N
 |Roll No.|Name|Semester|Percentage|
 |---|---|---|---|
 |22|Arun|7|45%|
@@ -71,11 +79,13 @@ RUN
 |58|Sita|7|35%|
 |28|Suresh|4|65%|
 |44|Pinky|4|75%|
-
+</div>
 
 ## Intersection
 
 it is represented as R ⋂ N. like set operation, selects all the common records from both the table.
+
+<div align="center">
 
 R⋂N
 |Roll No.|Name|Semester|Percentage|
@@ -83,6 +93,7 @@ R⋂N
 |22|Arun|7|45%|
 |31|Bindu|6|55%|
 |58|Sita|7|35%|
+</div>
 
 * To do Interscetion operation.
   * Both realtion(tables) must have same arity.
@@ -104,6 +115,8 @@ it is represented as R-N. like set operation, it removes all the records from R 
 
 It is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
 
+<div align="center">
+
 |Roll No.|Name|Semester|Percentage|Roll No.|Name|Semester|Percentage|
 |---|---|---|---|---|---|---|---|
 |22|Arun|7|45%|28|Suresh|4|65%|
@@ -121,7 +134,7 @@ It is represented as RxN. it multiplies Every row of table R with every row of t
 |44|Pinky|4|75%|28|Suresh|4|65%|
 |44|Pinky|4|75%|31|Bindu|6|55%|
 |44|Pinky|4|75%|58|Sita|7|35%|
-
+</div>
 
 ## Join
 
@@ -135,6 +148,8 @@ A join operation combines tuples/rows from different tables/relations, if and on
 Join the set of tuples of all combinations based on common attribute or with foriegn key. Join only those records that satisfy the condition of the natural join.
 
 > Natural join = cartesin_product + selection + projection
+
+<div align="center">
 
 Employee Table
 | EmployeeID | EmployeeName | DepartmentID | Salary |
@@ -153,8 +168,11 @@ Department Table
 | 102          | IT             |
 | 103          | Finance        |
 
+</div>
+
     Select * from Employee NATURAL JOIN Department;
 
+<div align="center">
 
 |EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentID|DepartmentName|
 |----------|------------|------------|------|------------|--------------|
@@ -174,24 +192,35 @@ Department Table
 |5         |Alex        |102         |21000 |102         |IT            |
 |5         |Alex        |102         |21000 |103         |Finance       |
 
+</div>
+
 * Here, the Natural join point is DepartmentID, eleminate those rows mismatching DepartmentId value.
+
+<div align="center">
 
 |EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentID|DepartmentName|
 |----------|------------|------------|------|------------|--------------|
 |1         |John        |101         |50000 |101         |HR            |
 |3         |Mark        |103         |55000 |103         |Finance       |
 |5         |Alex        |102         |21000 |102         |IT            |
+</div>
 
 * Now remove common coloumns, resultant table will be your output for the natural join.
+
+<div align="center">
 
 |EmployeeID|EmployeeName|DepartmentID|Salary|DepartmentName|
 |----------|------------|------------|------|--------------|
 |1         |John        |101         |50000 |HR            |
 |3         |Mark        |103         |55000 |Finance       |
 |5         |Alex        |102         |21000 |IT            |
+</div>
 
 ### Inner join
 
+
+<div align="center">
+  
 Customers
 | ID | Name    | Location  |
 |----|---------|-----------|
@@ -206,89 +235,101 @@ Orders
 | 102 | 200    | 2        |
 | 103 | 300    | 1        |
 | 104 | 150    | 3        |
-
+</div>
 
     SELECT C.Name, O.Ammount FROM Customer AS C INNER JOIN Order AS O ON C.ID = O.ID;
 
 ### Outer Join
-    ![](https://d1wl9nui6miy8.cloudfront.net/media/969825/2013-06-inner-outer-join-venn.jpg)
 
-  * **Left Outer join:** Take all records from left table(table1).
+<p align="center">
+  <img src="https://d1wl9nui6miy8.cloudfront.net/media/969825/2013-06-inner-outer-join-venn.jpg" />
+</p>
 
-    Student
-    | StudentID | StudentName |
-    |-----------|-------------|
-    | 1         | John        |
-    | 2         | Jane        |
-    | 3         | Smith       |
+### Left Outer join:
+* Take all records from left table(table1).
 
-    Marks
-    | StudentID | Grade |
-    |-----------|-------|
-    | 1         | 85    |
-    | 3         | 92    |
+<div align="center">
+  
+Student
+| StudentID | StudentName |
+|-----------|-------------|
+| 1         | John        |
+| 2         | Jane        |
+| 3         | Smith       |
 
-    Output
-    | StudentID | StudentName | Grade |
-    |-----------|-------------|-------|
-    | 1         | John        | 85    |
-    | 2         | Jane        | NULL  |
-    | 3         | Smith       | 92    |
+Marks
+| StudentID | Grade |
+|-----------|-------|
+| 1         | 85    |
+| 3         | 92    |
 
+Output
+| StudentID | StudentName | Grade |
+|-----------|-------------|-------|
+| 1         | John        | 85    |
+| 2         | Jane        | NULL  |
+| 3         | Smith       | 92    |
+</div>
 
         SELECT S.StudentID, S.StudentName, M.Grage FROM Student S LEFT JOIN Marks M ON S.StudentId = M.studentID;
 
-    * **RIGHT outer Join:**
+### RIGHT outer Join
+
+<div align="center">
    
-      Table: Orders
-      |OrderID|	CustomerID|	OrderDate|
-      |---|---|---|
-      |1|	101|	2023-10-01|
-      |2|	102|	2023-10-05|
-      |3|	103|	2023-10-10|
+Table: Orders
+|OrderID|	CustomerID|	OrderDate|
+|---|---|---|
+|1|	101|	2023-10-01|
+|2|	102|	2023-10-05|
+|3|	103|	2023-10-10|
       
-      Table: Customers
-      |CustomerID|	CustomerName-|	ContactName  |OrderID| OrderDate|
-      |----------|---------------|---------------|-------|----------|
-      |101       | Alfreds	Maria|         Anders|1      |2023-10-01|
-      |102       |	    Berglunds| Christina Berg|2      |023-10-05 |
-      |105       |	       Centro|Francisco Chang|NULL   |NULL      |
+Table: Customers
+|CustomerID|	CustomerName-|	ContactName  |OrderID| OrderDate|
+|----------|---------------|---------------|-------|----------|
+|101       | Alfreds	Maria|         Anders|1      |2023-10-01|
+|102       |	    Berglunds| Christina Berg|2      |023-10-05 |
+|105       |	       Centro|Francisco Chang|NULL   |NULL      |
 
-          SELECT O.OrderID, C.CustomerName, O.OrderData FROM Orders O RIGHT OUTTER JOIN Customers C ON O.CustomerID = C.CustomerID;
-      Output
-      |CustomerID|	CustomerName|	ContactName|
-      |---|---|---|
-      |101|	Alfreds	Maria| Anders|
-      |102|	Berglunds|	Christina Berg|
-      |105|	Centro|	Francisco Chang|
+    SELECT O.OrderID, C.CustomerName, O.OrderData FROM Orders O RIGHT OUTTER JOIN Customers C ON O.CustomerID = C.CustomerID;
+
+Output
+|CustomerID|	CustomerName|	ContactName|
+|---|---|---|
+|101|	Alfreds	Maria| Anders|
+|102|	Berglunds|	Christina Berg|
+|105|	Centro|	Francisco Chang|
+</div>
+
+### Full outer join
+
+<div align="center">
       
-
-    * **Full outer join:**
-
-      Employees:
-      |EmployeeID|EmployeeName|	DepartmentID|
-      |----------|------------|-------------|
-      |1         |	      John|	         101|
-      |2         |	      Jane| 	       102|
-      |3         |	       Bob|	         104|
-      |4         |	     Alice|          103|
+Employees:
+|EmployeeID|EmployeeName|	DepartmentID|
+|----------|------------|-------------|
+|1         |	      John|	         101|
+|2         |	      Jane| 	       102|
+|3         |	       Bob|	         104|
+|4         |	     Alice|          103|
       
-      Departments:
-      |DepartmentID|DepartmentName|
-      |------------|--------------|
-      |101         |	          HR|
-      |102         |	     Finance|
-      |104         |	          IT|
+Departments:
+|DepartmentID|DepartmentName|
+|------------|--------------|
+|101         |	          HR|
+|102         |	     Finance|
+|104         |	          IT|
 
           SELECT * FROM CUSTOMER FULL OUTER JOIN Departments;
 
-      Output
-      |EmployeeID|EmployeeName|	DepartmentID|	DepartmentName|
-      |----------|------------|-------------|---------------|
-      |1         |	      John|	         101|             HR|
-      |2         |	      Jane|	         102|        Finance|
-      |3         |	       Bob|	         104|             IT|
-      |4         |	     Alice|	         103|           NULL|
+Output
+|EmployeeID|EmployeeName|	DepartmentID|	DepartmentName|
+|----------|------------|-------------|---------------|
+|1         |	      John|	         101|             HR|
+|2         |	      Jane|	         102|        Finance|
+|3         |	       Bob|	         104|             IT|
+|4         |	     Alice|	         103|           NULL|
+</div>
 
 |Natural Join|Inner Join| Outer Join|
 |---|---|---|
@@ -306,6 +347,7 @@ Orders
      * $$\pi(table1) * \pi(table2) - (table1)$$
      * $$A(X,Y) / B(Y) = C(X)$$
 
+<div align="center">
 table1
 |Name|Course|
 |---|---|
@@ -324,3 +366,5 @@ resultant:
 |Name|
 |---|
 |database|
+
+</div>
