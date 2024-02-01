@@ -33,9 +33,7 @@
 
 ----
 
-## Definitions
-
-### Select:
+## Select:
 
 Selects records according to the specified condition
 $$\sigma_{condition} (tableName)$$
@@ -47,7 +45,7 @@ $$\sigma_{Roll no > 35}(R)$$
 $$\sigma_{Roll no > 30 AND Roll no < 45}(R)$$
 
 
-### Project
+## Project
 
 Project/show all the table record according specified table. return only unique tuples.
 
@@ -56,7 +54,7 @@ $$\pi_{col1, col2, ..., coln}(tableName)$$
 $$\pi_{Semester}(N)$$
 
 
-### Union
+## Union
 
 it is represented as R U N. like set operation, selects all the records from both the table without replication.
 
@@ -75,7 +73,7 @@ RUN
 |44|Pinky|4|75%|
 
 
-### Intersection
+## Intersection
 
 it is represented as R ⋂ N. like set operation, selects all the common records from both the table.
 
@@ -91,7 +89,7 @@ R⋂N
     * Same number of columns.
     * Same Name of columns with same order.
 
-### Difference
+## Difference
 it is represented as R-N. like set operation, it removes all the records from R that are present in the table N.
 
 |Roll No.|Name|Semester|Percentage|
@@ -102,7 +100,7 @@ it is represented as R-N. like set operation, it removes all the records from R 
     * Same number of columns.
     * Same Name of columns with same order.
 
-### Cartesion product
+## Cartesion product
 
 It is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
 
@@ -300,7 +298,7 @@ Orders
 |join matching columns| join matching rows| join each row|
 
 
-### Division(/):
+## Division(/):
    * all Tuple of table2 associated with tuples of table1.
    * Attributes of B is proper subset of attibutes of A, here in example attribute of tabel1 'course' attribute is also ocuring in table2
    * every, all, at all, for all, in all, for every like phrases will come in question then we have to perform division. for eg. Find the the person that has account in all the banks of a particular city.
