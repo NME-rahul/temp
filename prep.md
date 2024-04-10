@@ -10,6 +10,6 @@
 
 |HR.    |Monday|Tuesday|Wednesday|Thursday|Friday|Satuarday|Sunday|
 |---    |------|-------|---------|--------|------|---------|------|
-|11-3   |   TOC|    TOC|      TOC|      OS|    OS|       OS|   rev|
-|3-5,6-7|    DM|     DM|       DM|      EM|    EM|       EM|   rev|
+|11-3   |   TOC|    TOC|      TOC|      EM|    EM|       EM|   rev|
+|3-5,6-7|    DM|     DM|       DM|      OS|    OS|       OS|   rev|
 |7-10   |     C|      C|        C|      DS|    DS|       DS|   rev|
