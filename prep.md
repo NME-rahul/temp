@@ -13,7 +13,7 @@ OS: in Night
 |HR.    |March |April|May   |June  |July  |August|September|October|Novemeber|December|January|
 |---    |------|-----|------|------|------|------|---------|-------|---------|--------|-------|
 |11-3   |   TOC|  TOC|    CD|    CD|  DCCN|  DCCN|      CAO|   Apti|
-|3-5,6-7|    DM|   DM|    EM|    EM|    DE|   CAO|  DBMS(R)|    PYQ|
+|3-5,6-7|    DM|   DM|    DM|    EM|    DE|   CAO|  DBMS(R)|    PYQ|
 |7-10   |    DS|   DS|  Algo|  Algo|    DE|   CAO|      PYQ|      C|
 
 
