@@ -13,7 +13,7 @@
 <details>
   <summary>CAO</summary>
   
-  * [Pipelining](https://youtube.com/playlist?list=PLG9aCp4uE-s25GWXrKCwO-sPPSpB0G0wM&feature=shared)
+  * Vishwadeep Gothi(unacdemy): [Pipelining](https://youtube.com/playlist?list=PLG9aCp4uE-s25GWXrKCwO-sPPSpB0G0wM&feature=shared)
   
 </details>
 
@@ -22,6 +22,8 @@
 <details>
 
   * [course](https://youtube.com/playlist?list=PLG9aCp4uE-s0bu-I8fgDXXhVLO4qVROGy&feature=shared)
+  * Amit khurana[course]()
+    
   <summary></summary>
 </details>
 
