@@ -23,7 +23,7 @@
 <details>
 
   * [course](https://youtube.com/playlist?list=PLG9aCp4uE-s0bu-I8fgDXXhVLO4qVROGy&feature=shared)
-  * Amit khurana[course]()
+  * Amit khurana DBMS (complete)[]
     
   <summary></summary>
 </details>
@@ -41,6 +41,7 @@
 
 <details>
   
-  * [toc](https://youtube.com/playlist?list=PLG9aCp4uE-s1P6Z73Gbbh-kdDWwq5Bg7f&si=-BwYU-JEiJDLANQB)
+  * [Unacdemy toc(target)](https://youtube.com/playlist?list=PLG9aCp4uE-s1P6Z73Gbbh-kdDWwq5Bg7f&si=-BwYU-JEiJDLANQB)
+  * [Amit khurana toc(complete)](https://youtube.com/playlist?list=PLC36xJgs4dxGvebewU4z2CZYo-8nB93E7&si=Y2z3_4UyO5QTSFBs)
   <summary></summary>
 </details>
