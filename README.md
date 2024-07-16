@@ -22,7 +22,7 @@
 
 <details>
 
-  * [course](https://youtube.com/playlist?list=PLG9aCp4uE-s0bu-I8fgDXXhVLO4qVROGy&feature=shared)
+  * [vishwadeep Gothi (complete)](https://youtube.com/playlist?list=PLG9aCp4uE-s0bu-I8fgDXXhVLO4qVROGy&feature=shared)
   * Amit khurana DBMS (complete)[]
     
   <summary></summary>
@@ -31,8 +31,7 @@
 # Operating System
 
 <details>
-
-  * [course](https://youtube.com/playlist?list=PLG9aCp4uE-s17rFjWM8KchGlffXgOzzVP&feature=shared)
+  * [Vihwadeep gothi (complete)](https://youtube.com/playlist?list=PLG9aCp4uE-s17rFjWM8KchGlffXgOzzVP&feature=shared)
   <summary></summary>
 </details>
 
