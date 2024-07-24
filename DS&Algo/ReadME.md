@@ -6,6 +6,9 @@
      * Infix
      * Postfix
    * Expresseion evaluation
+   * Questions
+     * https://youtu.be/EfC7WxqB94E?si=1KdjdsGwEynNwLLb
+     * https://youtu.be/x78Pa55nGas?si=AntscQ_bjbXQEmK_
      
 4. Linked list
    * Regular/Singly link list
@@ -25,7 +28,7 @@
        * Inorder
        * Postorder
      * Binary Search/deletion/insertion
-     * AVL tree
+     * AVL tree: https://youtu.be/9QSN62vo-l0?si=X9Yh7upLQTntFSpS
   * Heap Tree
     * Insertion
     * Deletion
@@ -33,10 +36,12 @@
   * n-arry tree
   * m-way search Tree
   * B/B+ tree (For DBMS)
+  * Questions: 
 
 7. Graphs
    * BFS
    * DFS
+   * Questions: https://www.youtube.com/live/ZPNwt6SUvr8?si=-oyeWyg3dK7MK4c-
     
 8. Hashing
    * Division Method.
@@ -58,7 +63,13 @@
      * Video 33 - 57 (33rd video link: https://www.youtube.com/watch?v=yTKqJunZpto&list=PLC36xJgs4dxFCQVvjMrrjcY3XrcMm2GHy&index=33)
    * Tree Method: https://youtu.be/0D2-sYen23E?si=NQL-tr01GdsX0ap2
    * Substiution Method: https://youtu.be/PVHgrkz2cro?si=kcvlR4_TMBkSt5-2
-   * MAsters Theorem
+   * Masters Theorem
+   * Questions:
+     * https://www.youtube.com/live/-l0Gy_i47NE?si=6nWuyAg8B4jVw1E-
+     * https://www.youtube.com/live/cjO6uo8rBbE?si=dqpNdXJYIa9goQSK
+     * https://youtu.be/uoy3iGQBg7k?si=TBRFgDed4NjAjw3U
+     * https://youtu.be/yxOrdJLodE8?si=FsxOGD97muTfY3uz
+     * https://youtu.be/uYSdd6VjgHk?si=5skDRW5txuZu5XVb
 
 3. Search Techniques
    * Linear search
@@ -91,11 +102,11 @@
    * Job Sequencing
    * Optimal file merge pattern
    * Huffma Coding
-   * Minimum spanning tree(MST)
+   * Minimum spanning tree(MST): https://www.youtube.com/live/W2eDnCoCTuc?si=6OIWai5GezODHYYc
      * Krusksal's
      * Prims
    * Shortest Path
-     * Dijkstra's  algo
+     * Dijkstra's algo: https://www.youtube.com/live/mRKDEUO_uCk?si=AcnxBXtaZZgbP1kx
 
 6. Dynamic progammming
    * Longest commmon subsequence
@@ -104,7 +115,7 @@
    * Min cost path
    * Subset Sum Problem
    * Optimal Substructure Property
-   * bellmen-ford algo
+   * bellmen-ford algo: https://www.youtube.com/live/lNIqzVbuXtk?si=2tvxUj7ls1O75r8n
    * Floyed warshell algo
    * Shortest path with exactly k edges in a directed and weighted graph(not Gate)
    * Biconnected graph(not Gate)
