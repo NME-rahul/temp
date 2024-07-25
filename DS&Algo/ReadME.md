@@ -1,5 +1,6 @@
 # Data Structure
-* Complete Course by viswadeep Gothi Sir(1-6): https://www.youtube.com/live/ibcGYcSewTs?si=EaoPFRUZy1H6yLXS
+* Complete Course DS by viswadeep Gothi Sir(1-6): https://www.youtube.com/live/ibcGYcSewTs?si=EaoPFRUZy1H6yLXS
+*  Complete Course DS&Algo by Amit Khurana Sir: https://youtube.com/playlist?list=PLC36xJgs4dxFCQVvjMrrjcY3XrcMm2GHy&si=ZrsXgDE_9GySigPd
 1. Array
 2. Stack
    * Notations
