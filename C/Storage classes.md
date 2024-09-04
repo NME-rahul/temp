@@ -13,7 +13,6 @@
 *  **Lifetime**: Within defined block
 
 ## 2. Register
-wh
 * Variabale will store in CPU register. It is a request not command, and it is not necessary that variables will get space in register. Varibles that are frequently used should assigned with register, for eg. indexing variable.
 *  **Storage**: CPU Register
 *  **Default value**: Garbage
