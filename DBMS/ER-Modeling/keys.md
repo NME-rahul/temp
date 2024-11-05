@@ -2,7 +2,7 @@
 
 A superkey is indeed a set of every possible combination of attributes that can uniquely determine the tuples in a relation. 
 
-A super-key is a superset of candidate key's, All candidate keys can be a super key, but the reverse is not true.
+A super-key set is a superset of candidate key's, All candidate keys can be a super key, but the reverse is not true.
 
 If there are N attributes then $2^{(N-k)}$ super-keys are possible(when k is the length of candidate keys).
 
