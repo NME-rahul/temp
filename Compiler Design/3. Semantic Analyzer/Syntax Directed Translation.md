@@ -2,15 +2,17 @@
 
 ## Syntax-Directed Definition
 
-A _Syntax-directed_ defnition is a context-free grammar together with attributes and rule.
+A _Syntax-directed_ defnition is a context-free grammar together with attributes and rule. The syntax-directed translation is guided by the context free grammars.
+
+If X is symbol and ```a``` is one of its attribute then we write X.a to denote the value of ```a```  at a partcular parse-tree node. Attributes may be of any kind: numbers, type, table, references, or strings.
 
 ### Inherited an Synthesized attributes
 
-1. **Inherited attributes**: An attribute of non-terminal is called Inherited if it is inherited from it's parent or sibling or both.
+1. **Inherited attributes**: An attribute of non-terminal B is called Inherited if it is defined only in terms of it's parent or sibling or from itself.
 <div align="center">
   A -> BC
   
-  if B's inherited attribute will be dependent on A(parent) and C(right sibling).
+  if B's attribute defined by A(parent) and C(right sibling).
   
   B has no left sibling
 </div>
@@ -20,11 +22,11 @@ A _Syntax-directed_ defnition is a context-free grammar together with attributes
 
 
 
-2. **Synthesized attributes**: An attribute of non-terminal is called Synthesized if it is inherited from it's childeren.
+2. **Synthesized attributes**: An attribute of non-terminal N is called Synthesized if it is defined by it's childeren or itseld.
 <div align="center">
   A -> BC
   
-  if A's inherited attribute will be dependent on B(childeren of A) and C(childeren of A).
+  if A's attributes are defined by B(childeren of A) or C(childeren of A).
 
 </div>
 
