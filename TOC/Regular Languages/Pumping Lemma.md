@@ -25,9 +25,9 @@
 **Question:** 
 Let L is a language that satifies the pumping lemma for regular languages and pumping lemma for context-free languages
 
-- [] A. is necessarily a regular language.
-- [] B. is necessarily a context-free language, but not necessarily a regular language. 
-- [] C.  is necessarily a non-regular language.
+- A. is necessarily a regular language.
+- B. is necessarily a context-free language, but not necessarily a regular language. 
+- C. is necessarily a non-regular language.
 - [x] D. None of the above
 
 If any Language that does satifies the pumping lemma then we can't say from which language it belongs
