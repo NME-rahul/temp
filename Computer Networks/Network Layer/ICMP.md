@@ -26,3 +26,9 @@
 |3.|Time Exceeded: Time to Leaver becomes 0 before destination|Address mask request and reply|
 |4.|Parameter Problem: Header corrupted|Router Solicitation and Advertisement|
 |5.|Redirection: Packet doesn't drop but route is not appropriate||
+
+## Important Points
+* No ICMP message wii be generated in response of a datagram carrying an ICMP error Message.
+* No ICMP message will generate for a fregmented datagram that is not the first. Only for first fragment ICMP error message will send, because only first datagram have the header of TCP Segment.
+* No ICMP message will be gnerate for the multicaste message.
+* No ICMP message will generate for loop-back addresses(127.0.0.1/24) and ```0.0.0.0```.
