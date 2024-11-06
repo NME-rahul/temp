@@ -13,3 +13,8 @@
   * then here $|x| = 0$ and $a^i \in L$; $\forall_{i>=0}$
  
 * Can $|z| = 0$?, Yes
+
+**Note:** The minimum pumping length must be equal to $n$(where is the number of states in FA) when every state have only self loop.
+
+* let $n$ be the number of states in minimal DFA and $n_1$ be the number of states that are the part of any loop, then minimum pumping length will be $n - n_1 - trapState(1)$
+* Similary we can say that if $n_1$ be the number states in minimal DFA that are no part of any loop(state itself may have self loop), then minimum pumping length will be equal $n_1 - trapState(1)$
