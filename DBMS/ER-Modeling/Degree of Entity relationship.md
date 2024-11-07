@@ -10,7 +10,9 @@
 
 If a relationship type between enities in a single type. also known as recursive relation.
 
-eg. In a college presdenital election among all the students one student is elected whether the elected is he or she, the president is the student.
+
+eg. 1. In a college presdenital election among all the students one student is elected whether the elected is he or she, the president is the student.
+2. Managers that manages the employees are the part of employee entity set.
    
    <p align="center">
      <img height="300" width="" src="https://github.com/NME-rahul/temp/assets/100432854/81fb9807-9ed0-48ad-9bc3-896daa467af4" />
