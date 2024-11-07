@@ -110,7 +110,7 @@
 
 * Table should be in 2NF.
 * There should be no transitive dependencies for non-prime attributes.
-  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key and that is not a candidate key. A ---> B ---> C. Here, A, B and C is a non-prime-key.
+  * **Transitive dependencies:** If a non-key field is determined by the value in another non-key. A ---> B ---> C. Here, A, B and C is a non-prime-key.
 * **To remove this:**
   * Find the attributes that are transitively dependent.
   * Create seprate table for each of dependencies, A ---> B and B ---> C
@@ -132,7 +132,7 @@
   * Dieases ---> DoctorID
   * Here, Dieases is a candiate key and as well as prime key, DoctorID is not a prime key beacuse column have repeated value.
   * And there is transative functional dependecy, Dieases ---> DoctorID ---> Doctor
-  * To remove this create serate table for each dependency Dieases ---> DoctorID and DoctorID ---> Doctor
+  * To remove this create seprate table for each dependency Dieases ---> DoctorID and DoctorID ---> Doctor
   
 <div align="center">
  <table>
@@ -185,11 +185,11 @@
 * It is a new 3NF.
 * The table should be in 3NF.
 * There should be no overlapping candidate keys.
-  * **Overlapping Candidate key:** If we have more then one composit-key and every composit-key have a common attribute, then the keys are called  the overlapping candidate keys. eg (A,B) and (A,c)
+  * **Overlapping Candidate key:** If we have more then one composit-key and every composit-key have a common attribute, then the keys are called the overlapping candidate keys. eg (A,B) and (A,c)
 * **To remove this:**
   * Create seprate table for each unique combination of composit-key's attribute. (A,B), (A,C) and (B,C)
 
-* We know there are other dieases and there is no doctor avaiable to trat it. For the sake of understanding, we are extending Dieases table, you can add these extra attribute from starting of the normalization this will not affect much.
+* We know there are other dieases and there is no doctor avaiable to treat it. For the sake of understanding, we are extending Dieases table, you can add these extra attribute from starting of the normalization this will not affect much.
 
 * We know one dieases can be discover by more then one scientist and a dieases can have more then sympotoms and same symptoms can be seen in multiple dieases.
 
@@ -208,7 +208,7 @@
   </div>
  
 * In this table now, we can't determine any attribute by single attribute, we need composit keys to detemine unique rows.
-  * for eg., ther {Arthritis, Dr Augustin Jacob} deterimens symptom single "pain" but "Arthritis" single can not not determine a single symptom. another example is {Victor Babes, arm Weakness} determines the single dieases "tuberculosis" but "Victor Babes" can not determine a single "dieases" so we need composit keys to determine each row uniqly.
+  * for eg., ther {Arthritis, Dr Augustin Jacob} deterimens symptom single "pain" but "Arthritis" single can not not determine a single symptom. another example is {Victor Babes, arm Weakness} determines the single dieases "Babesios" but "Victor Babes" can not determine a single "dieases" so we need composit keys to determine each row uniqly.
 * Here (Dieases, DiscoverBY) and (DiscoverBY, Symptoms) are composit-keys, and each have DiscoverBY attribute common.
 * Crate table for each unique combination of composit-key. {(Dieases, DiscoverBY, DoctorID) and (DiscoverBY, Symptoms, DoctorID) }
   
