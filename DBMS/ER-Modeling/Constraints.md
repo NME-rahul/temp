@@ -1,6 +1,6 @@
 # Constrainsts
 
-Constraints are basically condition of restriction that must be satisfied in Relationship.
+Constraints are basically condition or restriction that must be satisfied in Relationship.
 
 # Types of Constrainsts
 
