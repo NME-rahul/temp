@@ -37,6 +37,38 @@ Constraints are basically condition of restriction that must be satisfied in Rel
 * It is maintained through the Primary-key and foriegn-key.
 * Here, Foriegn-key refernces the primary-key of other table before inserting and updating. Thes constrinsts can be controlled and defined by user for example by default any record present in refernced table must not be deleted or updated because it can be the case that prevoiusly inserted records are referenced with deleted or updated record, that can violate the referential integrity.
 
+**Self-referencing relationship:** is also called recursive relation, Here a foriegn key refers to its table's primary-key. For eg, a manager that manages employees is also a part of the table ```Employee```,
+
+<div align="center">
+ <table>
+  <tr>
+   <th>EmployeeID</th><th>EmployeeName</th><th>ManagerID</th>
+  </tr>
+  <tr>
+   <td>1001</td><td>Ramesh</td><td>NULL</td>
+  </tr>
+  <tr>
+   <td>1230</td><td>Latika</td><td>NULL</td>
+  </tr>
+  <tr>
+   <td>3423</td><td>Gaurav</td><td>7892</td>
+  </tr>
+  <tr>
+   <td>3123</td><td>Rahul</td><td>1230</td>
+  </tr>
+  <tr>
+   <td>3875</td><td>Mayank</td><td>3902</td>
+  </tr>
+  <tr>
+   <td>1001</td><td>Nikhil</td><td>3902</td>
+  </tr>
+  <tr>
+   <td>3902</td><td>Rama</td><td>NULL</td>
+  </tr>
+ </table>
+</div>
+* Here, ```MangerID``` is aForiegn-key that refers to its own table's ```EmployeeID``` that is a primary-key.
+
     
 ### 5. Tuple Uniqueness Constraint
 
