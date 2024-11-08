@@ -1,3 +1,5 @@
+## NOTE: After merging and decomposing any table you must need to think what will be the prime-key.
+
 # 1 NF
 
 * Fileds must contain atomic values.
@@ -29,6 +31,25 @@
 |5004|Neelam|60|Chavi|Babesios|1004|Bikaner|
 |5004|Neelam|60|Sambhavita|Cancer|1003|Bikaner|
 </div>
+
+* We have removes multivalued attribute but what is the prime-key? This will be composit-key of previous prime-key and multivalued-attribute column i.e (```PatientID``` ```Dieases``` ```DoctorID``` ```Age```) because during transforming we created redundant entries in prime-key column.
+* can you take less attribute in prime-key like prime-key with only one other multivalued-attribute?
+  * No, if the person with same age, disease, treated by same by Doctor then?
+    <div align="center">	
+     
+     |PatientID|PatientName|Age|Doctor|Dieases|DoctorID|PatientAddress|
+     |---------|-----------|---|------|-------|--------|--------------|
+     |5001|Rahul|38|Ram|alphaviruses|1001|Jaipur|
+     |5035|Rahul|38|Chavi|Babesios|1004|Shimla|
+     |5035|Rahul|38|Ram|alphaviruses|1001|Shimla|
+     |5035|Rahul|38|Chavi|Acute Flaccid Myelitis|1004|Shimla|
+    </div>
+
+* now answer this can you identify the Dieases of a patient with (PatientID and DoctorID) given respectively (5035, 1004)?
+  * No, there are two entry for this (5035, Rahul, 38, Chavi, Babesios, 1004, Shimla,) (5035, Rahul, 38, Chavi, Acute Flaccid Myelitis, 1004, Shimla). with only (patientID and Age) you cant' idenetify doctorID, Doctor name, Dieseas, with only (patientID, Doctor) you can't identify Dieases, DoctorID because name of doctors can be same treating the same Dieases.
+  * So, we can't take less attributes in candidate-key, by taking less attributes we can identify the non-multivalued attributes uniquly but not itself multivalued-valued entries.
+
+* You do this, and this is valid, but there are some anamolies like updation, insertion and deletion, you can't add new diseeases and delete any disease or doctors entry because it can violate constraint of prime-key, and also during updation you have to update multiple entries, due to data redundency, so the best idea is to create a seprate table for multivalued attributes.
 
 ## 2 NF
 
