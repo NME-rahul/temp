@@ -89,3 +89,29 @@ Note: Large locall array are created in the stack part of programs/process so it
    </td>
   </tr>
  </table>
+
+ ## Garbage Collection
+ 
+Grabage Collection is the process of memory mangement used in programng and runtime environment to reclaim memory that is no longer in use by the program. This helps prevent memory leaks and improves efficiency of memory usage, ensuing that the program has more active data then the dead data.
+
+<br>
+
+**What is Memory leaks?**
+
+Memory leaks occur when a program does not release memory that is no longer in use, which can lead to inefficient usage, and ultimately applicaion failure due to exhaustion of available memory.
+</div>
+
+<br>
+
+**How does grabse collection works?**
+
+It follows these steps:
+1. Tracking object referncecs: The garbage collector keeps track of all refernces to ojects in meory to identify which objects are still in use and which are not.
+2. Identifying Unrachable objects: It identifes ibjects that are no longer reachable from the program.(eg,. Objects that are no longer refenced by any ariable or other objects.)
+3. Reclaiming Memory: The Garbage collector reclaims the memory occupied by thes unreachable objects, making it avialable for future use.
+
+#### Popular Algorithms of automatic garbage collection
+1. Reference Counting
+2. Mark-and-sweap
+
+* manually garbage collection is done by the programmars using free() function, it is so heptic in larger programs.
