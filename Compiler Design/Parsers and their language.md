@@ -46,3 +46,32 @@
 |LR(1)|	Most deterministic context-free|	Deterministic PDA (with lookahead)|
 |LALR(1)|	Practical subset of context-free|	Deterministic PDA (merged states)|
 </div>
+
+### Important points
+
+Regular set == Regular languages
+
+if grammar is LL(1) then it must be unambiguous, not left recursivem and left factored
+
+$unambiguous \rightarrow non-left-recursive \\\ \land \\\ left-factored$
+
+Regular grammars can anbiguous.
+
+Regular can have a common prefix or left recursion.
+
+so, every regular grammar is not LL(1).
+
+But Every regular language has at least one right linear grammar which is LL(1).
+
+Every DCFL is LR(1) but need not be LL(1)
+
+Every regular language is DCFL.
+
+So, every regular language has LR(1) grammar.
+
+if grammar is LL(1) and not containing epsilon then it is SLR(1).
+
+Every LL(1) does not generate regular language but every LL(1) generated DCFL.
+
+LL(1) always deterministc unambiguous CFB
+
