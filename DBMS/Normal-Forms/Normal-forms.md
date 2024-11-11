@@ -229,9 +229,11 @@
   </div>
  
 * In this table now, we can't determine any attribute by single attribute, we need composit keys to detemine unique rows.
-  * for eg., ther {Arthritis, Dr Augustin Jacob} deterimens symptom single "pain" but "Arthritis" single can not not determine a single symptom. another example is {Victor Babes, arm Weakness} determines the single dieases "Babesios" but "Victor Babes" can not determine a single "dieases" so we need composit keys to determine each row uniqly.
+  * for eg.,{Arthritis, Dr Augustin Jacob} deterimens uniquly a symptom "pain" but "Arthritis" alone can not not determine a single symptom. another example is {Victor Babes, arm Weakness} determines the single dieases "Babesios" but "Victor Babes" alone can not determine a single "dieases" so we need composit keys to determine each row uniqly.
 * Here (Dieases, DiscoverBY) and (DiscoverBY, Symptoms) are composit-keys, and each have DiscoverBY attribute common.
 * Crate table for each unique combination of composit-key. {(Dieases, DiscoverBY, DoctorID) and (DiscoverBY, Symptoms, DoctorID) }
+* What is Composit-key here? it is a candidate-key.
+* Note: Every 3NF is BCNF if it's minimal-key(candidate-key) have only 1 attribute.
   
   <div align="center">
  <table>
