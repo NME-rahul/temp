@@ -269,6 +269,8 @@
  </table>
 </div>
 
+* We can see that still we have redundant information, and primary-key is stil ```DiscoverBY-Dieases``` ```DiscoverBY-Symptoms``` in respective tables.
+* BCNF does not guarntee that it will give you a good decomposition, as you can see in above example.
 * **Note**: This decomposition may give lossy decomposition, so after 3NF you should always check you get the same dependeency set as before decomposition or not, if not then it will stop here.
 
 ## 4 NF
