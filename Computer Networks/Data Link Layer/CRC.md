@@ -13,7 +13,7 @@
    
 3. $G(x)$ must not divide $1 + x^{j-i}$
 
-### To detect all burst error of degree b or less $( >=b)$
+### To detect all burst error of length b or less $( <=b)$
 1. The G(x) must have degree at least $b$ to detect all burst error of degree $<=b$
 
 
