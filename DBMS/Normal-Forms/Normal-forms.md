@@ -277,7 +277,7 @@
 
 * The table should be in BCNF.
 * It is based on the independent facts, if 2 or more independent columns are present in same table then seprate them.
-* There should be no multi-valued independency.
+* There should be no multi-valued dependency.
   * **Multi-valued dependencies:** In field A, there is a set of values for both fields B and C but fields B and C are not related.
 * **To remove this:**
   * create seprate table for each attribute with field A . (A,B) and (A,C)
