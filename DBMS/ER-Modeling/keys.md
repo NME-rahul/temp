@@ -22,6 +22,10 @@ Super-Key without any redundant key.
 
 A primary key is chosen from the set of candidate keys to uniquely identify tuples in a relation and that we will use in our implementation. Like candidate keys, the primary keys must be unique and cannot contain null values. Additional, the primary key is typically the key that is choosen to establish the relationship with the foriegn key.
 
+Note: There is difference between primary-key and prime attributes, prime-attributes are those attrbutes which is part of candidate-key.
+
+if AB is a candidate-key then A and B are prime attributes.
+
 ## Alternate-Key
 
 All candidate keys apart from primary-key are called alternate key.
