@@ -77,3 +77,16 @@ Merge the attribute column also in table, but still the prime-key will be the co
 * We can not merge tables because of partial side will lead to $NULL$ entires in total participaing side when partial side has higher cadinality then total partcipating entity-set and because we allowed to have many-to-many relation we have duplicated entries so niether compositly nor indvidually we are going to have primary-key.
 * What if total side hav higher cardinality then partial side?
   * No, it will not be possible because we have partial parital participation from one side, and it is neccessary that at least one entity should be there that is not participating in relation. you will always see $NULL$ entires in total side entity-set's columns in row where partial side's entity is not participating.
+ 
+
+## 3. $M:1$ or $1:M$
+
+### Case 1: Partial relation at both side
+
+* We can not merge the tables beause if we do then, we have following problems
+  * We can have duplicate values in "One" side column
+  * and **NULL** values in both side of column due to partial participation
+
+* can we make prime-key of One side as foreign-key in many side
+  * yes, we can do!, it is working because an entity of "many" side relates to only one entity of "One" side, but an entity of "One" side relates to many entites at "many" side. so we can keep uniqness at "many" side.
+    * What if we have many one side enity-set have more cardinality then one side? dont' worry we only include those entry(entity) of "One" side which are taking part in relation others will remain in their original table.
