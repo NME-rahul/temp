@@ -28,9 +28,11 @@ Note: You can merge tables here, primary of the entity-set which is is participa
 ### Case 3: Partial Participation from both the sides
 
 <div align="center">
+  
 </div>
 
 * We can move primary-key and table to other side.
+
 Note: We can not merge tables because both can have entites which are not related to have so resulting table may have $NULL$ entries.
 
 
@@ -49,9 +51,23 @@ image to show why we cant merge tables and also why we can't take primary key
 ### Case 2: Total prticipation from both side.
 
 <div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/WhatsApp%20Image%202024-11-15%20at%202.25.43%20AM.jpeg" />
+    <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/WhatsApp%20Image%202024-11-15%20at%202.25.43%20AM%20(1).jpeg" />
+  
 </div>
 
-* We can merge the table in the case due to total many-to-many relation we dont' have any $NULL$ entires but We are allowed to have duplicate entries and the prime-key in merged table will be the composit-key of primary id's of both tables, because compositly they're unique.
+* We can merge the table in this case due to total many-to-many relation we dont' have any $NULL$ entires but We are allowed to have duplicate entries and the prime-key in merged table will be the composit-key of primary id's of both tables, because compositly they're unique.
+
+<div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/WhatsApp%20Image%202024-11-15%20at%202.28.03%20AM.jpeg" />
+</div>
+
+#### What if Relation have attribute?
+Merge the attribute column also in table, but still the prime-key will be the composit of primary-key's of bothe table in relation
+
+<div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/WhatsApp%20Image%202024-11-15%20at%202.25.43%20AM%20(2).jpeg" />
+</div>
 
 ### Case 3: Total from one side and partial from other side
 
