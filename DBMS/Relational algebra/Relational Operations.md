@@ -1,3 +1,6 @@
+# Relational Algebra
+* Relattional algebra is procedural language, we have to specify what to do and how to do.
+  
 ## Relational operations
 
 1. Unary
@@ -41,8 +44,11 @@
 
 ## Select:
 
-Selects records according to the specified condition
-$$\sigma_{condition} (tableName)$$
+* Selects records according to the specified condition $\sigma_{condition} (tableName)$.
+* It will not change the no of attributes in output table.
+* The output table have no name.
+* If there is no condition then resultant table have all records of table.
+
 
 $$\sigma_{Semester = 4}(R)$$
 
@@ -66,7 +72,7 @@ it is represented as R U N. like set operation, selects all the records from bot
 
 * To do union operation.
   * Both realtion(tables) must have same arity.
-    * Same number of columns.
+    * Same number of columns and same domains.
     * Same Name of columns with same order.
 
 <div align="center">
@@ -97,7 +103,7 @@ R⋂N
 
 * To do Interscetion operation.
   * Both realtion(tables) must have same arity.
-    * Same number of columns.
+    * Same number of columns and same domains.
     * Same Name of columns with same order.
 
 ## Difference
@@ -108,7 +114,7 @@ it is represented as R-N. like set operation, it removes all the records from R 
 
 * To do Difference operation.
   * Both realtion(tables) must have same arity.
-    * Same number of columns.
+    * Same number of columns and same domains.
     * Same Name of columns with same order.
 
 ## Cartesion product
