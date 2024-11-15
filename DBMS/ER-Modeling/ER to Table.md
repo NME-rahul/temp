@@ -124,7 +124,11 @@ Merge the attribute column also in table, but still the prime-key will be the co
 
 
 
+----
 
+### What should we do when we have attributes in relation?
+* Do what you do with relation without having and attribute. like if you are merging two entity-set then include in merged table.
+* and if you making parimary-key of one side as foriegn-key to other side then also include the attribute of relation to the table where you'r inlcuding foriegn-key.
   
 
  
