@@ -90,3 +90,25 @@ Merge the attribute column also in table, but still the prime-key will be the co
 * can we make prime-key of One side as foreign-key in many side
   * yes, we can do!, it is working because an entity of "many" side relates to only one entity of "One" side, but an entity of "One" side relates to many entites at "many" side. so we can keep uniqness at "many" side.
     * What if we have many one side enity-set have more cardinality then one side? dont' worry we only include those entry(entity) of "One" side which are taking part in relation others will remain in their original table.
+
+### Case 2: Partial at one side and Total from other side
+
+
+<div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM.jpeg" />
+    <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM%20(1).jpeg" />
+</div>
+
+* Can we merge the table?
+  * No, we can't, because after merging resulting table will have duplicate, as well $NULL$ values. so we can not any attribute or composit attribute as prime-key.
+
+ <div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.43%20PM.jpeg" />
+</div>
+ 
+* To make a relation between them we have take partial-side's prime-key to total side by this way we will not have any $NULL$ values in any column, and the prime-key will be composit of foriegn-key and prime-key of current table(total-side).
+
+ <div align="center">
+  <img height="400px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM%20(2).jpeg" />
+</div>
+ 
