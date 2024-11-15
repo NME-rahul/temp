@@ -41,12 +41,31 @@ Note: We can not merge tables because both can have entites which are not relate
 ### Case 1: Partial Participation From both the sides
 
 <div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.06%20PM%20(1).jpeg" />
+    <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.06%20PM.jpeg" />
+  
 </div>
-image to show why we cant merge tables and also why we can't take primary key
 
-* You can not Merger the tables here, in fact you will require one more table, due to partial relation from both.
+* Can you merge tables?
+  * No, You can not Merge the tables here.
+  
+ <div align="center">
+  <img height="300px" width="300px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.05%20PM.jpeg" />
+</div>
+
 * Many-to-Many with partial relation from both side can leads $NULL$ entries whether you merge both tables or take primary key of one table to other side. So, it become necessary to create a sperate table for their relation which have only those entries which are participating in relation.
+
+<div align="center">
+  <img height="300px" width="300px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.05%20PM%20(1).jpeg" />
+    <img height="300px" width="300px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.05%20PM%20(2).jpeg" />
+</div>
+
+* we can not take primary-key of one side as foriegn-key to other side, in fact we have to create one more table to form a relation and this table have entry of only those entities whic are taking taking part in relation
 * One more intresting fact is that the primary key will be the composit key of prime-key's of both tables in relation because of many-to-many relation and both columns allowed have duplicate entries.
+
+ <div align="center">
+  <img height="300px" width="300px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20partial-partial/WhatsApp%20Image%202024-11-15%20at%201.28.06%20PM%20(2).jpeg" />
+</div>
 
 ### Case 2: Total prticipation from both side.
 
@@ -72,12 +91,22 @@ Merge the attribute column also in table, but still the prime-key will be the co
 ### Case 3: Total from one side and partial from other side
 
 <div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM.jpeg" />
+    <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM%20(1).jpeg" />
 </div>
 
-* We can not merge tables because of partial side will lead to $NULL$ entires in total participaing side when partial side has higher cadinality then total partcipating entity-set and because we allowed to have many-to-many relation we have duplicated entries so niether compositly nor indvidually we are going to have primary-key.
-* What if total side hav higher cardinality then partial side?
-  * No, it will not be possible because we have partial parital participation from one side, and it is neccessary that at least one entity should be there that is not participating in relation. you will always see $NULL$ entires in total side entity-set's columns in row where partial side's entity is not participating.
- 
+* Can we merge the table?
+  * No, we can't, because after merging resulting table will have duplicate, as well $NULL$ values. so we can not any attribute or composit attribute as prime-key.
+  
+<div align="center">
+  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.43%20PM.jpeg" />
+</div>
+
+* To make a relation between them we have take partial-side's prime-key to total side by this way we will not have any $NULL$ values in any column, and the prime-key will be composit of foriegn-key and prime-key of current table(total-side).
+
+<div align="center">
+  <img height="400px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%201.28.07%20PM.jpeg" />
+</div>
 
 ## 3. $M:1$ or $1:M$
 
@@ -94,21 +123,8 @@ Merge the attribute column also in table, but still the prime-key will be the co
 ### Case 2: Partial at one side and Total from other side
 
 
-<div align="center">
-  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM.jpeg" />
-    <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM%20(1).jpeg" />
-</div>
 
-* Can we merge the table?
-  * No, we can't, because after merging resulting table will have duplicate, as well $NULL$ values. so we can not any attribute or composit attribute as prime-key.
 
- <div align="center">
-  <img height="300px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.43%20PM.jpeg" />
-</div>
- 
-* To make a relation between them we have take partial-side's prime-key to total side by this way we will not have any $NULL$ values in any column, and the prime-key will be composit of foriegn-key and prime-key of current table(total-side).
+  
 
- <div align="center">
-  <img height="400px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%2012.55.42%20PM%20(2).jpeg" />
-</div>
  
