@@ -120,6 +120,7 @@ it is represented as R-N. like set operation, it removes all the records from R 
 ## Cartesion product
 
 It is represented as RxN. it multiplies Every row of table R with every row of table N. if table R have n rows and table N have m rows then RXN will have nxm rows.
+* The resultant table have no name.
 
 <div align="center">
 
