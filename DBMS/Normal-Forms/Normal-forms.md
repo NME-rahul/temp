@@ -2,7 +2,7 @@
 
 # 1 NF
 
-* Fileds must contain atomic values.
+* Fields must contain atomic values.
 * **To Remove this**
   * create seprate row for each value
 
