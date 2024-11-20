@@ -115,3 +115,7 @@ It follows these steps:
 2. Mark-and-sweap
 
 * manually garbage collection is done by the programmars using free() function, it is so heptic in larger programs.
+
+---
+
+Dangling reference: A dangling refernce is pointer or reference that points to a memory address that is already deallocated or released.
