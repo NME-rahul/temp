@@ -30,13 +30,38 @@ b. Memory is required for each of these entities
 
 * An ativation record is contiguous block of storage that manages information required by a single exceution of procedure.
 * When you enter a procedure, you allocate an activation record on stack memory and when you exit that procedure, you de-allocate it.
-* Basically whenever a function cal occures then a new activation record is created.
+* Basically whenever a function call occures then a new activation record is created.
+
+<p align="center">
+ <img width="365" alt="Screenshot 2024-11-21 at 11 25 30 AM" src="https://github.com/user-attachments/assets/cb20f660-08d9-4e3c-83f0-a3d5a4098652">
+</p>
 
 **Typical activation record contains**
-1. Parameter passed to the procedure
-2. Bokeeping information(where to return again), including return values.
-3. Space for local variables.
-4. Space for compiler generated local variables to hold subexpression values.
+1. Temporary values, such as those created from the evaluation of expressions and those temporaries cannot be held in registers.
+2. Local data belonging to called procedure.
+3. return address
+4. Control link, points to the preceding activation from where current is called.
+5. Access link, keeps the extra information to locate the data needed in nested function, for eg, in below program $x$ is defined in preocedure1 but is used in procedure2 and to ensure the correct definition the proceure2 keeps extra information called access link, it helps to look into the nested procedure until it found defnition of undindeined local variables.
+   
+       def procedure1:
+         x = 4;
+         def procedure2:
+           x = x + 1;
+           return x;
+         preocdure2()
+         return;
+
+* Acees link is only for nested function defnition not for seprate function like below.
+  
+      def procdure1:
+        x = 4;
+        preocdure2()
+         return;
+      def procedure2:
+        x = x + 1;
+        return x;
+         
+
 
 * Depending upon lamnguages activation record can be created in the stack or heap area. In c language activation records are stores in the runtime-stack.
 
