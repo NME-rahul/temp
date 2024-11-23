@@ -2,14 +2,14 @@
 
 ### SELECT command
 
-SELECT statement is used to query or retrieve information maentioned from specified columns.
+SELECT statement is used to query or retrieve information maentioned from specified columns. it doesn't remove duplicates from data.
 
     SELECT {column1, column2,...} FROM {table_name};
 
 
 #### DISTINCT
 
-Returns only distinct results.
+Returns only distinct results. it remove duplicates.
 
     SELECT DISTINCT {column1, column2,...} FROM {table_name};
 
@@ -43,7 +43,7 @@ Conditional operators:
 Wildcards:
 * _ (single character patterns)
     * '_a' starts with any chracter and ends with a, such as ea, ba, ca, ta etc.
-    * 'a_b' starts with a and ends with. such as acb, abb, avb, apb etc.
+    * 'a_b' starts with a and ends with b. such as acb, abb, avb, apb etc.
     
 * % (any number of character patterns)
   * '%a' starts with any and ends with 'a', such as 'ba', 'ma', 'latika', etc.
