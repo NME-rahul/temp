@@ -18,6 +18,8 @@ A candidate-key is a subset of the super-key, which uniquly determine each attri
 
 Super-Key without any redundant key.
 
+any key of which further decomposition will not give any key.
+
 ## Prime-key
 
 A primary key is chosen from the set of candidate keys to uniquely identify tuples in a relation and that we will use in our implementation. Like candidate keys, the primary keys must be unique and cannot contain null values. Additional, the primary key is typically the key that is choosen to establish the relationship with the foriegn key.
