@@ -19,6 +19,8 @@ $$ M = (Q, \Gamma, F, \delta, q_0, {\scriptstyle \sum}, Z_0)$$
 
 ### 1. Deterministic Push Down automata
 
+Dead configurtaion is allowed in DPDA.
+
 A PDA is deterministc PDA IFF following 2 conditions satisfy:
 
 **a**. $\forall_{q \in Q}$ & $\forall_{z \in \Gamma}$ if
@@ -31,4 +33,10 @@ For any state and stack symbol if there exist NULL move then there must not exis
    
 ### 2. Non-deterministic Push down automata
 
+<div align="center">
+   
 $\delta : Q \times ( {\scriptstyle \sum} \cap \epsilon ) \times \Gamma \rightarrow$ subset of $(Q \times \Gamma^*)$
+   <br>or<br>
+$\delta : Q \times ( {\scriptstyle \sum} \cap \epsilon ) \times \Gamma \rightarrow 2^{(Q \times \Gamma)}$
+</div>
+
