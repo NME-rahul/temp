@@ -19,7 +19,7 @@ $$ M = (Q, \Gamma, F, \delta, q_0, {\scriptstyle \sum}, Z_0)$$
 
 ### 1. Deterministic Push Down automata
 
-Dead configurtaion is allowed in DPDA.
+Dead configurtaion is allowed in DPDA. DPDA is a partial function.
 
 A PDA is deterministc PDA IFF following 2 conditions satisfy:
 
@@ -32,6 +32,8 @@ For any state and stack symbol if there exist NULL move then there must not exis
 **b**. There must be unique move for each transition
    
 ### 2. Non-deterministic Push down automata
+
+PDA is a total function that means it follows all the rules of a function.
 
 <div align="center">
    
