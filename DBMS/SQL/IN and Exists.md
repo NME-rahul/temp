@@ -1,4 +1,4 @@
-## IN
+## IN(is element of)
 * It matches the outer query with inner subquery.
 * matches every row of outer query with every row of inner query whether it found match or not it keeps go on.
   * if inner query has 6 records and outer query have 10 records then total matches will be 60.
