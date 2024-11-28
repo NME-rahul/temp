@@ -14,19 +14,32 @@ $$\alpha -> \beta$$
   
 #### To be in BCNF
 
-* If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
+* There should be no overlapping canidate-key, that means no two candidate-key must have commm attribute.
+* If $AB$ and $BC$ are tewo candidate-key's in any relation than it is overlapping candidate-key's because $B$ is a common attribute in them.
+
+NOTE: If there is only one candidate key or candidate-key with single attribute then relation is in BCNF because in both cases we can't have any overlaaping in key's.
 
 #### To be in 3NF
 
-* If alpha is a candidate-key or super-key then it is in BCNF, otherwise not.
-* If above condition fails check, whether beta is a prime-key, then relation is in 3NF.
-* If is transitive functional dependecny from prime-key to non-prime-key, then relation is not in 3NF.
+* If There is a transitive functional dependecny, then relation is not in 3NF.
+* A relation is trainsitvely dependet iff of non-prime attribute derives other non-prime.
+
+$$Candidate-key$$ <br>$$(non-prime) \rightarrow (non-prime)$$
+
+* let in relation $R(A, B, C, D)$ $AB$ is candidate key then
+
+$$AB \rightarrow C$$  <br> $$C \rightarrow D$$
+
+is a partial dependency.
+
+* because candidate-key can derive any of the attribute and if any no-prime attribute derives non-prime then it becomes transitive dependcy.
+* If either C and D are prime-attribute then it is not a transitive dependency.
 
 
 #### To be in 2NF
 
 * IF there is partial dependency then it is not in 2NF. If beta is partially dependent on alpha then it is a partialy dependency for example, AB is candidate key, and given functionl dependency is A -> D then D is partially dependent on the AB.
-* Here, A is the prime-key beacuse it's a part of candidate-key.
+* Rule: No non-prime attribute must not partially(proper subset) dependent on candidate-key.
 
 ---
 
