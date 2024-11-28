@@ -42,3 +42,17 @@ $\delta : Q \times ( {\scriptstyle \sum} \cap \epsilon ) \times \Gamma \rightarr
 $\delta : Q \times ( {\scriptstyle \sum} \cap \epsilon ) \times \Gamma \rightarrow 2^{(Q \times \Gamma)}$
 </div>
 
+---
+#### Acceptence condition
+1. Accept by final state: starting from initial state after reading entire string PDA is at one of final state then string is accepted.
+2. Accept by NULL : staring from initial state after reading entire string stack is empty(not even starting symbol of z) then string is accpeted.
+
+---
+
+* By default PDA means NDPDA, and DPDA is a special case of NDPDA.
+* Every DPDA is NDPDA but opposite is not True.
+* NDPDA is more powerful then DPDA, that means NDPDA can accept larger class of language then DPDA.
+* Every DPDA has equivalanet NDPDA but opposite is not True.
+* A language is CFL iff there exist a NDPDA.
+
+
