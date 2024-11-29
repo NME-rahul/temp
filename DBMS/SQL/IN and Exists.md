@@ -1,4 +1,4 @@
-## IN(is element of)
+## IN(is element of) $\equiv$ = Some
 * It matches the outer query with inner subquery.
 * matches every row of outer query with every row of inner query whether it found match or not it keeps go on.
   * if inner query has 6 records and outer query have 10 records then total matches will be 60.
@@ -7,6 +7,9 @@
 * Took more time obviosuly.
 
       SELECT SupplierName FROM Supplier WHERE SupplierID IN (SELECT SupplierID FROM Product WHERE ProductName = "Computer");
+
+      SELECT SupplierName FROM Supplier WHERE SupplierID = SOME (SELECT SupplierID FROM Product WHERE ProductName = "Computer");
+
 
 ## EXISTS
 * It also matches outer query with inner query rows but it stops when it founds one matching record of outer query and not matches for that same record again.
