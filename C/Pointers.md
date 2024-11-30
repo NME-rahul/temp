@@ -1,6 +1,6 @@
 # Pointers
 
-* $*$ is a operator that means "value at"(derefrence the memory)
+* $*$ is a operator that means "value at address that is stored in pointer"(derefrence the memory)
 * & is a operator that means "address of"
 
 
