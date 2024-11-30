@@ -1,5 +1,9 @@
 # Pointers
 
+* $*$ is a operator that means "value at"(derefrence the memory)
+* & is a operator that means "address of"
+
+
 * Pointers are variables that stores the memory address of operand instead of direct value.
 
       void *p = NULL; //generic pointer that has no data type until casting
