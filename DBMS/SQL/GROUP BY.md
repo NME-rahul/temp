@@ -3,6 +3,7 @@
 * it makes a logical set of same tuples that is specified in GROUP BY clause.
 * These logical set are then used with aggregate function for eg. you groupby a employee table on the basis of departName and you use aggregate function avg on salary attribute then it will selct avg salary of employee in each departmenet.
 * All attributes appeared in GROUPBY Clause must appear in SELECT clause.
+* Whenver there is GROUP BY in sql query then there will be only one tuple in output table for the every group.
 
       SELECT CustomerName, COUNT(CustomerName)
       FROM Customers
