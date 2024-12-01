@@ -16,8 +16,8 @@ Returns only distinct results. it remove duplicates.
 
 #### WHERE
 
-Introduces condition with SELECT command, It is used to retrieve data with some condition like in specific range etc.
-
+* Introduces condition with SELECT command, It is used to retrieve data with some condition like in specific range etc.
+  
     SELECT {column1, column2,...} FROM {table_name} WHERE {conditions};
 
 you can use one or more condition with **AND** **OR** operator.
