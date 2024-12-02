@@ -9,3 +9,17 @@
 3. Simplfy commands for the use: Views can be used to store complex queries.
 4. Rename columns: Views can also be used to rename the columns without affecting the base table.
 5. They provide data independency.
+
+
+    CREATE VIEW <view_name> AS <query>
+
+* For every query a new View is created.
+
+
+    CREATE VIEW book
+    (SELECT price, title FROM Supplier)
+    SELECT title FROM book WHERE price > 100;
+
+* It first creates view named book having two attributes price and title and then selects title of the book having price greater then 100.
+
+* It is not neccesary that we use only single table but also we can join multiple and can create view.
