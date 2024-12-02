@@ -60,7 +60,7 @@ Wildcards:
 
 ### INSERT INTO
 
-This statement is used to insert new rows into a table. if you are inserting values in all the columns then you need not to specify column name.
+This statement is used to insert new rows into a table. if you are inserting values in all the columns then you need not to specify column name. It always insert a whole row or set of rows and canot insert a single cell.
 
     INSERT INTO {table_name} VALUES ('value1', 'value2', ..., 'valueN');
 
@@ -68,7 +68,7 @@ This statement is used to insert new rows into a table. if you are inserting val
 
 ### UPDATE
 
-This statement is used to modify the data in a table.
+This statement is used to modify the data in a table. it can update only one cell or set of cells at at a time.
 
     UPDATE {table_name} SET {column_name} = {some_value};
 
@@ -77,9 +77,16 @@ This statement is used to modify the data in a table.
 
 ### DELETE
 
-This statment is used to delete rows from a table. The WHERE is used to delete row with specific condition otherwise all the rows will delete.
+This statment is used to delete rows from a table. The WHERE is used to delete row with specific condition otherwise all the rows will delete. It always delete rows or set of rows not any signle cell.
 
     DELETE FROM {table_name} WHERE {condition};
+
+
+    DELETE FROM Borrow
+    WHERE CardNo IN(
+                    SELECT CardNo From User
+                    WHERE name = "ABC"
+    );
 
 ### cartesian product
 
