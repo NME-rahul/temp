@@ -31,7 +31,7 @@ Note: You can merge tables here, primary of the entity-set which is is participa
   
 </div>
 
-* We can move primary-key and table to other side.
+* We can move primary-key to any side.
 
 Note: We can not merge tables because both can have entites which are not related to have so resulting table may have $NULL$ entries.
 
