@@ -79,6 +79,8 @@ This statement is used to modify the data in a table. it can update only one cel
 
 This statment is used to delete rows from a table. The WHERE is used to delete row with specific condition otherwise all the rows will delete. It always delete rows or set of rows not any signle cell.
 
+Deleting every will not delete realtion, it will remain as it is.
+
     DELETE FROM {table_name} WHERE {condition};
 
 
