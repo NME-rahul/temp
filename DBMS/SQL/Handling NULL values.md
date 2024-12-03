@@ -23,6 +23,10 @@ to compare NULL with other: $= \\\ \rightarrow$ IS  NULL
 
 1. NULL & relationa operator
    * No comparision allowed
+2. NULL & arithmatic operators
+   * No aritmatic operation allows simpley returns NULL
+3. NULL and aggregation function
+   * they ignores the NULL value, except `COUNT(*)`
 2. NULL & IN
    * it doesnot match with value which is NULL
 4. NULL & SOME
