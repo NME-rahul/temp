@@ -1,7 +1,7 @@
 ## HAVING $\equiv$ WHERE after GROUP BY
 
 * ```HAVING``` function is added in SQL because ```WHERE``` cannot be used after GROUP BY.
-  * Whenever you want to apply GROUP BY with some condition, HAVING is used and HAVING must be used with some aggregate function because GROUP BY works on sets that have single identfier(HAVING condindtion must compare with single tuple that will only come by aggregate fucntion).
+  * Whenever you want to apply GROUP BY with some condition, HAVING is used. HAVING must be used with some aggregate function because GROUP BY works on sets that have single identfier(HAVING function evaluates the condition for indivdual identifiers of every group).
 * It can be used with attribute alias like SELECT avg(salary) s FROM Emmployee GROUP BY DeptName HAVING AVG(s) > 40000;
 
       SELECT column_name(s)
@@ -22,3 +22,6 @@
  |2.|It is use before GROUP BY clause| It is used after GROUP BY clause|
  |3.|It cannnot contain aggregate function|It can contain aggregate functtion|
 </div>
+
+
+* According to new standards `HAVING` can be used without `GROUP BY` but `GROUP BY` must use `HAVING` not `WHERE`.
