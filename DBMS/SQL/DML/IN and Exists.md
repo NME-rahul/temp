@@ -1,4 +1,11 @@
 ## IN(is element of) $\equiv$ = Some
+
+    .... WEHRE column IN (1, 2, 3, 4)
+
+    .....WHERE column = 1 OR column = 2 OR column = 3 OR column = 4;
+
+
+* It is shortend form of `OR`.
 * It matches the every outer query table tuples with every tuple of subquery(inner query) table.
 * matches every row of outer query with every row of inner query whether it found match or not it keeps go on.
   * if inner query has 6 records and outer query have 10 records then total matches will be 60.
