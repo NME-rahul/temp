@@ -1,5 +1,5 @@
 ## IN(is element of) $\equiv$ = Some
-* It matches the every outer query table tuples with every of subquery(inner query) table.
+* It matches the every outer query table tuples with every tuple of subquery(inner query) table.
 * matches every row of outer query with every row of inner query whether it found match or not it keeps go on.
   * if inner query has 6 records and outer query have 10 records then total matches will be 60.
 * Inner query must return only one column that will only be matched by only columns of outer query.
