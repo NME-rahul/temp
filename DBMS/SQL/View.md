@@ -10,11 +10,13 @@
 4. Rename columns: Views can also be used to rename the columns without affecting the base table.
 5. They provide data independency.
 
+<div></div>
 
     CREATE VIEW <view_name> AS <query>
 
 * For every query a new View is created.
 
+<div></div>
 
     CREATE VIEW book
     (SELECT price, title FROM Supplier)
