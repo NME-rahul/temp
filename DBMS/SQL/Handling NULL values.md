@@ -1,6 +1,7 @@
 # NULL values
 
 * It is unkown value.
+* Any comparision return truth value, `UNKOWN`
 * It is keyword in sql.
 
 * to see relation with NULL we have other operators like
