@@ -3,7 +3,6 @@
 * $*$ is a operator that means "value at address that is stored in pointer"(derefrence the memory)
 * & is a operator that means "address of"
 
-
 * Pointers are variables that stores the memory address of operand instead of direct value.
 
       void *p = NULL; //generic pointer that has no data type until casting
@@ -16,6 +15,47 @@
       printf("pointer address: %d", p);
       printf("operand at address: %d", *p);
 
+<div></div>
+
+      int x[] = {3, 1, 2, 5, 8};
+      int *p = x;
+      printf("pointer address: %d", p);
+      printf("operand at address next to first: %d", *++p);
+
+      output: pointer address: p
+      operand at address next to first: 1
+
+
+* `++` increase the address by 1 unit(that is speified during declaration of pointer)
+  * if pointer is `char` and char takes 1 byte the ++p will increase the address by 1 byte.
+  * if pointer is `int` and char takes 4 byte the ++p will increase the address by 4 byte.
+<br>
+what if pointer is pointing to the another pointer and that pointee is pointing to some value. consider the below program
+
+      char *x[] = {"hello", "world"};
+      char **p = x;
+      printf("operand first address: %s", *p);
+      printf("operand at address next to first: %s", *++p);
+
+      output:
+      operand first address: hello
+      operand at address next to first: world
+    
+* `*` means "value at address stored(dereference)" because pointer is, pointer to pointer so in that case it will two time derefrence the the address stored at p.
+  * in generarl we can say if pointer is `char *x` then * will defreference the pointer 1 time, if `char **x` then * will defreference the pointer 2 time, `char 8**x` then * will defreference the pointer 3 time and so on
+
+<div></div>
+
+      char *x[] = {"hello", "world"};
+      char *p = x;
+      printf("operand first address: %s", *p);
+      printf("operand at address next to first: %s", *++p);
+      output:(with warning)
+      operand first address: p
+      operand at address next to first: p
+
+* because pointer p is storing the address of x that is also an array of pointers(each element is a pointer) but pointer is defined as `char *p` so * will derefene the pointer only 1 time and derencing 1 time will give us the first element of array x that is an address so first and second `printf()` will print address of first element and 2nd element(address) of char array x respectively.
+   
 
 ## general initialization & assignmenet
 
