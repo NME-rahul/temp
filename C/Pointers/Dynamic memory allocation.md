@@ -7,6 +7,8 @@
 * realloc(); to update memory size of the given address
 * free(); to release memory, of the given address.
 
+**NOTE**: we can free only those memory which we were allocated during runtime and not compile time.
+
 <div></div>
 
     int *p, n;
