@@ -12,6 +12,11 @@
     int *p, n;
     scanf("%d", &n);
     p = malloc(n*sizoef(int));  //allocate n integer size memory blocks
+    printf("%ld", sizeof(p));
+    printf("%ld", sizeof(*p));
+
+    output: 8 //sizeof of integer pointer
+    4 //sizeof of first chunk of memory block and because it is a integer block so 4 byte
 
 genearlly malloc returns void pointer, that's why you need to typecase it every time you use.
 
