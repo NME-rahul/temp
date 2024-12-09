@@ -2,9 +2,10 @@
 * dynamic memory allocation is always done from heap and static memory allocation is always from stack.
 * it is not conitguos
 
-* malloc(); calloc(); allocte memory
-* realloc(); to update memory size
-* free(); to release memory
+* malloc(); calloc(); allocte memory and returns the address of allocated memory that should be catch by the pointer `*p`
+  * i
+* realloc(); to update memory size of the given address
+* free(); to release memory, of the given address.
 
 <div></div>
 
