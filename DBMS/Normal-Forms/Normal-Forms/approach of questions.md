@@ -14,15 +14,27 @@ $$\alpha -> \beta$$
   
 #### To be in BCNF
 
+* it is strictier then 3NF
 * There should be no overlapping canidate-key, that means no two candidate-key must have commm attribute.
 * If $AB$ and $BC$ are tewo candidate-key's in any relation than it is overlapping candidate-key's because $B$ is a common attribute in them.
 
 NOTE: If there is only one candidate key or candidate-key with single attribute then relation is in BCNF because in both cases we can't have any overlaaping in key's.
 
-#### To be in 3NF
+* $X \rightarrow Y$
+  * X must be a super-key
+
+#### To be in 3NF 
+
+$$X \rightarrow Y$$
+
+* what should happen?
+  * X is super-key or Y is prime
+
+* what should not happen?
+  * X is non-superkey and Y is non-prime
 
 * If There is a transitive functional dependecny, then relation is not in 3NF.
-* A relation is trainsitvely dependet iff of non-prime attribute derives other non-prime.
+* for 3NF A relation is transitvely dependent iff of non-prime attribute derives other non-prime.
 
 $$Candidate-key$$ <br>$$(non-prime) \rightarrow (non-prime)$$
 
@@ -33,7 +45,10 @@ $$AB \rightarrow C$$  <br> $$C \rightarrow D$$
 is a partial dependency.
 
 * because candidate-key can derive any of the attribute and if any no-prime attribute derives non-prime then it becomes transitive dependcy.
-* If either C and D are prime-attribute then it is not a transitive dependency.
+* If D is prime-attribute then it is not a transitive dependency because it becomes trivial functional dependency.
+
+what if C is prime and D is non-prime?
+then it is not even in 2NF.
 
 
 #### To be in 2NF
