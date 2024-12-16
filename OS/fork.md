@@ -1,6 +1,6 @@
 #  fork()
 
-Fork system call is used for creatinga new process, which is called child process. Which runs concurrently(with the help of threads) with the process that makes fork() call.
+Fork system call is used for creating a new process, which is called child process. Which runs concurrently(with the help of kernel-level threads) with the process that makes fork() call.
 
 * It takes no parameters and returns an integer value.
   * Negative Value: Creation of a child process was unsuccessful.
