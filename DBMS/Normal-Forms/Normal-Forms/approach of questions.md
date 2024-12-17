@@ -12,7 +12,7 @@ $$\alpha -> \beta$$
 | P | NP| partial dependency|
 | NP| NP|transitive dependency|
   
-#### To be in BCNF
+## To be in BCNF
 
 * it is strictier then 3NF
 * There should be no overlapping canidate-key, that means no two candidate-key must have commm attribute.
@@ -23,8 +23,9 @@ NOTE: If there is only one candidate key or candidate-key with single attribute 
 * $X \rightarrow Y$
   * X must be a super-key
 
-#### To be in 3NF 
-
+## To be in 3NF 
+* 3NF only does not allow particular type of transitive dependency that is $X \rightarrow Y$ where $X$ and $Y$
+  
 $$X \rightarrow Y$$
 
 * what should happen?
@@ -44,14 +45,12 @@ $$AB \rightarrow C$$  <br> $$C \rightarrow D$$
 
 is a partial dependency.
 
-* because candidate-key can derive any of the attribute and if any no-prime attribute derives non-prime then it becomes transitive dependcy.
+* because candidate-key can derive any of the attribute and if any non-prime attribute derives a non-prime attribute then it becomes transitive dependcy.
 * If D is prime-attribute then it is not a transitive dependency because it becomes trivial functional dependency.
 
-what if C is prime and D is non-prime?
-then it is not even in 2NF.
+what if C is prime and D is non-prime? then also it is allowed.
 
-
-#### To be in 2NF
+## To be in 2NF
 
 * IF there is partial dependency then it is not in 2NF. If beta is partially dependent on alpha then it is a partialy dependency for example, AB is candidate key, and given functionl dependency is A -> D then D is partially dependent on the AB.
 * Rule: No non-prime attribute must not partially(proper subset) dependent on candidate-key.
