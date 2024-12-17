@@ -12,48 +12,54 @@ $$\alpha -> \beta$$
 | P | NP| partial dependency|
 | NP| NP|transitive dependency|
   
-## To be in BCNF
+# To be in BCNF
+
+If whenever a non-trvial functional dependency $X \rightarrow Y$ in R, then $X$ is super-key.
 
 * it is strictier then 3NF
-* There should be no overlapping canidate-key, that means no two candidate-key must have commm attribute.
-* If $AB$ and $BC$ are tewo candidate-key's in any relation than it is overlapping candidate-key's because $B$ is a common attribute in them.
+* There should be no overlapping canidate-key, that means no two candidate-key must have common attribute.
+  * If $AB$ and $BC$ are two candidate-key's in any relation than it is overlapping candidate-key's because $B$ is a common attribute in them.
+ 
+
+* what makes a relation in 3NF but not in BCNF?
+  * in $X \rightarrow Y$, $X$ is not super-key but $Y$ is a prime.
+ 
+if we have more then 1 candidate-key then their super-key must have overlapping candidate 
 
 NOTE: If there is only one candidate key or candidate-key with single attribute then relation is in BCNF because in both cases we can't have any overlaaping in key's.
 
-* $X \rightarrow Y$
-  * X must be a super-key
+# To be in 3NF 
 
-## To be in 3NF 
-* 3NF only does not allow particular type of transitive dependency that is $X \rightarrow Y$ where $X$ and $Y$
+No non-prime attribute is transtively dependent on any candidate-key. remember this definition and any modification could ciolate condition of 2NF.
+
+**violation of 3NF**
+  * non-super key $\rightarrow$ non-prime
   
-$$X \rightarrow Y$$
+1. non-primes(non-superkey) $\rightarrow$ non-prime
+  * candidate-key can determine any attribute so, candidate-key $\rightarrow$ non-prime $\rightarrow$ non-prime
 
-* what should happen?
-  * X is super-key or Y is prime
+* is non-prime $\rightarrow$ prime is  transitive functional depdnecy.
+  * it is not even possible because if any $A$ non-prime attribute derives prime attribute $X$ then it automatically becomes prime attribute because prime attribute is part of some key $XY$ and if any part $X$ of that key is determined by some another attribute $A$ then we can put make $AY$ also a candidate-key so $A$ automatically becomes prime attribute.
+ 
+* prime $\rightarrow$ prime is not transitive functional dependency because it is trivial FD.
 
-* what should not happen?
-  * X is non-superkey and Y is non-prime
+2. proper-subset of candidatekey(non-superkey) $\rightarrow$ non-prime
+   * it is also violation of 2NF, that's why every to be in 3NF it must be in 2NF
+  
+3. prime + non-prime(not superkey) $\rightarrow$ non-prime
 
-* If There is a transitive functional dependecny, then relation is not in 3NF.
-* for 3NF A relation is transitvely dependent iff of non-prime attribute derives other non-prime.
 
-$$Candidate-key$$ <br>$$(non-prime) \rightarrow (non-prime)$$
+NOTE: $X \rightarrow Y$, then $X$ is either super-key or $Y$ is prime attribute
 
-* let in relation $R(A, B, C, D)$ $AB$ is candidate key then
+# To be in 2NF
+Every non-prime attribute is full dependent on every candidate-key.
 
-$$AB \rightarrow C$$  <br> $$C \rightarrow D$$
+**violation of 2NF**
+  * proper subset of candidate-key  $\rightarrow$ non-prime
 
-is a partial dependency.
+Note: proper subset of candidate-key  $\rightarrow$ non-prime, is cause of partial depnedncy but itself not a partial dependency rather candidate-key $\rightarrow$ non-prime will become partial dependency.
 
-* because candidate-key can derive any of the attribute and if any non-prime attribute derives a non-prime attribute then it becomes transitive dependcy.
-* If D is prime-attribute then it is not a transitive dependency because it becomes trivial functional dependency.
-
-what if C is prime and D is non-prime? then also it is allowed.
-
-## To be in 2NF
-
-* IF there is partial dependency then it is not in 2NF. If beta is partially dependent on alpha then it is a partialy dependency for example, AB is candidate key, and given functionl dependency is A -> D then D is partially dependent on the AB.
-* Rule: No non-prime attribute must not partially(proper subset) dependent on candidate-key.
+* if candidate-key is of singleton attribute then it is also in 2NF because then we can not have partial dependency.
 
 ---
 
