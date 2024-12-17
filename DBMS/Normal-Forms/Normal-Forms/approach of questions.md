@@ -2,15 +2,6 @@
   * If fails, check for 3NF
     * If fails, check for 2NF
       * If fails, check for 1NF
-
----   
-
-$$\alpha -> \beta$$
-
-|$$\alpha$$|$$\beta$$|dependency|
-|---|---|---|  
-| P | NP| partial dependency|
-| NP| NP|transitive dependency|
   
 # To be in BCNF
 
