@@ -49,7 +49,7 @@
   * No, there are two entry for this (5035, Rahul, 38, Chavi, Babesios, 1004, Shimla,) (5035, Rahul, 38, Chavi, Acute Flaccid Myelitis, 1004, Shimla). with only (patientID and Age) you cant' idenetify doctorID, Doctor name, Dieseas, with only (patientID, Doctor) you can't identify Dieases, DoctorID because name of doctors can be same treating the same Dieases.
   * So, we can't take less attributes in candidate-key, by taking less attributes we can identify the non-multivalued attributes uniquly but not itself multivalued-valued entries.
 
-* You do this, and this is valid, but there are some anamolies like updation, insertion and deletion, you can't add new diseases and delete any disease or doctors entry because it can violate constraint of prime-key, and also during updation you have to update multiple entries, due to data redundency, so the best idea is to create a seprate table for each multivalued attributes having forigen-key which is primary-key of main table.
+* You do this, and this is valid, but there are some anamolies like updation, insertion and deletion, you can't add new diseases and delete any disease or doctors entry because it can violate constraint of prime-key, and also during updation you have to update multiple entries, due to data redundency, so the best idea is to create a seprate table for each multivalued attributes having forigen-key which is primary-key or the attribute that can derive multivalued-attribute.
 
 ## 2 NF
 
