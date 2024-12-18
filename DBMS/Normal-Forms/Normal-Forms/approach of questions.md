@@ -29,13 +29,13 @@ No non-prime attribute is transtively dependent on any candidate-key. remember t
 1. non-primes(non-superkey) $\rightarrow$ non-prime
   * candidate-key can determine any attribute so, candidate-key $\rightarrow$ non-prime $\rightarrow$ non-prime
 
-* is non-prime $\rightarrow$ prime is  transitive functional depdnecy.
+* is non-prime $\rightarrow$ prime, transitive functional depdnecy?
   * it is not even possible because if any $A$ non-prime attribute derives prime attribute $X$ then it automatically becomes prime attribute because prime attribute is part of some key $XY$ and if any part $X$ of that key is determined by some another attribute $A$ then we can put make $AY$ also a candidate-key so $A$ automatically becomes prime attribute.
  
 * prime $\rightarrow$ prime is not transitive functional dependency because it is trivial FD.
 
 2. proper-subset of candidatekey(non-superkey) $\rightarrow$ non-prime
-   * it is also violation of 2NF, that's why every to be in 3NF it must be in 2NF
+   * it is also violation of 2NF, that's why to be in 3NF it must be in 2NF
   
 3. prime + non-prime(not superkey) $\rightarrow$ non-prime
 
