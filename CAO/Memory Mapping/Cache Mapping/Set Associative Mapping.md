@@ -18,7 +18,7 @@
 |---|---|---|---|
 |Comaprator|$N$-bit comparator, where $N$ = no of tag bits|set size|the comparator compares the tag bits within a set, if we have $k$-way set associative memory then we require $k$ number of comparators.|
 |OR|$2^n$ where $n$:set size, is the number of lines in a set||the output of comparator is fed into the OR gate, that means we require a OR that has input equal to the number of lines per set.|
-|Multiplexer 1|$2^{k}-to-1$, where k: no. of sets in cache||It selects the Set.|
+|Multiplexer 1|$2^{k}-to-1$, where $2^k$: no. of sets in cache||It selects the Set.|
 |Multiplexer 2|$2^{offsetBits}-to-1$||It selects the Set and also selcets the particular word within cache line, so if a line contains 64 word then we need $\log_2(64)-to-1$ mulitplexer. |
 
 ---
