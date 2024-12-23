@@ -21,7 +21,7 @@ NOTE: If there is only one candidate key or candidate-key with single attribute 
 
 # To be in 3NF 
 
-No non-prime attribute is transtively dependent on any candidate-key. remember this definition and any modification could ciolate condition of 2NF.
+No non-prime attribute is transtively dependent on any candidate-key. $\exists$ non-superkey $\rightarrow$ prime. remember this definition and any modification could violate condition of 2NF.
 
 **violation of 3NF**
   * non-super key $\rightarrow$ non-prime
@@ -40,7 +40,8 @@ No non-prime attribute is transtively dependent on any candidate-key. remember t
 3. prime + non-prime(not superkey) $\rightarrow$ non-prime
 
 
-NOTE: $X \rightarrow Y$, then $X$ is either super-key or $Y$ is prime attribute
+**NOTE:** $X \rightarrow Y$, then $X$ is either super-key or $Y$ is prime attribute.
+          Non-superkey $\rightarrow$ proper-subset of key; opposite is not true
 
 # To be in 2NF
 Every non-prime attribute is full dependent on every candidate-key.
