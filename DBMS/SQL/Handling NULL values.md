@@ -23,7 +23,7 @@ to compare NULL with other: $= \\\ \rightarrow$ IS  NULL
 # Summary
 
 1. NULL & relationa operator
-   * No comparision allowed
+   * No comparision allowed, return `unknown`
 2. NULL & arithmatic operators
    * No aritmatic operation allows simpley returns NULL
 3. NULL and aggregation function
