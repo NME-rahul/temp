@@ -24,11 +24,19 @@
 assume the `int` size is 1 Byte and 
 
 unsigned range: $2^{n} - 1$
-2's complement range: $-2^{n-1} \\\ to \\\ 2^{n-1} -1$
+2's complement range: $-2^{n-1}$  to $2^{n-1} -1$
 
 
     unsigned int x = -128; //according the range we can store -128 in 1 byte but in but unsigned can store upto 255; will store as (10000000)2
     signed int y = 127; //
     if(x > y) //this condition will evaluates to TRUE because -2 will be stored in 2s complement form that is (10000000)2=+128
 
+
+## Explicit conversion
+* In this type of conversion programmer can convert the data type of any variable in their choice.
+
+
+      (type)expression
+
+* uncareful conversion can result in data loss because during converting larger data type in smaller can make truncate the data.
 
