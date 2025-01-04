@@ -44,12 +44,20 @@ No non-prime attribute is transtively dependent on any candidate-key. $\exists$ 
           Non-superkey $\rightarrow$ proper-subset of key; opposite is not true
 
 # To be in 2NF
-Every non-prime attribute is full dependent on every candidate-key.
+Every non-prime attribute is fully dependent on every candidate-key.
 
 **violation of 2NF**
   * proper subset of candidate-key  $\rightarrow$ non-prime
 
+What is the meaning of proper subset?
+* It means it should only be the proper subset of any candidate-key not combination of prime of 2 or more candidate-keys and combination of prime and no-prime.
+
 Note: proper subset of candidate-key  $\rightarrow$ non-prime, is cause of partial depnedncy but itself not a partial dependency rather candidate-key $\rightarrow$ non-prime will become partial dependency.
+
+
+**Partial Dependency that are allowed***
+1. super-key $\rightarrow$ non-prime
+2. candidate-key $\rightarrow$ non-prime
 
 * if candidate-key is of singleton attribute then it is also in 2NF because then we can not have partial dependency.
 
