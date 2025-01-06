@@ -8,8 +8,15 @@
 ## Typess of Intrrupt
 
 Event-relaated software or hardware can trigger the issuance of interrupt signals.
+1. Software Interrupts
+   1. System calls
+   2. Exceptions
+2. Hardware Interrupts(in COA)
+   1. Maskable Interrupts
+   2. non-maksbale Interrupts
 
-### 1. Software Iterrupts/trap/Exceptions
+
+### 1. Software Interrupts
 
 It is produced by software or system as opposes to hardware. These are generally made by the system calls whenever any process needs a service for os for eg. fork(), division by zero etc.
 
