@@ -16,5 +16,7 @@ Fork system call is used for creating a new process, which is called child proce
 
 When a process is forked the OS makes exact clone of the forked process, and child process get a different physical address sapce in MM but their virtual address space remains same. in some implementation, initialy process can have same physical address space but as soon as any thread tries to modifies the content they cloned to differnet physical address space, still their virtual address space remain same.
 
+If any file is open or any pointer that is pointing to that file or some data object then that pointer variable will be copied but the content of that pointer will remain same.
+
 process creaed by the fork() are executed concurrently by the help of threads, their is no particular what thread will run first child or parent.
 
