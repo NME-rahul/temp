@@ -35,9 +35,12 @@ No non-prime attribute is transtively dependent on any candidate-key. $\exists$ 
 * prime $\rightarrow$ prime is not transitive functional dependency because it is trivial FD.
 
 2. proper-subset of candidatekey(non-superkey) $\rightarrow$ non-prime
+   * prime(not superkey) $\rightarrow$ non-prime
    * it is also violation of 2NF, that's why to be in 3NF it must be in 2NF
   
 3. prime + non-prime(not superkey) $\rightarrow$ non-prime
+
+4. {prime1, prime2}(not superkey) $\rightarrow$ non-prime, prime1 and prime2 are prime attributes of different candidate keys and does not form any superkey.
 
 
 **NOTE:** $X \rightarrow Y$, then $X$ is either super-key or $Y$ is prime attribute.
@@ -50,7 +53,7 @@ Every non-prime attribute is fully dependent on every candidate-key.
   * proper subset of candidate-key  $\rightarrow$ non-prime
 
 What is the meaning of proper subset?
-* It means it should only be the proper subset of any candidate-key not combination of prime of 2 or more candidate-keys and combination of prime and no-prime.
+* It means it should only be the proper subset of single candidate-key not combination of prime of 2 or more candidate-keys and combination of prime and no-prime.
 
 Note: proper subset of candidate-key  $\rightarrow$ non-prime, is cause of partial depnedncy but itself not a partial dependency rather candidate-key $\rightarrow$ non-prime will become partial dependency.
 
