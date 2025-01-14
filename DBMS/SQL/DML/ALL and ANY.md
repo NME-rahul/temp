@@ -14,7 +14,7 @@
       FROM Suppliers
       WHERE price > ALL(SELECT AVG(price) FROM
                         FROM Suppliers, Products
-                        AND Suppliers.supplierID = Products.productID
+                        AND Suppliers.supplierID = Products.supplierID
                         GROUP BY productName);
 
 * The above query returns suplierID of all suppllier who supplies **all the products** higher then average price suppplied by all the suppliers. 
@@ -36,7 +36,7 @@
       FROM Suppliers
       WHERE price > ANY(SELECT AVG(price) FROM
                         FROM Suppliers, Products
-                        AND Suppliers.supplierID = Products.productID
+                        AND Suppliers.supplierID = Products.supplierID
                         GROUP BY productName);
 
 * The above query returns suplierID of all suppllier who supplies **at least one** products higher then average price suppplied by all the suppliers. 
