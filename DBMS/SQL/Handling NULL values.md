@@ -29,13 +29,15 @@ to compare NULL with other: $= \\\ \rightarrow$ IS  NULL
   
   |||AND (Truth Value)|
   |---|---|---|
-  |FALSE|NULL|FALSE|
+  |FALSE|NULL|NULL|
   |TRUE|NULL|FALSE|
+  |NULL|NULL|NULL|
 
   |||OR (Truth Value)|
   |---|---|---|
-  |FALSE|NULL|FAlSE|
+  |FALSE|NULL|NULL|
   |TRUE|NULL|TRUE|
+  |NULL|NULL|NULL|
 
 </div>
   
