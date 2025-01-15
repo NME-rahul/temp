@@ -23,7 +23,7 @@ Note: You can merge tables here, primary-key can be any table's primary-key beca
 <div align="center">
 </div>
 
-Note: You can merge tables here, primary of the entity-set which is is participating partially will become the primary key of merged table.
+Note: You can merge tables here, primary-key of the entity-set which is is participating partially will become the primary-key of merged table.
 * Merging is possible but design is inefficient because of we can have many $NULL$ entires
 
 
@@ -122,13 +122,25 @@ Merge the attribute column also in table, but still the prime-key will be the co
 
 ### Case 2: Partial at one side and Total from other side
 
+* We can move primary-key of partial side at total side to create foreign-key.
 
+* Can we merger the tables ?
+  * No, we can not merge the tables because it will create duplicacy in partial side and NULL at total side.
+ 
 
+### Case 3: total at one side and Total from other side
+
+* we can move the primary-key at either side and the new primary-key will be the combination of old primary-key and newly formed foreign-key.
+
+* can we merge the tables?
+  * yes we can merge the tables, and again primar-key will be combination of both side primary-key due to dulicacy in either columns(of primary-key).
 ----
 
 ### What should we do when we have attributes in relation?
 * Do what you do with relation without having and attribute. like if you are merging two entity-set then include in merged table.
 * and if you making parimary-key of one side as foriegn-key to other side then also include the attribute of relation to the table where you'r inlcuding foriegn-key.
-  
+
+
+
 
  
