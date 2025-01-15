@@ -1,9 +1,11 @@
 # Approach
 
-## 1. $1:1$ cardinality
+# 1. $1:1$ cardinality
+
+* We can move primary-key to any side.
+
 
 ### Case 1. Total Participation From both Side
-
 
 eg. Every employee is assciated with the 1 department and similariy every department have 1 employee
 
@@ -31,12 +33,10 @@ Note: You can merge tables here, primary of the entity-set which is is participa
   
 </div>
 
-* We can move primary-key to any side.
-
 Note: We can not merge tables because both can have entites which are not related to have so resulting table may have $NULL$ entries.
 
 
-## 2. $M:N$ Minimum Caridinality
+# 2. $M:N$ Minimum Caridinality
 
 ### Case 1: Partial Participation From both the sides
 
@@ -108,7 +108,7 @@ Merge the attribute column also in table, but still the prime-key will be the co
   <img height="400px" width="400px" src="https://github.com/NME-rahul/temp/blob/main/DBMS/Images/many-many%2C%20total-partial/WhatsApp%20Image%202024-11-15%20at%201.28.07%20PM.jpeg" />
 </div>
 
-## 3. $M:1$ or $1:M$
+# 3. $M:1$ or $1:M$
 
 ### Case 1: Partial relation at both side
 
