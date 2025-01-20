@@ -36,7 +36,7 @@ $$MissRatio = 1 - HitRatio$$
 
 # Write through Vs Write Back
 
-Write-through and write-back are two different cache write policies that determine how changes made to data in the cache, are propagated to the main memory
+Write-through and write-back are two different cache write policies that determine how changes made to data in the cache, are propagated to the main memory. By default "Write-Back" policy is used because it is more efficecient.
 
 |Sr. no.|Write through|Write Back|
 |---|---|---|
