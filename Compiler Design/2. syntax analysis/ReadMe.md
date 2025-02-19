@@ -1,6 +1,6 @@
 # Syntax analyzer
 
-**Work:** it works together wihh the lexical anayzer, it performs syntax checking and uses tokens coming from lexical analyzer to create a parse tree.
+**Work:** it works together with the lexical anayzer, it performs syntax checking and uses tokens coming from lexical analyzer to create a parse tree. It creates a tree-like structure that is used to check gramartical correctness of token-stream(program). This tree-like structure is  called the _syntax tree_ in which each interrior node repersents an operation and the childeren of the nodes repersent the argumnet of the operation.
 
 * It use context-free grammer to check language rules and uses parsers generator tools like YACC(Yet Another Compiler Compiler) or Bison for generating parse tree.
 
