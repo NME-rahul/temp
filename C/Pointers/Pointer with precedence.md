@@ -16,9 +16,9 @@
 | 7                    | `==` `!=`                                | Equality, inequality                          | Left-to-right     |
 | 8                    | `&`                                      | Bitwise AND                                   | Left-to-right     |
 | 9                    | `^`                                      | Bitwise XOR                                   | Left-to-right     |
-| 10                   | `|`                                      | Bitwise OR                                    | Left-to-right     |
+| 10                   | &#124;                                   | Bitwise OR                                    | Left-to-right     |
 | 11                   | `&&`                                     | Logical AND                                   | Left-to-right     |
-| 12                   | `||`                                     | Logical OR                                    | Left-to-right     |
+| 12                   | &#124;&#124;                             | Logical OR                                    | Left-to-right     |
 | 13                   | `? :`                                    | Ternary conditional                           | Right-to-left     |
 | 14                   | `=` `+=` `-=` `*=` `/=` `%=`             | Assignment operators                          | Right-to-left     |
 |                      | `<<=` `>>=` `&=` `^=` `|=`               | Assignment operators                          | Right-to-left     |
