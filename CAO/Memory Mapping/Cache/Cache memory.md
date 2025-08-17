@@ -25,6 +25,8 @@ $$MissRatio = 1 - HitRatio$$
 
 # Write allocation Vs No write allocation
 
+Write allocation and No write alllocation policies defines what system should do when CPU have data to write.
+
 |Sr. No.|Write allocation | No write allocation|
 |---|---|---|
 |1.| In the Write-allocate strategy, when a write operation is requested, the entire block containing the target address is first brought into the cache(if it is not already present)|In the no-write allocation stratergy, when a write operation is requested,the data is written directly to the main memory without bringing the corresponding cache block into the cache.|
@@ -36,7 +38,7 @@ $$MissRatio = 1 - HitRatio$$
 
 # Write through Vs Write Back
 
-Write-through and write-back are two different cache write policies that determine how changes made to data in the cache, are propagated to the main memory. By default "Write-Back" policy is used because it is more efficecient.
+Write-through and write-back are two different cache write policies that determine how changes made to data in the cache, are propagated to the main memory. By default "Write-Back" policy is used because it is more efficient.
 
 |Sr. no.|Write through|Write Back|
 |---|---|---|
@@ -44,3 +46,13 @@ Write-through and write-back are two different cache write policies that determi
 |2.|After a write operation, both the cache line and corresponding location in main memory are updated simultaneously|The modified data is first written to the cache, and the corresponding location in main memory is updated only when the cache line is about to be replaced or when explicitly requested.|
 |3.|This ensures that the data in the cache is always consistent with the data in the main-memory|This allows for multiple writes to the same location in the cache before updating the main-memory, potentially reducing memory traffic.|
 |4.|Write through policy is used when there is no possibilty of modification in near future.|Write back policy is implemented when, in near future multiple modification has to be done on same cache line.|
+
+
+# Read through/Read Allocate Vs Rerefered word first read
+
+When there is miss in cache the block or word has to transfer lower memory(eg. main-memory).
+
+|Sr. no.|Read through|Rerefered word first read|
+|---|---|---|
+|1.|In Read through policy whenever ther is a miss in cache, a block is first transfered from main-memory to cache and then a word is transfered from cache to CPU.|In "Rerefered word first read" policy the system does not wait for the block to transfer first main-memory to cache and then CPU, instead it directly send word from main-meory to CPU and do the updates in cache later.|
+
