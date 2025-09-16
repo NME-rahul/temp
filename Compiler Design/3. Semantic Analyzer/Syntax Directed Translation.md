@@ -20,9 +20,9 @@ If X is symbol and ```a``` is one of its attribute then we write X.a to denote t
   $$E_p \rightarrow E \cdot T$$ { $$E_P = E.val \cdot T.val; T.val = E_p.val$$ }
 
 
+* A leaf node(terminals) have sythesized attributes initalized by the lexical analyzer and cannot be modified.
 
-
-2. **Synthesized attributes**: An attribute of non-terminal N is called Synthesized if it is defined by it's childeren or itseld.
+2. **Synthesized attributes**: An attribute of non-terminal N is called Synthesized if it is defined by it's childeren or itself.
 <div align="center">
   A -> BC
   
