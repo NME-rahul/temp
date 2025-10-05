@@ -55,11 +55,14 @@ Constrants are nothing but rules that needs to be followed while entring the dat
      
          CREATE TABLE Students (SID INT PRIMARY KEY, Student_name VARCHAR(50), Email VARCHAR(50) UNIQUE);
   
-3. **Entity Integrity constraints:** It ensures the consistency and integrity of PRIMARY KEY attribute.
+3. **Entity Integrity constraints:** It ensures the consistency and integrity of PRIMARY KEY attribute and make sure the primary-key does not take `NULL` values. it does not care about uniquness of values in primary-key.
+
+
+4. **Primary-key constraints:** It ensures the consistency and integrity of PRIMARY KEY attribute and make sure the primary-key does not take `NULL` and as well as duplicate values.
 
         CREATE TABLE Students (Student_ID INT PRIMARY KEY, Student_name VARCHAR(50));
    
-4. **Refrential integrity constraints:**  Refrential integirty constraints ensures the consistency and accuracy of data between related tables.
+5. **Refrential/Foreign-key integrity constraints:**  Refrential integirty constraints ensures the consistency and accuracy of data between related tables.
 
        CREATE TABLE Auhors (Auther_id PRIMARY KEY, Author_name VARCHAR(50));
        CREATE TABLE Books(Book_ID INT PRIMARY KEY, Book_title VARCHAR(50), Author_ID INT, FOREIGN KEY (Author_ID) REFRENCES Authors(Author_ID) ON DELETE CASCADE);
@@ -67,7 +70,7 @@ Constrants are nothing but rules that needs to be followed while entring the dat
      * ON DELETE CASCADE clause is used which means that if a record in the Authors is deleted, all the associated recored in the Books table with the Author_ID will automatically delete.
   
 
-5. **Tupe uniquness constraint:** It is also knwon as composite key constraints, it is use to enforce uniqness in the table by the combination of multiple columns in the table. for example in a table Student, student name, DOB and age can be used to uniqly determine each individual student in table.
+7. **Tuple uniquness constraint:** It is also knwon as composite key constraints, it is use to enforce uniqness in the table by the combination of multiple columns in the table. for example in a table Student, student name, DOB and age can be used to uniqly determine each individual student in table.
 
         CREATE TABLE Students (Student_ID INT, Student_name VARCAHR(50), Age INT(3), DOB DATE, CONSTRAINTS name_age_dob UNIQUE (Student_name, Age, DOB));
   * here name_age_dob is the name given to the combination of three column Student_name, Age and DOB
