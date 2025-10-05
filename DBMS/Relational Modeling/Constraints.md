@@ -1,6 +1,7 @@
-# Constrainsts
+# Constraints
 
 Constraints are basically condition or restriction that must be satisfied in Relationship.
+Integrity constraints are defines on the schema and their programing comes under the data definition language(DDL). On Run time these constraints are cheked and throws error if constraints are not satisfied.
 
 # Types of Constrainsts
 
