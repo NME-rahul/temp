@@ -46,10 +46,11 @@ Constrants are nothing but rules that needs to be followed while entring the dat
      
          CREATE TABLE Employee (EID INTEGER(5) PRIMARY KEY, Name VARCHAR(50), Department VARCHAR(50));
      
-   * **Foreign Key:** It is column that is defined as PRIMARY KEY and used to reference another table(this table should also contain the same column).
+   * **Foreign Key:** It is column that refrences to PRIMARY KEY of another table(this table should also contain the same column).
      
          CREATE TABLE Orders (Order_ID INT PRIMARY KEY, Order_Date DATE, Customer_ID INT, FOREIGN KEY (Customer_ID) REFRENCES Customer(Customer_ID));
-     * here Customer is another table that is refrenced to table Orders.
+     
+     * here Customer is another table that is refrenced by the table Orders.
        
    * **Unique constraint:** It ensures that not two values inside a column are the same.
      
