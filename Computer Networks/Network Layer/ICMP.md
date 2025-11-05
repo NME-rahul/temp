@@ -1,6 +1,6 @@
 # Internet Message Control Protocol(ICMP)
-
-* IP is best effort delivery system i.e. it niether have Flow Control not Error Control.
+* It is network layer protocol.
+* IP is best effort delivery system i.e. it niether have Flow Control nor Error Control.
 * IP needs Support from ICMP for Flow and error control.
 * ICMP can't detect or correct errors, actually it is an error reporting protocol.
 * An Network layer Device such as Router or an host ICMP message to source whenever it detects and issue.
