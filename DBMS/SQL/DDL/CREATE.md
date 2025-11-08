@@ -25,13 +25,13 @@ It is used to create table.
 
 * if want to referece another attribute then primary-key then we can use following syntax.
 
-    CREATE TABLE Book
-    (
-      Bid int(5),
-      CardNo int(5) REFRENCES User(Name), //REFERENCE keyworkd is use to make foriegn-key, here CardNo is referencing to the User table's Name attribute
-      DOT DATE,
-      PRIME KEY(Bid, CardNo) //defining composit key
-    );
+      CREATE TABLE Book
+      (
+        Bid int(5),
+        CardNo int(5) REFRENCES User(Name), //REFERENCE keyworkd is use to make foriegn-key, here CardNo is referencing to the User table's Name attribute
+        DOT DATE,
+        PRIME KEY(Bid, CardNo) //defining composit key
+      );
 
 ---
 
