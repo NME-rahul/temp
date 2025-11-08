@@ -20,7 +20,7 @@
 
 ## EXISTS
 * it does not matches the tuple directly but Inner query matches the every tuple of outer query table with inner query table.
-* EXISTS returns TRUE or FALSE. TRUE if result of inner query is empty or FALSE if inner query result is non-empty.
+* EXISTS returns TRUE or FALSE. FALSE if result of inner query is empty or TRUE if inner query result is non-empty.
 * When WHERE condition becomes FALSE then result does not contain the corresponding tuple of that iteration.
 * Inner query stops finding tuples when it found a single matching tuple because it makes table non-mepty and we'll get TRUE.
 * How matching is done?
