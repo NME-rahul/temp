@@ -1,12 +1,12 @@
 # ALL
 
-* it returns true when the condition evaluates to true for all the tuples that are in table.
+* it returns TRUE when the condition evaluates to true for all the tuples that are in table.
 * It acts like a universal quantifier. 
 
 * it matches every tuple of outer query with each tuple of inner query table iteration-by-iteration and because it acts like a universal quantifier so if all tuple of inner query table matches then it returns TRUE otherwise FALSE.
 * What if inner query table is empty?
   * It will always returns TRUE.
-  * because we know universal quantifer returns TRUE for empty sets because there is not tuple to make FALSE.
+  * because we know universal quantifer returns TRUE for empty sets because there is no tuple to make FALSE.
 
 <div></div>
 
