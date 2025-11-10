@@ -10,16 +10,17 @@
 *  `(*x)++` it first dereference the pointer and the increment the value ie. 1 because it is post increment.
 *  `*++x` similairy will produce an error because of incrementing constant value
 
+       int fun(int *p){
+         printf("%d", *++p); //print: 2 why? because now p is not a consant pointer but an normal integer pointer having address of an array and incrementing it by 1 p will point to next address of array
+         printf("%d", *p++); //print: 2 why? because it is a post increment so it will increment to next address but take effect after print
+       } 
 
-    int fun(int *p){
-     printf("%d", *++p); //print: 2 why? because now p is not a consant pointer but an normal integer pointer having address of an array and incrementing it by 1 p will point to next address of array
-     printf("%d", *p++); //print: 2 why? because it is a post increment so it will increment to next address but take effect after print
-   }
-   int main(){
-     int x[3] = {1, 2, 3};
-     printf("%d", *x);     //print: 1
-     printf("%d", *++x);  //will produce an error because we're increenting constant variable
-     printf("%d", *x++);  //will produce an error because we're increenting constant variable
 
-     fun(x);
-   }
+       int main(){
+         int x[3] = {1, 2, 3};
+         printf("%d", *x);     //print: 1
+         printf("%d", *++x);  //will produce an error because we're increenting constant variable
+         printf("%d", *x++);  //will produce an error because we're increenting constant variable
+
+         fun(x);
+       }
