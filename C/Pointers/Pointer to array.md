@@ -24,3 +24,10 @@
 
          fun(x);
        }
+
+
+## Representation
+
+<p align="center">
+    <img width="872" height="180" alt="Screenshot 2025-11-10 at 2 05 04 PM" src="https://github.com/user-attachments/assets/35314d20-24cb-4230-948f-b547e8f7682c" />
+</p>
