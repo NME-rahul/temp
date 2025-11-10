@@ -30,4 +30,6 @@
 
 <p align="center">
     <img width="872" height="180" alt="Screenshot 2025-11-10 at 2 05 04 PM" src="https://github.com/user-attachments/assets/35314d20-24cb-4230-948f-b547e8f7682c" />
+    <img width="872" height="220" alt="Screenshot 2025-11-10 at 2 10 20 PM" src="https://github.com/user-attachments/assets/fab94dc6-43b5-4c07-a618-3a55106b6a28" />
+
 </p>
