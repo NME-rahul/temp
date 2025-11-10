@@ -28,7 +28,7 @@
 *  **Lifetime**: whole program
 
 ## 4. External
-* Extern  storage class is used to declare a variable or a function but not to define i.e. it gives information to compiler that x is only decalred here bu definition can be present same or other file.
+* Extern  storage class is used to declare a variable or a function but not to define i.e. it gives information to compiler that x is only decalred here but definition can be present in global part of same or other file.
 * `extern` variable refrences the definition from where it is defined in the global area(or global variable).
 * It extends the visibilty of the variables and functions in C to multiple source file.
 * If local and global varible have same name then prioity will be given to local varible, to use global variable **scope resolution operator(::)** is used.
