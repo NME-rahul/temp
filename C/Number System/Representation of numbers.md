@@ -62,3 +62,12 @@ While Truncation regardless of source or destination `unsigned` or `signed` type
 <p align="center">
   <img width="573" height="163" alt="Screenshot 2025-11-10 at 12 02 36 PM" src="https://github.com/user-attachments/assets/171630e4-2500-4eb4-82fa-4ffffa7d3b04" />
 </p>
+
+
+
+## Integer Promotion
+Whenever a `short` or `char` is used for an expression it will be promoted to `int`(rest rules are same as type Extension).
+
+<p align="center">
+  <img width="690" height="426" alt="Screenshot 2025-11-10 at 1 41 37 PM" src="https://github.com/user-attachments/assets/1b4aa59d-7f59-47f1-b0d4-a22be63621b6" />
+</p>
