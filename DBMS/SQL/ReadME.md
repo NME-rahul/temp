@@ -4,3 +4,5 @@
   1. TRUE
   2. FALSE
   3. UNKNOWN : it is return by any logical comprision with NULL value
+ 
+* SQL works on multiset however pure relations are mathematical concept that works on set i.e. a relation concept in RDBMS can not have duplicate tuple but Tables of SQL can have.
