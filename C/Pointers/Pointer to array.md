@@ -1,6 +1,7 @@
     int x[5] = {1, 2, 3, 4, 5};
 
-* an array variable is a constant(doesnt change) pointer to first element of array.
+* an array variable is a constant(doesnt change) pointer to first element of array. 
+* Array variable address and its value(address of first element) is same. x $\equiv$ &x.
 * Declaration:
   * x[2] <--> *(x + 2) <---> *(2 + x) <---> 2[x]
   * x + 2; it is an address of third element of array
