@@ -9,3 +9,4 @@
 
 --- 
 * These fucntions can work on multisets(set having duplicate values).
+* MIN, MAX, AVG, SUM ignores because they works on specific attribute, COUNT also ignores NULL values only if used on specific attribute/column.
