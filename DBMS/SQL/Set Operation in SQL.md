@@ -5,7 +5,7 @@ User(cardNo, name, city)
 Borrow(bid, cardNo, DOI)
 Supplier(bid, sname, price, DOS)
 
-1. UNION
+### 1. UNION
 
         SELECT sid FROM Book UNION SELECT sid FROM Course;
 * Select all sid that are in book tabel as well as in course
@@ -14,15 +14,17 @@ Supplier(bid, sname, price, DOS)
 
 * Select all bid from book table where title is DBMS and and all books that are issued
     
-2. INTERSECTON
+### 2. INTERSECTON
 
         SELECT sid FROM Book INTERSECTION SELECT sid FROM Course;
 
 * Select all sid that are common in book and course table.
+* it remove duplicate tuples if present, to retail the duplicate tuples use `INTERSECT ALL`.
         
-* MINUS, EXCEPT
+### 3. MINUS, EXCEPT
 
         SELECCT sid FROM Book MINUS SELECT sid FROM Course.
+        
 * Select all sid that are only in book table; Select all sid that are in Book table except sid' from course table.
   
 * SOME
