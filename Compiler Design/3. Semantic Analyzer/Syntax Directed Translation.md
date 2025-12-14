@@ -1,46 +1,23 @@
 # Semantic Analyzer
 
+<img width="590" height="301" alt="Screenshot 2025-12-14 at 10 37 02 PM" src="https://github.com/user-attachments/assets/87ad9026-9e17-41c9-b70e-443fa99b719f" />
+<img width="582" height="64" alt="Screenshot 2025-12-14 at 10 38 17 PM" src="https://github.com/user-attachments/assets/c7d9180d-bde7-491d-9372-255a8a23ff4d" />
+
+
 ## Syntax-Directed Definition
 
-A _Syntax-directed_ defnition is a context-free grammar together with attributes and rule. The syntax-directed translation is guided by the context free grammars.
-
-If X is symbol and ```a``` is one of its attribute then we write X.a to denote the value of ```a```  at a partcular parse-tree node. Attributes may be of any kind: numbers, type, table, references, or strings.
-
-### Inherited an Synthesized attributes
-
-1. **Inherited attributes**: An attribute of non-terminal B is called Inherited if it is defined only in terms of it's parent or sibling or from itself.
-<div align="center">
-  A -> BC
-  
-  if B's attribute defined by A(parent) and C(right sibling).
-  
-  B has no left sibling
-</div>
-
-  $$E_p \rightarrow E \cdot T$$ { $$E_P = E.val \cdot T.val; T.val = E_p.val$$ }
-
-
-* A leaf node(terminals) have sythesized attributes initalized by the lexical analyzer and cannot be modified.
-
-2. **Synthesized attributes**: An attribute of non-terminal N is called Synthesized if it is defined by it's childeren or itself.
-<div align="center">
-  A -> BC
-  
-  if A's attributes are defined by B(childeren of A) or C(childeren of A).
-
-</div>
-
-$$E \rightarrow E + T;$$ { $$E.val = E.val + T.val$$ }
-
+<img width="534" height="509" alt="Screenshot 2025-12-14 at 10 33 24 PM" src="https://github.com/user-attachments/assets/57a9bd1b-735e-4c28-93a2-9580a3210e8f" />
   
 
 ## SDT type
+<img width="614" height="133" alt="Screenshot 2025-12-14 at 10 24 46 PM" src="https://github.com/user-attachments/assets/51dcb06d-9461-4e77-b296-1364858f1e42" />
+<img width="628" height="588" alt="Screenshot 2025-12-14 at 10 24 53 PM" src="https://github.com/user-attachments/assets/959b7985-d4b7-46c2-a576-857a42bdf0ee" />
+<img width="606" height="130" alt="Screenshot 2025-12-14 at 10 21 40 PM" src="https://github.com/user-attachments/assets/d90388ff-7d85-4fbd-8c1e-1ccaaa763fb3" />
+<img width="598" height="237" alt="Screenshot 2025-12-14 at 10 23 18 PM" src="https://github.com/user-attachments/assets/a7baeb2c-4576-4d0b-82de-0c8855589440" />
+<img width="573" height="92" alt="Screenshot 2025-12-14 at 10 23 37 PM" src="https://github.com/user-attachments/assets/467aae81-448a-48b6-ac1b-33921f9f5d69" />
 
-|S.no.|S-attributed SDT|L-attributed SDT|
-|---|---|---|
-|1.|SDT uses only synthesized attribute|Uses both synthesized and Inherited attribute but Each inherited attribute is restricted to inherit either from parent or left sibling. <br><br>eg. $A -> XYZ$ {Y.s = A.s, Y.s = X.s, Y.s = Z.s}|
-|2.|Sementic actions are placed at right end of production.<br><br> eg. $A->BCC$ { }<br><br> Also called postfix SDT.|Sementic action are placed anywhere on RHS <br><br> A -> { } BC <br>A -> D { } E <br>A -> FG { }|
-|3.|Attributes are evaluated during bottom-up parsing.|Attributes are evaluated by traversing parse tree depth first, left to right.|
+#### Circular dependency with inherited and synthesized attribute
+
+<img width="569" height="450" alt="Screenshot 2025-12-14 at 9 50 57 PM" src="https://github.com/user-attachments/assets/5271823e-b39b-4a35-84f8-ca2ae3117d5f" />
 
 
-* If SDT is S-attribute then it is definitely L-attributed because L-attributed SDT uses S-attribute SDT's definition also.
