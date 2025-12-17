@@ -17,7 +17,7 @@
 ||Vectored|Non-Vectored|
 |---|---|---|
 ||Device sends interrupt and vector|Device sends only interrupt|
-|working| Device sends the interrupt to CPU and CPU sends acknowledgment to device After recieving acknowledgement the device sends the ISR of Interrupt|Executes a default service routine and Cpu Obtain the location of actual ISR|
+|working| Device sends the interrupt to CPU and CPU sends acknowledgment to device After recieving acknowledgement the device sends the ISR of Interrupt|The branch address is assigned to a fixed location in memory.|
 
 ---
 
@@ -34,21 +34,11 @@
 
 ---
 
-
 ### Time required in interrupt IO
 
-* Time required in interrupt IO = Interrupt overhead time + service time
+* Time required in interrupt IO = Interrupt overhead time + service time(includes IO speed of transfering data)
+  * Interrupt overhead time: context saving + includes time of ACK by CPU + transfer of VAD
 * Interrupt overhead time = Intrrupt accepts + device acknowledgment + vector transfer
-
-### Simultaneous Interrupt
-
-* When 2 devce generetes interrupt simultaneously then it service the intrrupt according priority
-* When internal or external interrupt generates simultaneously then it service internal interrupt first.
-
-## Priority Interrupt handeling
-
-1. Softwate solution - priority resolutions is done by software.
-2. Hrdware solution- priority reslution is done using dedicated hardware.
 
 
 ### Hardware soltion has two types
@@ -57,7 +47,7 @@
 
 #### 1. Serial(daisy chaining)
 
-* The daisy chaining involves connecting all the devices tthat can request an interrupt in serial manner.
+* The daisy chaining involves connecting all the devices that can request an interrupt in serial manner.
 * The Device with highest priority is placed followed by the second highest priority device and so on.
 * Starvation is possible.
 
