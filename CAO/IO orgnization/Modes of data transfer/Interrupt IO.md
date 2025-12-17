@@ -55,14 +55,7 @@
   <img src="https://github.com/NME-rahul/temp/assets/100432854/ef1cec6e-c581-4aeb-a9de-18e085aa2b68" height="" width="" />
 </p>
 
-**Working**
+#### **Working**
+<img width="522" height="337" alt="Screenshot 2025-12-17 at 5 10 36 PM" src="https://github.com/user-attachments/assets/05f60e69-ab47-4987-8a02-1bd6cb6cd4b6" />
 
-* When no interrupt are pending, the interrupt line stays in the high-level state and enables the intrrupt input lines.
-* Device place the inttrupt signal and places the interrupt line in the low state, menas now no device can place interrupt signal on line.
-* The CPU acknowledges the interrupt request throught intrrupt acknowledgment line in repsone to request.
-* The signal is recieved at PI input of first device on line.
-* If device has no interrupt, it passes the signal to the next ddevice throgh it PO(PI=1 & PO=1).
-* However, if device had requested the interrupt then device consumes the acknowledgmentsignal and block its further use by placing 0 at it's PO.
-* The device then proceed to place its interrupt vector address(VAD) into the data bus of CPU.
-* The device puts its interrupt signal in HIGH state to indicate its intrrupt has been taken care of.
 
