@@ -9,3 +9,6 @@ $$k^n(A) = (kA)$$ $$(kA) = k^n(A) \\\ \text{     where A is of order of nxn}$$
 
 <img width="311" height="286" alt="Screenshot 2025-12-17 at 12 18 23 AM" src="https://github.com/user-attachments/assets/36952c5a-31a6-45e5-b52f-e82652a83c3c" />
 <img width="301" height="426" alt="Screenshot 2025-12-17 at 12 18 17 AM" src="https://github.com/user-attachments/assets/4f4c2904-a2a1-4f8a-aaf3-72955bbbd37e" />
+
+
+* A Square matrix $A$ is called nilpotent if there is non-negative integer $k$ such that $A^K$ is the zero matrix. The smalles such integer $k$ is called degree of the index $A$.
