@@ -4,3 +4,4 @@
 4. $rank(AB) \leq min(rank(A), rank(B))$
 5. $rank(A \pm B) \leq rank(A) + rank(B) $
 6. The eigenspace correpsonding to eigenvalue 0 tells the null space, the dimension of the NULL space tells the geometric multiplicity of eigen value 0.
+7. $(rA)^{-1} = r^{-1} A^{-1}$
