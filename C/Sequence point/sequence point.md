@@ -7,11 +7,9 @@
     int a = 1;
     int y = a++ + a;
 
-Here After + opeartor we don't know the value of $a$ We(compiler) don't whether it is incremented(i.e. a = 2) or still waiting to be incremented(i.e $a$ is $2$) `+` is not a sequence point.
+Here After + opeartor we don't know the value of $a$ We(compiler) don't whether it is incremented(i.e. a = 2) or still waiting to be incremented(i.e $a$ is $2$) because `+` is not a sequence point. BUt if there is a sequence point between them like `&&` then it will work.
 
-* This kind xpression shows undefined behaviour or it is compiler dependent what value will they reflecte.
-
-* Any expression in which same operand is modfied more then one time show this type of undefined behaviour.
+* So xpression shows undefined behaviour if value is modfied multiple time before sequence point or it is compiler dependent what value will they reflect.
 
 Another example, 
 
