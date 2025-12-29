@@ -1,6 +1,6 @@
 # Median In Unsorted Array O(n)
 
-* There is a naive apprach to find median in the sorted array is to first sort the algorithm and then find middle element but it takes $O(n.logn)$ time.
+* There is a naive apprach to find median in the unsorted array is to first sort the algorithm and then find middle element but it takes $O(n.logn)$ time.
 * Another Appraoch is to modify the quick sort algorithm which can find median in $O(n)$ time, it is also called quick select algorithm and it totally depends on the choice of pivot element, and time can go upto $O(n^2)$.
 
       modified_quicksort(A, first, last):
