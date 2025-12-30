@@ -44,13 +44,13 @@ Extesion happens based on source `type` if source is of signed then it retains t
 
 * Even after changing the destination `type` we're still doing extension based on source `type`. 
 <p align="center">
-<img width="690" height="426" alt="Screenshot 2025-11-10 at 11 44 26 AM" src="https://github.com/user-attachments/assets/d50a5921-b8a9-462e-b50f-1b786d4fef46" />
+  <img width="690" height="426" alt="Screenshot 2025-11-10 at 11 44 26 AM" src="https://github.com/user-attachments/assets/d50a5921-b8a9-462e-b50f-1b786d4fef46" />
 </p>
 
 * THe source that is `short int y` is a signed reprsentation so the extension is happend based on what is sign bit and retains the sing bit.
 
 <p align="center">
-<img width="690" height="426" alt="Screenshot 2025-11-10 at 11 51 24 AM" src="https://github.com/user-attachments/assets/04226f39-6cec-4a69-98cd-f0ab1cdc25d9" />
+  <img width="665" height="506" alt="Screenshot 2025-12-30 at 4 59 50 PM" src="https://github.com/user-attachments/assets/899f2dbe-e544-41fc-aa79-57f3341bc3ad" />
 </p>
 
 * Since the source is `unsigned short int y` the whole bits is used represented the numbers i.e. their is no sign bit thats why while extensing it is putting 0's.
