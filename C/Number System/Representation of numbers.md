@@ -36,7 +36,7 @@ For `printf()` function the `type` is not valued it prints the value based on wh
 **Extension**: Copying a lower bit number to higher bit. eg. short to int. <br>
 **Truncation**: Copying a higher bit number to lower bit. for eg. int to short
 
-**Extension**:
+#### **Extension**:
 Extesion happens based on source `type` if source is of signed then it retains the sign the MSB bit for remaning bits while extension.
 <p align="center">
 <img width="690" height="426" alt="Screenshot 2025-11-10 at 11 43 21 AM" src="https://github.com/user-attachments/assets/edc3e459-d789-4654-ba94-335ad0940db2" />
@@ -56,11 +56,11 @@ Extesion happens based on source `type` if source is of signed then it retains t
 * Since the source is `unsigned short int y` the whole bits is used represented the numbers i.e. their is no sign bit thats why while extensing it is putting 0's.
 
 
-**Truncation**
+#### **Truncation**
 While Truncation regardless of source or destination `unsigned` or `signed` type, truncation always just truncates. This can cause the number to change drastically in sign value.
 
 <p align="center">
-  <img width="573" height="163" alt="Screenshot 2025-11-10 at 12 02 36 PM" src="https://github.com/user-attachments/assets/171630e4-2500-4eb4-82fa-4ffffa7d3b04" />
+  <img width="563" height="190" alt="Screenshot 2025-12-30 at 4 56 58 PM" src="https://github.com/user-attachments/assets/c04473f0-80b9-4020-9771-d2794648cc8f" />
 </p>
 
 
