@@ -33,8 +33,8 @@ For `printf()` function the `type` is not valued it prints the value based on wh
 
 ## Extension and Truncataion
 
-**Extension**: Coping a lower bit number to higher bit. eg. short to int.
-**Truncation**: Copying a higher bit number to lowe bit. for eg. int to short
+**Extension**: Copying a lower bit number to higher bit. eg. short to int. <br>
+**Truncation**: Copying a higher bit number to lower bit. for eg. int to short
 
 **Extension**:
 Extesion happens based on source `type` if source is of signed then it retains the sign the MSB bit for remaning bits while extension.
