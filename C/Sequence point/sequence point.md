@@ -1,5 +1,6 @@
 # Sequence point
 
+* A sequence point defines point where side effects of previous evaluation is guranteed.
 * `;` semicolon is also called sequence point.
   * x = a++; after the semicolon a will increase or we side effect will take place sequence point.
 <div></div>
