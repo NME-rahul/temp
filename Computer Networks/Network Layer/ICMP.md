@@ -3,10 +3,10 @@
 * IP is best effort delivery system i.e. it niether have Flow Control nor Error Control.
 * IP needs Support from ICMP for Flow and error control.
 * ICMP can't detect or correct errors, actually it is an error reporting protocol.
-* An Network layer Device such as Router or an host ICMP message to source whenever it detects and issue.
+* An Network layer Device such as Router or an host sends ICMP message to source whenever to report any error if occur.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/98d96375-39e7-40a9-b6a5-2f818e643a0c" />
+  <img height="410px" width="520px" src="https://github.com/user-attachments/assets/98d96375-39e7-40a9-b6a5-2f818e643a0c" />
 </p>
 
 * In case of Error, ICMP protocol attaches errornious packet's header with additional 8 bytes(of TCP header) with own ICMP header and sent it to source(sending ICMP error again requires and IP header).
