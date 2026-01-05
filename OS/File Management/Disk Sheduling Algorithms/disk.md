@@ -1,4 +1,5 @@
-* The number of actuaters(R/W head) or platters is nothing with the speed but actually to increase the storage space, multiple platters just provide more capcaity and actuators are just to read/write on correspoonding platters. Only one actuator works at a time, reducing only the seek time and not rotational latency and tansfer time by overlapping time.
+* THe outer most cylinder is the first track generally, and last at the near of spindle.
+* The number of actuaters(R/W head) or platters is nothing to do with the speed but actually to increase the storage space, multiple platters just provide more capcaity and actuators are just to read/write on correspoonding platters. Only one actuator works at a time, reducing only the seek time and not rotational latency and tansfer time by overlapping time.
 * Data in the hard disk is first stored sectors wise in same track then cylinderwise thus reducing the seek time.
   * First fill all sectors in same track,
   * Then fill the second track on the same cylinder(i.e. the first track of second surface),
