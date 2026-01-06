@@ -20,8 +20,24 @@
 <video src="https://github.com/user-attachments/assets/9a06c6ea-efdc-47bf-ace6-a2f343c924a3" /></video>
 </div>
 
----
+# Router
+* Routes Data from one network to another network.
+* It works on network layer of OSI model can see and manipulate the IP information.
+* A router is gateway of network.
+ 
+<div align="center">
+  <img width="700" height="400" alt="Screenshot 2026-01-07 at 1 22 58 AM" src="https://github.com/user-attachments/assets/f2b19e1f-f5ba-4f18-bc71-d7fc6640a296" />
+  <img width="700" height="400" alt="Screenshot 2026-01-07 at 12 25 04 AM" src="https://github.com/user-attachments/assets/43792f54-0973-4d2a-a3eb-09863fcdd15e" />
+</div>
 
+
+* Routers can also be used to physically diivde the network into subnetwork, that sperates the broadcast domain and routes traffic efficiently.
+ 
+<div align="center">
+  <img width="700" height="400" alt="Screenshot 2026-01-07 at 1 23 57 AM" src="https://github.com/user-attachments/assets/4dba1a5a-36e9-43da-8dbb-3393388ca23f" />
+</div>
+
+---
 * Hubs and switches are used to exchange data within a local area network, Not used to exchange data outside their own network.
 * To Exchange data outside their own network, a device needs to be able to real IP address.
-
+* Essentially Hubs and switches are used to create network, whereas routers are used to connect network.
