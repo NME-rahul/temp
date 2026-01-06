@@ -20,5 +20,6 @@
 <img width="875" height="415" alt="Screenshot 2026-01-06 at 6 59 06 AM" src="https://github.com/user-attachments/assets/56682146-be4f-4b04-9d60-7207a92600c5" />
 <img width="835" height="486" alt="image" src="https://github.com/user-attachments/assets/3e06c9a6-60f9-4276-94c8-1ee6e592e18b" />
 
+---
 
-Orignial Source: https://www.classes.cs.uchicago.edu/archive/2003/winter/54001-1/data/hw2sol.pdf 
+* Source: https://www.classes.cs.uchicago.edu/archive/2003/winter/54001-1/data/hw2sol.pdf 
