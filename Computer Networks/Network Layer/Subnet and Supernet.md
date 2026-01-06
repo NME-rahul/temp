@@ -1,5 +1,5 @@
 # Subnets
-
+* Subnets are designed to segment a larger network, separating broadcast domains and managing traffic efficiently, not to reuse addresses.
 * Subnetting is a physical concept, at high-level we can say that subneeting divides one network into differnet subets.
 * This physical division is used for the purpose of security and more useabilty as it reduces the broadcast domain thus network traffic.(Subnetting can also be done usinf VLANs by configuring ports of VLAN to subnets, but this is not in syllabus).
 
