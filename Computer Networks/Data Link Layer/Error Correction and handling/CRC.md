@@ -1,4 +1,7 @@
 # CRC
+* $R(x) = S(x) + e(x)$
+
+We should choose $G(x)$ such that it can not divide $e(x)$, for example if $e(x) = x^5$ and $G(x) = x^3$ then $G(x)$ can divide $e(x)$ so we can not detect the error because we got remainder as $0$, that's why if error is of order $d$ like $e(x) = x^d + x^{d-1} + ... + 1$ then $G(x)$ must be at least of order $d$.
 
 ## Guidelines to Choose $G(x)$
 1. It must have at least 2 terms
