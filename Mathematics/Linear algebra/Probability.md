@@ -15,6 +15,8 @@
 * Probabilty of event $A$ given event $B$
 * Probabilty of happening an event given some condition.
 
+Baye's theorem: 
+
 $$P(A | B) = \frac{ P(A \cap B) } {P(B)}$$
 
 
@@ -32,3 +34,7 @@ $$P(A | B) = \frac{ P(A \cap B) } {P(B)}$$
 * $P(A \cap B) = P(A).P(B | A) = P(B \cap A)$
 * $P(A \cap B) = P(B).P(A | B)$
 * $P(A \cap B \cap C) = P(A).P(B | A).P(C | A \cap B)$ --> Factorization or chain rule
+
+---
+
+<img width="1211" height="693" alt="image" src="https://github.com/user-attachments/assets/63a46ca6-d7a0-42cb-8961-8bb43b1f63a2" />
