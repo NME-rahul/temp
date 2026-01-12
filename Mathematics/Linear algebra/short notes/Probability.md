@@ -38,3 +38,11 @@ $$P(A | B) = \frac{ P(A \cap B) } {P(B)}$$
 ---
 
 <img width="1211" height="693" alt="image" src="https://github.com/user-attachments/assets/63a46ca6-d7a0-42cb-8961-8bb43b1f63a2" />
+
+
+
+# Random Variable
+
+* It is a function that maps sample space on real line.
+
+$$f:2^{\Omega} \rightarrow [0,1]$$
