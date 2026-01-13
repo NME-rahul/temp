@@ -12,7 +12,7 @@ $$R \supseteq r1 \bowtie r2 \bowtie r3 \bowtie ..... rn $$
 ## 1. Lossy Decomposition
 $$R \supset r1 \bowtie r2 \bowtie r3 \bowtie ..... rn $$
 
-The word loosy refers to loose of information not the tuples, if looses the information after decomposition then it is called lossy decomposition, remember we can can get some extra tuples called suprious tuples after joining decomposed relations.
+The word loosy refers to loose of information not the tuples, if we losse the information after decomposition then it is called lossy decomposition, remember we can can get some extra tuples called suprious tuples after joining decomposed relations not less tuple.
 
 
 ## 2. Lossless Decomposition/Non-addititve decomposition
