@@ -59,7 +59,7 @@ $$P(x) = \frac{1}{b - a + 1} \\\ or \\\ \frac{1}{n}$$
 * Variance: $\frac{n^2 - 1}{12}$
 
 
-### 1. Continuous uniform R.V.
+### 2. Continuous uniform R.V.
 
 <div align="center">
   <img width="603" height="173" alt="image" src="https://github.com/user-attachments/assets/e51dbe5b-361d-4114-b9e8-442c55cadbd3" />
@@ -68,3 +68,50 @@ $$P(x) = \frac{1}{b - a + 1} \\\ or \\\ \frac{1}{n}$$
 
 * Mean : $\frac{(a+b)}{2}$
 * Variance: $\frac{(b-a)^2}{12}$
+
+
+### 3. Bernouli R.V.
+
+* Every even have only two outcomes(need not to be same) and number of trials is only 1.
+
+* Mean : $p$
+* Variance: $pq$
+
+
+### 3. Binomial R.V.
+
+* It is a extension of Bernouli for $n$ number of trials
+* Every event have only two outcomes(need not to be same).
+
+$$\sum_{r=0}^{n} p^{r}q^{n-r}$$
+
+* Mean : $np$
+* Variance: $npq$
+
+### 4. Poisson R.V.
+
+* It is also extension of binomial but trials here are very large($n \rightarrow \inf$) or probability $p$ is very less.
+
+$$\frac{ e^{-m}m^r }{r!}$$
+
+* Mean : $m = np$
+* Variance: $m = np$
+
+
+### 5. Normal Distribution ~N(mean, variance)
+
+* It is based on natural occuring phenomen
+* It is symmetric about mean.
+* Standard Normal Distribution : $~ N(0,1)$ ; where mean is $0$ and variance is $1$.
+
+$$f(x) = \int \frac{1}{\sigma \sqrt{2 \pi}} * e^{\frac{-1}{2}.(\frac{x - \mu}{\sigma})^2}$$
+
+* Mean : $\mu$
+* Variance: $\sigma^2$
+
+### 5. Exponential Distribution
+
+$$p(X) = \begin{cases} \lambda e^{-\lambda x} & x \geq 0 \\\ 0 & otherwise\end{cases}$$
+
+* Mean : $\frac{1}{\lambda}$
+* Variance: $\frac{1}{\lambda^2}$
