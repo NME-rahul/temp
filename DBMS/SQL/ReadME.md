@@ -20,3 +20,4 @@ Assume <br>
 ---
 
 * Arithmatic operation with `NULL` values give `NULL`.
+* Aggregate function returns `NULL` on empty table except `COUNT(column_name)` and `COUNT(*)`
