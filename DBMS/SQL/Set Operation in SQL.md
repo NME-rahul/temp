@@ -1,5 +1,7 @@
 # Set Operation
 
+* Set operations in SQL `UNION` , `EXCEPT`, `INTERSECTION` removes duplicate tuples from both the particpating relations.
+
 Book(bid, title, Yr_Pub)
 User(cardNo, name, city)
 Borrow(bid, cardNo, DOI)
