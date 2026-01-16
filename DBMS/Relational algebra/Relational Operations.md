@@ -57,6 +57,9 @@ $$\sigma_{Roll no > 35}(R)$$
 $$\sigma_{Roll no > 30 AND Roll no < 45}(R)$$
 
 
+* It is commutative in nature, $$
+
+
 ## Project
 
 Project/show all the table record according specified table. return only unique tuples.
