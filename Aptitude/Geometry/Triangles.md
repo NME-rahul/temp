@@ -10,8 +10,10 @@ $\sqrt{S(S-a)(S-b)(S-c)}$
 #### **Area of Triangle**:
 $1/2 * base * height$
 
-#### Isoceles Triangle
+## Isoceles Triangle
 * It Has two sides equal.
+* **Properties**:
+  * It has two sides equal and angles to the base of equal side are equal.
 * The line Perpendicular to the side $BC$ is bisector.
 
 **Proof**
