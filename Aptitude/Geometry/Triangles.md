@@ -30,3 +30,18 @@ $$\theta_1 = \theta_2$$
 </div>
 
 * Any perndicular will be a bisector of the side.
+
+
+## Similar Triangle
+
+* if Triangles are similar then then their two angles equal or one angle and two sides or all three sides are in propetion.
+* The ratio of height and and theri is equal in similar triangle, $\frac{h_1}{h_2} = \frac{b_1}{b_2}$
+* if there is parallel line to the base of triangle $ABC$ intersection two sides at the point $P$ and $Q$ then sides $\frac{AP}{PB} = \frac{AQ}{QC}$ (generally property not specific to similar triangles)
+
+<div align="center">
+  <img width="703" height="573" alt="image" src="https://github.com/user-attachments/assets/b5a9fbbd-26e6-4eec-bf41-12d3a133fdaa" />
+</div>
+
+## Congurent Triangle
+* Triangles are in exactly if they place one each other.
+* Their 3 sides and all three angles are equal.
