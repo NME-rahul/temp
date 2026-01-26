@@ -26,6 +26,7 @@
 |3.|Time Exceeded: Time to Leaver becomes 0 before destination|Address mask request and reply|
 |4.|Parameter Problem: Header corrupted|Router Solicitation and Advertisement|
 |5.|Redirection: Packet doesn't drop but route is not appropriate||
+|6.|If time exceeded during the reassembling by the host.||
 
 ## Important Points
 * No ICMP message wii be generated in response of a datagram carrying an ICMP error Message.
