@@ -1,13 +1,14 @@
 # GROUP BY
 
 * it makes a logical set of same tuples that is specified in GROUP BY clause.
-* These logical set are then used with aggregate function for eg. you groupby a employee table on the basis of departName and you use aggregate function avg on salary attribute then it will selct avg salary of employee in each departmenet.
+* These logical set are then used with aggregate function(not ncessarily) for eg. you groupby a employee table on the basis of departName and you use aggregate function avg on salary attribute then it will selct avg salary of employee in each departmenet.
 * All attributes appeared in `SELECT` Clause must appear in `GROUP BY` clause.
   * but reverse is not True accroding to new standards, It is not necessary that all attributes used in `GROUP BY` clause must appear in `SELECT` clause.
   
-* Whenver there is GROUP BY in sql query then there will be only one tuple in output table for the every group.
+* Whenver there is GROUP BY in sql query then there will be only one tuple in output table for the every group if aggregate function is used.
+* `NULL` itself have a seprate group.
 
-* If you want to display any attribute in outptut then it must also appear in GROUP BY clause and any extra attribute you want to select that is not ```GROUP BY``` clause then you must use those with some aggregate function.
+* If you want to display any attribute in output then it must also appear in GROUP BY clause and any extra attribute you want to select that is not ```GROUP BY``` clause then you must use those with some aggregate function.
 
 
       SELECT p.SupplierID, s.SupplierName, SUM(p.Price)
