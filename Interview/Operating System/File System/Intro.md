@@ -32,4 +32,11 @@ Most of the file operation involve searching the directory for the entry associa
 File Types: A common technique for implementing file types is to include the type as part of the file name. The name is split into two parts — a name and an extension.
 
 ### 2. Director
-* This stores the inforamtion about files kept in the director, typically a director entry consists of the file's name and its unique identifier.
+* This stores the inforamtion about files kept in the director, typically a director entry consists of the file's name and its unique identifier. IT can be viewed as a symbol table that translates file names into their file control blocks.
+* **Directory Operations:**
+  1. Seach for a file
+  2. Create a file
+  3. Delete a file
+  4. List a directory
+  5. Rename a file
+  6. Traverse the file system
