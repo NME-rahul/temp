@@ -1,3 +1,3 @@
-# Access methods
+# File Access methods
 
 1. Sequential Access
