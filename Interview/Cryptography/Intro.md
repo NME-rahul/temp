@@ -6,7 +6,7 @@
 ## Types of Cryptography
 
 ### 1. Symmetric Key Cryptography
-* Sender and receiver of a message use a single common key to encrypt and decrypt messages.
+* Sender and receiver of a message use a single common key to encrypt and decrypt messages. Only the common generated key can decrypt the data if its encrypted.
 * It is faster and simpler but the problem is sender and receiver have to somehow  exchange keys securely.
 * The most popular symmetric key cryptography system are Data Encryption(DEC) and Advance Encryption System(AES).
 
@@ -17,6 +17,7 @@
 ### 2. Asymmetric KEy Cryptography
 * In Asymmetric Key Cryptography a pair of keys is usesd to encrypt and decrypt information. A sender's public key is used for encryption and receivers private key is used for decryption.
 * Even everyone know the public key, the decryption is only can only be done by the indended receiver by the private key.
+* Only private key can decrypt the data, encrypted by the public key and vice-versa.
 * Example: RSA
 * Symmetric keys are slow, and inefficient and can ony be used with small amount of data.
 * What we can do is we can share the symmetric keys using Assymetric Key Encrption and then after can use symmetric Key Encryption to share bulk data. This is what SSL and TLS do
