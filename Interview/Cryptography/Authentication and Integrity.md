@@ -8,3 +8,7 @@
 
   * Assymetric Keys can be used to ensure the integrity of Data meaning they are not modifed by some middle-men.
   * Because the shared data is encrypted data can only be decrypted by the Public-Key, the public key holder can decrypt and see if the decrypted data is grbage either data is compromised or user is not authentic.
+
+---
+
+* Autheticaation process for Signature, By signatue with Private-Key we can ensure that only Privat-key holder can encrypt by decrypting.
