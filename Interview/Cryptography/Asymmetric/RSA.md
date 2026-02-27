@@ -23,4 +23,15 @@
 * we have now Public-Key and Private-Key
 
 6. Encryption: $(Message)^E \\ \\ MOD \\ \\ N =$ Cipher-Text
-7. Decryption: $(Cipher-Text)^D \\ \\ MOD \\ \\ N =$ Original-message 
+7. Decryption: $(Cipher-Text)^D \\ \\ MOD \\ \\ N =$ Original-message
+
+
+### Use Cases of RSA
+
+* Secure Web Browsing(HTTPS/SSL/TLS)
+* Digital Signature
+* Email Encryption
+* Secure File Transfer(SFTP)
+* Virtual Private Networks(VPNs)
+* Key Exchange
+* Blockchain
