@@ -10,7 +10,7 @@
     }
 
 <div align="center">
-  <img height="400" width="400" src="https://github.com/user-attachments/assets/4d6165a3-071e-40f8-8c7f-fc6865302ed5" >
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/4d6165a3-071e-40f8-8c7f-fc6865302ed5" >
 </div>
 
 
@@ -20,7 +20,7 @@
     }
 
 <div align="center">
-  <img height="400" width="400" src="https://github.com/user-attachments/assets/6ee50b0d-ae35-4ee6-a55a-df387b0fc77d">
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/6ee50b0d-ae35-4ee6-a55a-df387b0fc77d">
 </div>
 
 
@@ -32,7 +32,7 @@
     }
 
 <div align="center">
-  <img height="400" width="400" src="https://github.com/user-attachments/assets/e3236b06-50e0-4540-ad88-7fe5aa459fba">
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/e3236b06-50e0-4540-ad88-7fe5aa459fba">
 </div>
 
 
@@ -43,7 +43,7 @@
     }
 
 <div align="center">
-  <img height="400" width="400" src="https://github.com/user-attachments/assets/29710eb3-66ab-4f1e-8e13-13b82ac840a4">
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/29710eb3-66ab-4f1e-8e13-13b82ac840a4">
 </div>
 
 * By just changing the order we can save the space.
@@ -56,5 +56,5 @@
     }
 
 <div align="center">
-  <img height="400" width="400" src="https://github.com/user-attachments/assets/1d568c27-aa7a-44ba-a4fc-06b173022b50">
+  <img height="400" width="600" src="https://github.com/user-attachments/assets/1d568c27-aa7a-44ba-a4fc-06b173022b50">
 </div>
