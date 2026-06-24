@@ -30,3 +30,7 @@
           return median;
 
 * There is an another algorithm called median of medians, effciently finds the median in $O(n)$ time.
+
+## Median-of-Medians
+
+https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2012/c3a8610ea2120258eaa0d71f95f59fde_MIT6_046JS12_lec01.pdf
